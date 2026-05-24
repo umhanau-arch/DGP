@@ -1,0 +1,121 @@
+Digitale Geschäftsprozesse – Ultimativer
+Lernzettel
+Ziel: Dieser Lernzettel fasst die wichtigsten Klausurthemen extrem einfach, übersichtlich und lernfreundlich
+zusammen. Fokus liegt auf:
+• schnellem Verstehen
+• leichtem Auswendiglernen
+• typischen Klausurmustern
+• Tabellen, Merksätzen und Strukturen
+1. Geschäftsprozess – Einfach erklärt
+Geschäftsprozess: Wiederholender Ablauf mit Ziel und Wertschöpfung.
+Beispiele:
+• Bestellung bearbeiten
+• Rechnung versenden
+• Ware liefern
+Merksatz: Ein Geschäftsprozess läuft immer wieder gleichartig ab.
+Geschäftsprozess Projekt
+wiederholend einmalig
+dauerhaft temporär
+Routine Innovation
+stabil endet
+2. ARIS – Die 5 Sichten
+ARIS hilft Prozesse aus verschiedenen Perspektiven zu betrachten.
+Sicht Frage Beispiel
+Funktionssicht WAS? Rechnung prüfen
+Organisationssicht WER? Buchhalter
+Datensicht Welche Daten? Kundendaten
+Leistungssicht Input/Output? Produkt
+Steuerungssicht WIE? Reihenfolge
+3. GPM-Lebenszyklus
+Der wichtigste Kreislauf der Klausur!
+Reihenfolge merken:
+Identifikation → Erhebung → Analyse → Verbesserung → Einführung → Überwachung
+Phase Ziel Merkhilfe
+Identifikation wichtige Prozesse finden Welche Prozesse gibt es?
+
+-- 1 of 4 --
+
+Erhebung Istprozess aufnehmen Wie läuft es aktuell?
+Analyse Probleme erkennen Wo sind Schwächen?
+Verbesserung Sollprozess entwickeln Wie wird es besser?
+Einführung Umsetzung Neuen Prozess starten
+Überwachung Kontrolle mit KPIs Läuft alles gut?
+4. Prozessarten
+Extrem wichtig für die Klausur!
+Prozessart Bedeutung Beispiele
+Kernprozess direkter Kundennutzen Produktion, Versand
+Supportprozess unterstützt intern HR, Buchhaltung
+Managementprozess steuert Prozesse Planung, Strategie
+Merksatz: Hat der Prozess direkten Kundenbezug? → Dann Kernprozess!
+5. Prozessanalyse – Die wichtigsten Methoden
+Wertbeitragsanalyse
+• wertschöpfend
+• geschäftserforderlich
+• nicht wertschöpfend (= Verschwendung)
+6M-Modell:
+Mensch – Maschine – Material – Methode – Milieu – Messung
+Satz von Little:
+L = λ × W
+Anzahl = Ankunftsrate × Durchlaufzeit
+6. KPIs & SMART
+KPI = Key Performance Indicator
+Messgröße zur Bewertung eines Prozesses.
+SMART Bedeutung
+S Specific
+M Measurable
+A Achievable
+R Reasonable
+T Time-Bound
+7. Balanced Scorecard (BSC)
+Die BSC verbindet Strategie und Kennzahlen.
+Perspektive Frage
+
+-- 2 of 4 --
+
+Finanzen Wie profitabel?
+Kunden Wie zufrieden?
+Prozesse Wo verbessern?
+Lernen Wie zukunftsfähig?
+8. ISO 9001 & PDCA-Kreis
+ISO 9001: Qualitätsmanagementstandard.
+Ziel:
+• bessere Qualität
+• standardisierte Prozesse
+• weniger Fehler
+Phase Bedeutung
+Plan planen
+Do umsetzen
+Check prüfen
+Act verbessern
+9. Digitalisierung & Industrie 4.0
+Digitization: analog → digital
+Beispiel: Papier → PDF
+Digitalization: Prozesse verbessern
+Beispiel: Workflow-Systeme
+Digitale Transformation: Geschäftsmodell verändert sich komplett.
+Begriff Bedeutung
+Smart Factory Maschinen kommunizieren
+IoT Geräte senden Daten
+Digital Twin virtuelles Abbild
+Dezentrale Steuerung Produkt steuert Prozess
+10. Klausur-Fokus – Was MUSST du können?
+Sehr wichtig:
+n GPM-Zyklus
+n Kern-/Supportprozesse
+n BPMN
+n Petrinetze
+n Process Mining
+n KPIs & SMART
+n Prozesskostenrechnung
+Fast immer Theoriefragen:
+• ITIL
+• ISO 9001
+• Balanced Scorecard
+
+-- 3 of 4 --
+
+• Industrie 4.0
+Viel Erfolg bei der Klausur! n
+
+-- 4 of 4 --
+

@@ -1,0 +1,2112 @@
+1
+Digitale Geschäftsprozesse
+Geschäftsprozessmodellierung
+
+-- 1 of 159 --
+
+Lernziele des Kapitels
+Die Studierenden sind in der Lage
+• die Bedeutung und den Mehrwert eines Modells zu erläutern
+• den Unterschied zwischen Geschäftsprozess und Workflow zu
+diskutieren
+• die verschiedenen Modellierungsarten von GPen zu benennen
+• Prozesse mit Hilfe von Swimlane Diagrammen darzustellen
+• Prozesse als Petrinetze oder eEPKs abzubilden und das Tokenkonzept
+anwenden
+• Prozesse mit BPMN zu modellieren und mit einer Workflow-Engine
+auszuführen
+2
+
+-- 2 of 159 --
+
+Agenda
+1. GP, GPM, GPMS und Workflows
+2. Geschäftsprozessmodellierung
+i. Swimlane-Diagramme
+ii. Petrinetze
+iii. Ereignisgesteuerte Prozesskette
+iv. BPMN
+3
+
+-- 3 of 159 --
+
+Wiederholung
+• Was ist ein Geschäftsprozess?
+4
+
+-- 4 of 159 --
+
+Wiederholung
+• Was ist ein Geschäftsprozess?
+• Man versteht unter einem Geschäftsprozess einen komplexen, aus
+mehreren Funktionen bestehenden Arbeitsablauf zur Erledigung einer
+betrieblichen Aufgabe. [Hansen et al. 2019]
+• Die Funktionen stehen in einem zeitlich-sachlogischen
+Zusammenhang und tragen zu einem betriebswirtschaftlichen Ziel bei
+• verschiedene Teilnehmer sind arbeitsteilig mit der Durchführung
+einzelner Funktionen betraut
+• Sie gebrauchen Informationen und Vorleistungen (als Input)
+• Informationssysteme spielen bei der Prozessgestaltung/-ausführung
+eine bedeutende Rolle (befähigende Technik)
+5
+
+-- 5 of 159 --
+
+Motivation: Systemsilos und Prozessketten
+6
+
+-- 6 of 159 --
+
+Motivation: Systemsilos und Prozessketten
+7
+
+-- 7 of 159 --
+
+Wdhlg. GPM, GPM-Zyklus
+• Definition: Unter Geschäftsprozessmanagement (GPM) versteht man
+die Gesamtheit aller Aufgaben und Maßnahmen, die darauf abzielen,
+Geschäftsprozesse effizienter und effektiver zu machen.
+8
+
+-- 8 of 159 --
+
+Wdhlg. GPM-System (GPMS)
+Geschäftsprozessmanagementsystem:
+Softwaresystem, das die Definition,
+Entwicklung, Ausführung (inklusive
+Überwachung) und Analyse von
+Geschäftsprozessen unterstützt.
+• Bei der Ausführung wird der aktuelle
+Zustand der Prozessinstanzen überwacht
+und Aufgaben an Prozessteilnehmer verteilt
+• Bei Überschreitung von Fristen ergreift das
+GPMS automatisch geeignete Maßnahmen
+(z.B. Versand von Dringlichkeitsmeldungen
+an Teilnehmern)
+Workflow: Geschäftsprozess, der durch ein
+GPMS oder ein anderes betriebliches
+Informationssystem zumindest teilweise
+automatisiert ist
+9
+
+-- 9 of 159 --
+
+Warum modellieren wir GPs?
+10
+
+-- 10 of 159 --
+
+Warum modellieren wir GPs?
+• das Wichtigste: …, um den Prozess zu verstehen!
+• und um unser Verständnis des Prozesses mit anderen Personen zu
+teilen
+• die meisten Prozessakteure sind nur an einem Teil des Prozesses
+beteiligt, sodass Sie deren komplette Komplexität meist nicht
+erkennen
+• …, um im Prozess einfacher Probleme zu erkennen und zu vermeiden
+• Dieses Verständnis ist notwendig für die Prozessanalyse, -
+verbesserung und –implementierung
+• …, um Prozesse zu automatisieren bzw. zu digitalisieren
+11
+
+-- 11 of 159 --
+
+Workflows
+• zunehmende Digitalisierung führt dazu, dass immer mehr Prozesse
+computergestützt ausgeführt werden
+• dabei nimmt der Begriff des „Workflows“ eine wichtige Rolle ein
+• Workflows:
+Prozesse, die auf Basis von Modellen und Algorithmen gesteuert
+werden
+• Workflows setzen daher eine Möglichkeit zur zumindest teilweisen
+Automatisierung des Prozesses und dessen Ausführung mithilfe von
+Softwaresystemen voraus
+• Kurzum: Workflows sind digital ausgeführte und von einem
+Softwaresystem gesteuerte Geschäftsprozesse
+12
+Gadatsch et al. (2023) folgend
+
+-- 12 of 159 --
+
+Geschäftsprozesse und Workflows
+• Detaillierungsgrad des GP ist dann erreicht, wenn er die
+Arbeitsschritte beschreibt, die von einem Mitarbeiter in einem Zug an
+einem Arbeitsplatz ausgeführt werden können
+• Detaillierungsgrad des Workflows ist dann erreicht, wenn die
+Beschreibung des softwaregesteuerten Arbeitsschrittes so konkret
+vorgegeben ist, dass sie von einem Anwendungssystem ausgeführt
+werden kann
+13
+Gadatsch et al. (2023)
+
+-- 13 of 159 --
+
+Warum schauen wir uns GPM-Systeme an?
+• Prozesskontrolle und Datenmanagement
+• Auditfähige, strukturierte und reproduzierbare Prozesse über
+Abteilungsgrenzen
+• Konformität zu regulatorischen Vorgaben
+• Vermeidung von Fehlern
+• Verbesserte Prozessperformanz und Kostenreduktion
+• Wesentliche Reduktion der operativen Kosten
+• Höhere Prozessautomatisierung (Straight-through Processing)
+• Erhöhung der Kundenzufriedenheit
+• Messbare Prozessgrößen
+• Prozessmetriken für Optimierung und Ermittlung anderer
+Unternehmenskennzahlen (Corporate Performance Measurement -
+CPM)
+• Identifikation organisatorischer Flaschenhälse
+• Kontrolle von Arbeitslast und Ressourcenauslastung
+14
+
+-- 14 of 159 --
+
+Strategischer Nutzen
+• Überwindung von Systemsilos
+• Einfachere Integration von Partnern
+• Identifikation von Teilprozessen zur Auslagerung an Partner (Business
+Process Outsourcing)
+• Zentrales und effektives Veränderungsmanagement
+• Nutzung von Prozess-Daten für Business Intelligence
+15
+
+-- 15 of 159 --
+
+Modell und Wirklichkeit
+„Man muss die Welt nicht verstehen, man muss sich nur darin zurecht
+finden“ A. Einstein
+• Fokussierung auf den Teil der Welt, der uns momentan wichtig ist
+• Wir bilden uns unsere Abstraktion eines Ausschnitts der Wirklichkeit
+und nennen dies ein Modell
+• die enthaltenen Aspekte nennen wir Attribute des Modells
+16
+Elstermann et al. (2023)
+
+-- 16 of 159 --
+
+Beispiel eines Modells: Bahnfahrt
+• Fahrplan als vereinfaches Modell der Realität
+• Wesentliche betrachtete Aspekte:
+• Wie komme ich von „A“ nach „B“?
+• Welche Bahn muss ich nehmen?
+• Symbole des Plans sind normiert,
+sodass jeder sie versteht
+• GPs sind häufig sehr komplex und
+arbeitsteilig organisiert
+• Es haben sich über die Zeit ver-
+schiedene Modellierungstechniken
+für die Analyse des IST- und Soll-GPs
+etabliert
+17
+
+-- 17 of 159 --
+
+Modellierungsansätze von Geschäftsprozessen
+• Formale Methoden werden in skriptbasierte Methoden
+(Skriptsprachen) und grafische Methoden (Diagrammsprachen)
+unterteilt
+• Skriptsprachen
+• Erlauben Beschreibung anhand einer an Programmiersprachen
+angelehnten formalen Notation
+• Hohe Präzision der Modellspezifikation möglich
+• eher wenig anschaulich und Interpretation schwer
+• Diagrammsprachen
+• differenzierbar in Datenfluss-, kontrollfluss-, objektorientierte
+Ansätze
+• haben sich in der Praxis durchgesetzt
+• ergeben gut interpretier und erklärbare Modelle
+18
+
+-- 18 of 159 --
+
+Datenorientierte Methoden
+• Beschreiben den Datenfluss, d.h. den Verlauf der Daten im
+Zusammenspiel der Einzeltätigkeiten
+• Prozess ergibt sich nur indirekt aus den Darstellungen
+• Bedeutung hat aufgrund der Interpretierbarkeit daher stark
+abgenommen
+• Nichtsdestotrotz sollten Datenaspekte wie Datenmodelle immer mit
+Berücksichtigung finden!
+19
+
+-- 19 of 159 --
+
+Kontrollflussorientierte Methoden
+• Abfolge der Tätigkeiten stehen im Vordergrund, also die eigentliche
+Prozessmodellierung
+• Beispiele sind
+• Prozesslandkarten,
+• Swimlane-Diagramme,
+• Petrinetze
+• Wertschöpfungskettendiagramme (WKD),
+• Die erweiterte ereignisgesteuerte Prozesskette (eEPK)
+• Business Process Modeling and Notation (BPMN)
+20
+
+-- 20 of 159 --
+
+Objektorientierte Methoden
+• aus der Softwareentwicklung stammend
+• Funktionen und Daten gehören zusammen und lassen sich zu
+sogenannten Objekten integrieren
+• daher auch objektorientierte Methode der Modellierung
+• vorrangig im Einsatz ist hier UML mit dem Aktivitätsdiagramm
+21
+
+-- 21 of 159 --
+
+Hybride Methoden
+• z.B. Wertstromanalyse (WSA) und das Business Model Canvas (BMC)
+• WSA wird vorrangig im Fertigungs- und Produktionsbereich
+verwendet, um Prozesse zu analysieren
+• Identifikation von Verschwendungen steht hierbei im Vordergrund aus
+bspw. unnötiger Überproduktion, Transportwegen, Wartezeiten,
+Überbeständen, Fehler oder entsprechender Nacharbeit
+• BMC beschreibt oberhalb der Prozessebene die zentralen
+Eigenschaften des Unternehmensgeschäftsmodells
+• eignet sich gut als Einstieg in das Prozessmanagement, da die GPs aus
+dem Geschäftsmodell des Unternehmens resultieren
+• Ursprünglich für die strategische Begleitung bei Startup Gründungen
+konzipiert
+22
+
+-- 22 of 159 --
+
+Überblick diagrammbasierte Methoden
+23
+Praxisrelevante Methoden
+Gadatsch et al. (2023)
+
+-- 23 of 159 --
+
+Überblick diagrammbasierte Methoden
+24
+Praxisrelevante Methoden
+Gadatsch et al. (2023)
+
+-- 24 of 159 --
+
+Swimlane Diagramm
+• Darstellung von Tätigkeitsfolgen
+• orientiert sich an einem aus der Vogelperspektive betrachtetes
+Schwimmbecken
+• lanes stehen für Verantwortungsbereiche von Akteuren, zwischen
+denen die Verantwortung für einen Prozessabschnitt hin und her
+pendelt, bis der Prozess abgeschlossen ist
+• ähnlich zu Aktivitätsdiagrammen in UML
+• Notation:
+25
+Interpretation Symbole in Swimlane-Diagrammen
+Organisationseinheiten Swimlanes
+Aktivitäten (Prozessschritte) Rechtecke
+Entscheidungen Raute
+
+-- 25 of 159 --
+
+Notation
+26
+Gadatsch et al. (2023)
+
+-- 26 of 159 --
+
+Modellierungsbeispiel
+• mit frei verfügbarem tool draw.io angelegt
+• Beispiel: Prozess der Terminvergabe in einer Arztpraxis
+27
+https://app.diagrams.net/
+Gadatsch et al. (2023)
+
+-- 27 of 159 --
+
+Weiteres Modellierungsbeispiel
+• Etwas komplexeres Beispiel des Prozesses einer
+Krankenhausbehandlung
+28
+Gadatsch et al. (2023)
+
+-- 28 of 159 --
+
+Bewertung der Methode
+Vorteile:
+• gute Übersicht, besonders deutlich ist der Abteilungswechsel
+• gute Sichtbarkeit bei Prozessen mit vielen Mitarbeiterwechseln (hier
+direkt auch Optimierungspotential diesbezüglich sichtbar)
+• Kein extra Tool ist notwendig (auch an der Tafel umsetzbar)
+Nachteile:
+• Eingeschränkte Detailtiefe und geringer Informationsgehalt der
+Darstellungen
+• Fokus ist auf prägnanter Darstellung des Kontrollflusses
+• weniger sinnvoll für komplexe Prozesse mit vielen Verzweigungen
+29
+
+-- 29 of 159 --
+
+Übung
+Gegeben ist der folgende beschriebene Bestellprozess in einem Online-
+Shop. Generieren Sie ein entsprechendes Swimlane Diagramm.
+Der Prozess beginnt, wenn ein Kunde den Online-Shop besucht und sich
+die Produkte seiner Wahl in den Warenkorb legt. Der Kunde gibt seine
+Stammdaten ein und schließt die Bestellung ab. Der Vertrieb überprüft
+den Kunden, ob er bereits im Online-Shop negativ aufgefallen ist. Ist er
+dies wird die Bestellung des Kunden abgelehnt. Ist er es nicht, wird vom
+Lager der Warenbestand der Produkte überprüft. Ist das Produkt
+vorhanden verpackt das Lager direkt das Paket und versendet es. Ist es
+nicht vorhanden wird das Produkt von der Fertigung nachproduziert und
+anschließend vom Versand verpackt und versendet. Abschließend
+empfängt der Kunde das Paket.
+30
+
+-- 30 of 159 --
+
+Lösung zum Bestellprozess
+31
+
+-- 31 of 159 --
+
+Überblick diagrammbasierte Methoden
+32
+Praxisrelevante Methoden
+Gadatsch et al. (2023)
+
+-- 32 of 159 --
+
+Petrinetze
+• formales Konstrukt, auf das viele Notationen
+und Visualisierungen aufgebaut sind
+• Petri Netze sind zunächst statisch und
+bestehen aus Stellen (places) und
+Transitionen (transitions)
+• die einzelnen Knoten sind durch gerichtete
+Kanten verbunden, wobei eine Kante genau
+eine Stelle mit einer Transition oder
+umgekehrt verbindet
+• Dynamik wird durch Marken (token)
+beschrieben
+• Stellen können Marken (token) halten
+• Transitionen produzieren oder konsumieren
+Marken
+33
+red
+green
+yellow
+rg
+gy
+yr
+
+-- 33 of 159 --
+
+Markierungen (markings)
+• der Tokenzustand wird über sogenannte Markierungen definiert
+• Markierungen sind die Verteilung von Tokens über das Petri Netz
+34
+red
+green
+yellow
+rg
+go
+red
+green
+yellow
+rg
+go
+red
+green
+yellow
+rg
+go
+Initiale Markierung
+erreichbare Markierung unerreichbare Markierung
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 34 of 159 --
+
+Markierungen (markings)
+• der Tokenzustand wird über sogenannte Markierungen definiert
+• Markierungen sind die Verteilung von Tokens über das Petri Netz
+35
+red
+green
+yellow
+rg
+gy
+red
+green
+yellow
+rg
+gy
+red
+green
+yellow
+rg
+gy
+Initiale Markierung
+erreichbare Markierung unerreichbare Markierung
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 35 of 159 --
+
+Aktivierung und Feuern
+• Transition t1 ist „aktiviert“ (engl.
+enabled) wenn jede input Stelle
+einen Token enthält
+• eine Transition, die aktiviert ist
+kann „feuern“ (engl. fire), indem
+Sie die Tokens der eingehenden
+Stellen konsumiert und für jede
+output Stelle einen Token
+produziert
+36
+p1 p2
+p3 p4 p5
+t1
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 36 of 159 --
+
+Was, wenn mehr Token vorliegen?
+37
+p1 p2
+p3 p4 p5
+t1
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 37 of 159 --
+
+Was, wenn mehr Token vorliegen?
+38
+p1 p2
+p3 p4 p5
+t1
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 38 of 159 --
+
+Was, wenn eine Stelle Input und Output ist?
+39
+p1 p2
+p3 p4 p5
+t1
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 39 of 159 --
+
+Was, wenn eine Stelle Input und Output ist?
+40
+p1 p2
+p3 p4 p5
+t1
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 40 of 159 --
+
+Wie oft kann t1 feuern und wie sieht die finale
+Markierung aus?
+41
+p1 p2
+p3 p4 p5
+t1
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 41 of 159 --
+
+Wie oft kann t1 feuern und wie sieht die finale
+Markierung aus?
+42
+p1 p2
+p3 p4 p5
+t1
+3 mal Feuern ist atomar!
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 42 of 159 --
+
+Was, wenn es mehrere Transitionen gibt?
+43
+p1 p2
+p3 p4 p5
+t1 t2
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+t1 ist nicht aktiviert
+t2 feuert
+
+-- 43 of 159 --
+
+Was, wenn es mehrere Transitionen gibt?
+44
+p1 p2
+p3 p4 p5
+t1 t2
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+t1 ist nicht aktiviert
+t2 feuert
+
+-- 44 of 159 --
+
+Was, wenn es mehrere Transitionen gibt?
+• Alle drei Transitionen
+sind aktiviert und können
+feuern in beliebiger
+Reihenfolge oder sogar
+parallel
+2 ⋅ 2 ⋅ 2 = 8 erreichbare
+Zustände
+3 ⋅ 2 ⋅ 1 = 6 mögliche
+Transitionen
+45
+p1a p2a p3a
+p1b p2b p3b
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 45 of 159 --
+
+Zustandsexplosion
+46
+t1 t2 t3 t4 t5 65 = 7776
+erreichbare
+Zustände
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 46 of 159 --
+
+Was, wenn es mehrere Transitionen gibt?
+47
+p1 p2
+p3 p4 p5
+t1 t2
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+Beide sind
+aktiviert aber nur
+eine kann feuern
+
+-- 47 of 159 --
+
+Was, wenn es mehrere Transitionen gibt?
+48
+p1 p2
+p3 p4 p5
+t1 t2
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+Beide sind
+aktiviert aber nur
+eine kann feuern
+
+-- 48 of 159 --
+
+Geben Sie alle möglichen Endmarkierungen an
+49
+p1
+t1 t2
+p2 p3
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 49 of 159 --
+
+p1
+t1 t2
+p2 p3
+Geben Sie alle möglichen Endmarkierungen an
+50
+p1
+t1 t2
+p2 p3
+p1
+t1 t2
+p2 p3
+p1
+t1 t2
+p2 p3
+p1
+t1 t2
+p2 p3
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 50 of 159 --
+
+Geben Sie alle möglichen Endmarkierungen an
+51
+t1 t2
+p1 p2 p3
+p4 p5 p6
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 51 of 159 --
+
+Geben Sie alle möglichen Endmarkierungen an
+52
+t1 t2
+p1 p2 p3
+p4 p5 p6
+t1 t2
+p1 p2 p3
+p4 p5 p6
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 52 of 159 --
+
+Geben Sie alle möglichen Endmarkierungen an
+53
+t1 t2
+p1 p2 p3
+p4 p5 p6
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 53 of 159 --
+
+Geben Sie alle möglichen Endmarkierungen an
+54
+t1 t2
+p1 p2 p3
+p4 p5 p6
+t1 t2
+p1 p2 p3
+p4 p5 p6
+t1 t2
+p1 p2 p3
+p4 p5 p6
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 54 of 159 --
+
+Wie modellieren wir zwei Ampeln?
+55
+red
+green
+yellow
+rg
+gy
+yr
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 55 of 159 --
+
+Wie modellieren wir zwei Ampeln?
+56
+red1
+green1
+yellow1
+rg1
+gy1
+red2
+green2
+yellow2
+rg2
+gy2
+red
+green
+yellow
+rg
+gy
+oder	yr1
+yr2
+3 ⋅ 3 = 9 erreichbare Markierungen 6 erreichbare Markierungen
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 56 of 159 --
+
+Problem von zwei Ampeln
+57
+r1 r2
+g1 g2
+y1 y2
+rg1 rg2
+Wie könnte man ausschließen, dass beide auf grün schalten?
+yg1 yg2
+yr1 yr2
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 57 of 159 --
+
+Sichere Ampeln (nicht deterministisch)
+58
+r2
+g2
+y2
+rg2
+yg2
+yr2
+r1
+g1
+y1
+rg1
+yg1
+yr1
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 58 of 159 --
+
+Wie ermöglicht man, dass die Ampeln
+abwechselnd schalten?
+59
+r2
+g2
+y2
+rg2
+yg2
+yr2
+r1
+g1
+y1
+rg1
+yg1
+yr1
+x
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 59 of 159 --
+
+Wie ermöglicht man, dass die Ampeln
+abwechselnd schalten?
+60
+r2
+g2
+y2
+rg2
+yg2
+yr2
+r1
+g1
+y1
+rg1
+yg1
+yr1
+x
+x y
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 60 of 159 --
+
+Nicht-deterministische Ampel
+• Initiale Markierung:
+[r1, r2, x]
+• Set der erreichbaren
+Markierungen:
+{ [r1, r2, x], [g1, r2],
+[r1, g2], [y1, r2],
+[r1, y2] }
+61
+r2
+g2
+y2
+rg2
+yg2
+yr2
+r1
+g1
+y1
+rg1
+yg1
+yr1
+x
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 61 of 159 --
+
+Erreichbarkeitsgraph (Reachability graph)
+• Der Erreichbarkeitsgraph eines
+Petrinetzes ist ein
+Transitionssystem (engl.
+transition system) mit einer
+initialen Markierung und keiner
+expliziten finalen Markierung
+62
+r2
+g2
+y2
+rg2
+yg2
+yr2
+r1
+g1
+y1
+rg1
+yg1
+yr1
+x
+[r1, r2, x]
+[y1, r2]
+[g1, r2]
+[r1, o2]
+[r1, g2]
+yr1 yr2
+rg2
+go2
+rg1
+go1
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 62 of 159 --
+
+Erreichbarkeitsgraph
+63
+p1
+p3 p4
+p2
+t1
+t2
+[p12, p3] [p12, p4]
+[p1, p2, p3]
+[p22, p3]
+[p1, p2, p4]
+[p22, p4]
+t2
+t2
+t2
+t1
+t1
+t1
+t1
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 63 of 159 --
+
+Konstruieren sie den Erreichbarkeitsgraph
+64
+p1
+p3 p4
+p2
+t1
+t2
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 64 of 159 --
+
+Konstruieren sie den Erreichbarkeitsgraph
+65
+p1
+p3 p4
+p2
+t1
+t2
+[p12, p3] [p1, p4]
+[p1, p2, p3]
+[p22, p3]
+[p2, p4]
+t2
+t2
+t1
+t1
+t1
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 65 of 159 --
+
+Erreichbarkeitsgraphen müssen nicht finit sein …
+66
+p1
+p3
+t3
+p2
+t1
+t2
+t1
+[p1] [p2]
+t2
+[p1,p3] t1 [p2,p3] t2 [p1,p32] t1 [p2,p32] t2
+…
+[] [p3]
+Modellierung kann ganz
+schön kompliziert werden
+….
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+t3 t3
+
+-- 66 of 159 --
+
+Beschränktheit
+• Eine Stelle p ist k-beschränkt wenn es
+keine erreichbare Markierung mit
+mehr als k Token in p gibt
+• Ein Petrinetz ist k-beschränkt wenn
+alle Stellen k-beschränkt sind
+• Eine Stelle/ Petrinetz ist beschränkt,
+wenn ein solches k existiert
+67
+p1
+p3
+t3
+p2
+t1
+t2
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 67 of 159 --
+
+Beschränktheit
+68
+p1
+p3
+t3
+p2
+t1
+t2
+p1 ist 2-beschränkt p2 ist 2-beschränkt
+p3 ist nicht beschränkt
+Das ganze Petrinetz ist
+nicht beschränkt
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 68 of 159 --
+
+Binäres (sicheres) Petrinetz
+eine sichere Stelle/ sicheres Petrinetz ist durch die 1-Beschränktheit
+bestimmt
+69
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 69 of 159 --
+
+Binäres Petrinetz
+70
+r2
+g2
+y2
+rg2
+yg2
+yr2
+r1
+g1
+y1
+rg1
+yg1
+yr1
+x
+r2
+g2
+y2
+rg2
+yg2
+yr2
+r1
+g1
+y1
+rg1
+yg1
+yr1
+x
+Welches markierte Petrinetz ist sicher?Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 70 of 159 --
+
+Deadlock
+• eine Markierung ist tot (dead)
+wenn mit ihr keine Transition
+aktiviert ist
+• ein Petrinetz hat ein
+potentielles Deadlock wenn es
+eine erreichbare tote
+Markierung gibt
+• ein Petrinetz heißt deadlock-
+frei, wenn jede erreichbare
+Markierung mindestens eine
+Transition aktiviert
+71
+p1
+p3
+t3
+p2
+t1
+t2
+p1
+p3
+t3
+p2
+t1
+t2
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 71 of 159 --
+
+Lebendigkeit (Liveness)
+• Eine Transition 𝑡 ist lebendig (live)
+wenn es von jeder erreichbaren
+Markierung möglich ist eine
+Markierung zu erreichen, die
+wieder 𝑡 aktiviert
+• Ein Petrinetz ist lebendig, wenn
+alle Transitionen lebendig sind
+• Ein Petrinetz, das lebendig ist, ist
+auch deadlock-frei!
+72
+r2
+g2
+y2
+rg2
+yg2
+yr2
+r1
+g1
+y1
+rg1
+yg1
+yr1
+x
+lebendig
+lebendig
+lebendig
+Nicht lebendig
+Nicht lebendig
+Nicht lebendig
+Deadlock-frei aber nicht
+lebendig
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 72 of 159 --
+
+Eigenschaften von Petrinetzen
+• Ist das Petrinetz beschränkt?
+• Ist das Petrinetz sicher?
+• Ist das Petrinetz deadlock frei?
+• Ist das Petrinetz lebendig?
+73
+p1
+p2
+t3
+t1 t2
+t4
+p3
+p4
+
+-- 73 of 159 --
+
+Eigenschaften von Petrinetzen
+• Das Petrinetz ist nicht beschränkt,
+da man durch t1-t2-t3,
+beliebig viele Token in p4
+erzeugen kann
+• Daher ist es auch nicht sicher
+• Es ist auch nicht deadlock frei, da
+die Markierung [p2] erreichbar ist.
+Von hier aus, kann keine
+Transition aktiviert werden
+• Und damit ist es auch nicht
+lebendig
+74
+p1
+p2
+t3
+t1 t2
+t4
+p2
+p4
+
+-- 74 of 159 --
+
+Überblick diagrammbasierte Methoden
+75
+Praxisrelevante Methoden
+Gadatsch et al. (2023)
+
+-- 75 of 159 --
+
+Ereignisgesteuerte Prozesskette (EPK)
+• EPKs waren lange Zeit Standard zur Abbildung von GPs
+• EPKs sind zentraler Teil der von Scheer an der Uni Saarland
+erarbeiteten Architektur für die Entwicklung und Beschreibung von
+Informationssystemen ARIS (Architektur integrierter
+Informationssysteme)
+76
+Elstermann et al. (2023)
+
+-- 76 of 159 --
+
+Historie der EPK
+• EPKs haben sich relativ schnell in der Praxis als federführend
+durchgesetzt,
+• da es auch von der SAP AG zur Dokumentation ihres Systems „R/3“
+genutzt wurde und dementsprechend mit SAP den Aufschwung erlebt
+hat
+• es gibt mittlerweile eine Vielzahl von verwandten und modifizierten
+Notationen und keinerlei Standardisierung wie bei BPMN
+• Im Folgenden wird weitestgehend die ursprüngliche Notation
+betrachtet
+77
+
+-- 77 of 159 --
+
+Basisnotation (EPK)
+• Basisnotation beschreibt den Ablauf eines GPs mit nur wenigen
+Grundsymbolen
+• Ausgangspunkt ist ein Ereignis (z.B. Eingang einer Bestellung per Fax)
+• Nach dem auslösenden Ereignis wird eine zu erfüllende Funktion
+ausgeführt
+• Es gibt schlussendlich vier Grundelemente:
+• die Funktion, die den Zustand von Objekten ändert
+• das Ereignis, das Zustandsänderungen von Objekten auslöst
+• die Kante, welche Funktionen und Ereignisse verknüpft und
+• der Konnektor, der Funktionen und Ereignisse zu einem Prozess
+verbindet
+78
+
+-- 78 of 159 --
+
+Funktion
+• aktiver Objekttyp
+• beschreibt Transformationsprozesse von Informationsobjekten
+• komplexe Tätigkeit, die noch weiter untergliedert werden kann
+• Beschriebene Tätigkeit wird durch Akteure durchgeführt (Mensch
+oder SW)
+• Die Bezeichnung der EPK setzt sich aus einem Informationsobjekt
+(Substantiv) und einer Beschreibung der Verrichtung (Verb)
+zusammen
+• Symbol ist ein Rechteck mit abgerundeten Kanten
+79
+Gadatsch et al. (2023)
+
+-- 79 of 159 --
+
+Ereignis
+• passive Objekttyp
+• stellen nur Zustände dar und können keine Entscheidungen treffen
+• Beschreiben das Objekt, das eine Zustandsänderung erfahren hat
+• lösen Funktionen aus und sind Ergebnis ausgeführter Funktionen
+• können inner- oder außerhalb des Unternehmens auftreten
+• Bezeichnung setzt sich zusammen aus einem Informationsobjekt
+(Substantiv) des Datenmodells und einem Verb im Perfekt, d.h. einem
+eingetretenen Zustand
+80
+Gadatsch et al. (2023)
+
+-- 80 of 159 --
+
+Grundlegende Modellierungsregeln
+• EPK beginnt und endet mit einem auslösenden Startereignis und
+einem abschließendem Endereignis
+• Einfaches Beispiel:
+81
+Gadatsch et al. (2023)
+
+-- 81 of 159 --
+
+Konnektoren
+• Funktionen können in der Praxis von mehr als einem Ereignis
+angestoßen werden und auch mehrere Ereignisse auslösen
+• z.B. Ereignis „Kunde ist kreditwürdig“ kann von mehreren
+Vorbedingungen abhängen, die mittels mehrerer Funktionen geprüft
+werden müssen
+• für solche Bedingungen werden logische Konnektoren verwendet
+82
+Gadatsch et al. (2023)
+
+-- 82 of 159 --
+
+XOR-Beispiel
+83
+Gadatsch et al. (2023)
+
+-- 83 of 159 --
+
+AND-Beispiel
+84
+Gadatsch et al. (2023)
+
+-- 84 of 159 --
+
+Übung EPK
+Modellieren Sie mit den bisher eingeführten Notationssymbolen folgenden
+Prozess eines Fahrzeugverleihers:
+• Nachdem ein Kunde das Fahrzeug zurückgegeben hat, wird der Zustand des
+Wagens überprüft.
+• Liegt mindestens ein Mangel vor, wird zunächst eine Mängelliste erstellt.
+• Falls das Fahrzeug beschädigt ist, wird es repariert.
+• Wenn der Tank nicht vollständig gefüllt ist, wird das Fahrzeug aufgetankt.
+• Wenn das Fahrzeug nicht vollständig sauber ist, wird es gereinigt.
+• Wenn der Reifendruck nicht korrekt ist, wird Luft aufgefüllt oder abgelassen.
+• Anschließend wird das Fahrzeug auf dem Parkplatz eingeparkt. Es kann nun
+wieder vermietet werden
+85
+
+-- 85 of 159 --
+
+86
+Lösungsvorschlag
+
+-- 86 of 159 --
+
+Spezielle Modellierungsaspekte
+• es gibt einige Situationen, die zu Sonderfällen bei der Benutzung der
+bisherigen Notationssymbole führen
+• Optionale Ereignisse:
+• Ursprüngliche Standardregel: Ereignisse wechseln sich mit
+Funktionen ab
+• Wenn es mehr Klarheit schafft oder aus organisatorischen Gründen
+ist es auch erlaubt Ereignisse auf Ereignisse folgen zu lassen
+87
+Gadatsch et al. (2023)
+
+-- 87 of 159 --
+
+Spezielle Modellierungsaspekte
+• Geschachtelte Konnektoren:
+• auch Konnektoren können hintereinander verwendet werden
+88
+Gadatsch et al. (2023)
+
+-- 88 of 159 --
+
+Verknüpfungsarten der EPK
+• mehrere Ereignisse können mit einem Konnektor mit einer Funktion
+verknüpft werden
+• andersherum gilt dies nur teilweise, da ein Ereignis keine
+Entscheidung treffen kann!
+89
+Hoffmann et al. (1992)
+
+-- 89 of 159 --
+
+Verständnisfragen
+• Welche der Aussagen treffen auf das
+dargestellte EPK-Modell zu?
+a) E2 kann erst eintreten, wenn F1
+abgeschlossen ist
+b) Auf F1 folgt immer genau eines der
+Ereignisse E1, E2 oder E3
+c) Auf F1 folgen die Ereignisse E1, E2 und
+E3 gleichzeitig
+d) Auf F1 folgt E1
+90
+
+-- 90 of 159 --
+
+Verständnisfragen
+• Welche der Aussagen treffen auf das
+dargestellte EPK-Modell zu?
+a) E2 kann erst eintreten, wenn F1
+abgeschlossen ist
+b) Auf F1 folgt immer genau eines der
+Ereignisse E1, E2 oder E3
+c) Auf F1 folgen die Ereignisse E1, E2 und
+E3 gleichzeitig
+d) Auf F1 folgt E1
+91
+
+-- 91 of 159 --
+
+Verständnisfragen
+• Welche der Aussagen treffen auf das
+dargestellte EPK-Modell zu?
+a) F1 wird ausgeführt, wenn E1 oder E2
+eintritt
+b) Wenn E1, E2 und E3 gleichzeitig
+eintreten, wird F1 ausgeführt
+c) Wenn F1 ausgeführt wurde, kann man
+mit Sicherheit daraus schließen, dass
+das E2 eingetreten ist
+d) Wenn F1 ausgeführt wurde, kann man
+mit Sicherheit daraus schließen, dass
+das E3 eingetreten ist
+92
+
+-- 92 of 159 --
+
+Verständnisfragen
+• Welche der Aussagen treffen auf das
+dargestellte EPK-Modell zu?
+a) F1 wird ausgeführt, wenn E1 oder E2
+eintritt
+b) Wenn E1, E2 und E3 gleichzeitig
+eintreten, wird F1 ausgeführt
+c) Wenn F1 ausgeführt wurde, kann man
+mit Sicherheit daraus schließen, dass
+das E2 eingetreten ist
+d) Wenn F1 ausgeführt wurde, kann man
+mit Sicherheit daraus schließen, dass
+das E3 eingetreten ist
+93
+
+-- 93 of 159 --
+
+Verständnisfragen
+• Welche der Aussagen treffen auf das
+dargestellte EPK-Modell zu?
+a) F1 wird ausgeführt, wenn die
+Ereignisse E1, E2 und E3 gleichzeitig
+aktiviert werden
+b) Wenn F2 ausgeführt wurde, sind die
+Ereignisse E4, E5 und E7 zuvor
+eingetreten
+94
+
+-- 94 of 159 --
+
+Verständnisfragen
+• Welche der Aussagen treffen auf das
+dargestellte EPK-Modell zu?
+a) F1 wird ausgeführt, wenn die
+Ereignisse E1, E2 und E3 gleichzeitig
+aktiviert werden
+b) Wenn F2 ausgeführt wurde, sind die
+Ereignisse E4, E5 und E7 zuvor
+eingetreten
+95
+
+-- 95 of 159 --
+
+Notwendigkeit der Erweiterung
+• Bisher: Darstellung der Ablauflogik
+• Aber Notwendig: Detailinformation über die Einführung und
+Integration von Informationssystemen
+• Erweiterung um mehrere Elemente, u.a. die „organisatorische
+Einheit“, das „Informationsobjekt“, das „Anwendungssystem“ sowie
+der „Datenfluss“
+• Organisatorische Einheit: dient zur Beschreibung der am Prozess
+beteiligten Personen, Rollen, Stellen, Abteilungen oder Partner
+• Informationsobjekt: bildet die vom Prozess verarbeiteten
+Informationen (Input und Output) ab
+96
+
+-- 96 of 159 --
+
+Erweiterte Notationselemente
+• Anwendungssystem: dient der Darstellung der
+Informationsverarbeitungsunterstützung der GP
+• Datenfluss: dient der Verknüpfung von Funktion und
+Informationsobjekt
+• Semantik:
+97
+Gadatsch et al. (2023)
+
+-- 97 of 159 --
+
+Textuelle Zuordnung
+98
+Gadatsch et al. (2023)
+
+-- 98 of 159 --
+
+Zusammenfassung Notation
+99
+Gadatsch et al. (2023)
+
+-- 99 of 159 --
+
+Übung eEPK
+Modellieren Sie den folgenden Prozess mit der eEPK
+• Nach Ankunft des Kunden bei der Mietwagenzentrale werden vom
+Kundenberater die Führerscheindaten sowie ergänzende
+Informationen (Versicherungsschutz) im ERP-System erfasst. Unter
+Umständen werden weitere Fahrer erfasst. Die Führerscheindaten der
+weiteren Fahrer werden ebenfalls erfasst.
+• Der Kunde kann Vollkasko, Teilkasko oder keinen Schutz wählen.
+Gegebenenfalls werden der Versicherungsschutz und die gewünschte
+Eigenbeteiligung vom Kundenberater aufgenommen.
+• Der Kunde übergibt dem Kundenberater seine Kreditkarte. Die
+Kreditkarte wird mithilfe des Kreditkartenabrechnungssystems
+überprüft. Die Kartendaten werden in die Kundendaten des ERP-
+Systems übernommen. Anschließend wird der Mietvertrag
+ausgedruckt und an den Kunden übergeben
+100
+
+-- 100 of 159 --
+
+Lösung
+101
+
+-- 101 of 159 --
+
+Einführung BPMN
+• eher neue und international standardisierte Methode (ISO/IEC
+19510:2013) zur Unterstützung der Darstellung und Ausführung von
+Prozessen
+• aktuelle Version BPMN 2.0 Ergebnis einer längeren Entwicklung
+• jeweils aktuelle Version auf der Website der OMG (www.omg.org)
+abgerufen werden
+• 2001 durch IBM-Mitarbeiter Stephen A. White erarbeitet
+• 2004 von der BPMI (Business Process Management Initiative)
+veröffentlicht
+• 2005 BPMN durch OMG zur weiteren Pflege übernommen
+• 2011 BPMN 2.0 von der OMG verabschiedet
+• 2013 BPMN auch als ISO-Standard publiziert
+102
+
+-- 102 of 159 --
+
+Vorteile von BPMN
+• BPMN 2.0 rein materiell ist zunächst eine 500-seitige Spezifikation der
+Modellierungssprache
+• das Besondere: ab dem Standard 2.0 sind alle BPMN Modelle direkt
+ausführbar auf sogenannten Workflow-Engines
+• BPMN ist daher stark im Vormarsch!
+• es ist standardisiert und Prozessmodelle direkt ausführbar
+• große Chance, dass Geschäftspartner oder neue Mitarbeiter BPMN
+beherrschen
+• man wird unabhängiger von den vielen Modellierungssprachen und
+BPM-Tools
+103
+
+-- 103 of 159 --
+
+Was ist eigentlich eine Workflow-Engine?
+• Beispielprozess:
+• Kreditantrag geht per Post auf den Schreibtisch eines
+Sachbearbeiters ein
+• Dieser prüft ihn visuell
+• Gibt auf der Schufa Website die Daten des Antragstellers ein, um
+eine Bonitätsauskunft zu erhalten
+• Ist diese positiv, erfasst er den Antrag in der BankSoft SW und leitet
+die Unterlagen an den Vorgesetzten weiter, damit er den Antrag
+bewilligt
+• Wie könnte eine Prozessautomatisierung aussehen?
+104
+
+-- 104 of 159 --
+
+Was ist eigentlich eine Workflow-Engine?
+• Mögliche Automatisierung:
+• Kreditantrag geht per Post ein, wird gescannt und per
+Texterkennung in ein elektronisches Dokument umgewandelt
+• Das Dokument wird von einer SW, der „Workflow-Engine“
+übernommen und in die Tasklist des Sachbearbeiters gelegt
+• Sachbearbeiter öffnet die Aufgabe, prüft den Antrag visuell am
+Bildschirm
+• Per Knopfdruck ruft die Workflow-Engine über eine Schnittstelle
+den Auskunfsdienst der Schufa auf, übergibt die Personendaten
+und erhält die Bonitätsauskunft
+• Ist diese positiv, spielt die Workflow-Engine den Antrag über eine
+Schnittstelle in die BankSoft SW und benachrichtigt den
+Vorgesetzten über eine Genehmigungsaufgabe
+105
+
+-- 105 of 159 --
+
+Workflow-Engine
+Erkenntnisse:
+• Prozessautomatisierung heißt nicht zwangsläufig, dass der gesamte
+Prozess vollautomatisch läuft
+• Zentrale Komponente der Automatisierung ist die Workflow-Engine
+106
+• Workflow Engine steuert
+den Prozess (Orchestrierung
+der Schnittstellen und
+Aufgabenverteilung von
+Prozessteilnehmern)
+• Entscheidungen welche
+Service-Aufrufe etc. getan
+werden soll, trifft die Engine
+mithilfe des Prozessmodells
+Freund und Rücker (2017)
+Die Workflow Engine ist wie ein
+Compiler und das technische
+Prozessmodell der Programmcode
+
+-- 106 of 159 --
+
+Begrifflichkeiten
+• Prozessmodell: in einem Diagramm sind ein oder mehrere
+Prozessmodelle beschrieben. Das Modell ist die prinzipielle
+Beschreibung des Prozesses.
+• Prozessinstanz: Wenn der Prozess in der Realität durchlaufen wird,
+handelt es sich um eine Prozessinstanz. (Beschwerde eines Kunden ist
+bspw. eine Instanz des Reklamationsprozesses)
+107
+• Token: Ein Token ist eine abstrakte
+Einheit, die den Fortschritt einer
+Aktivität innerhalb eines GPs
+darstellt. Das Token-Konzept
+beschreibt den Ablauf einer
+bestimmten Prozessinstanz über das
+Prozessmodell. Tokens können für
+Simulationen von Prozessen
+verwendet werden.
+
+-- 107 of 159 --
+
+BPMN-Basiselemente
+• ergeben sich aus einer allgemeinen Prozessbeschreibung
+• Im Prozess müssen bestimmte Dinge getan werden (Aktivitäten)
+• möglicherweise unter bestimmten Bedingungen (Gateways)
+• und es können Dinge passieren (Ereignisse).
+• diese Elemente sind über Sequenzflüsse miteinander verbunden,
+jedoch nur innerhalb eines Pools bzw. einer Lane
+• Falls eine Verbindung über Pool Grenzen hinweg notwendig ist, greift
+man zu Nachrichtenflüssen
+• Weiterhin gibt es Artefakte, die zusätzliche Informationen zum
+Prozess liefern und über Assoziationen mit Flussobjekten verbunden
+sein können
+108
+
+-- 108 of 159 --
+
+BPMN-Basiselemente
+109
+Freund und Rücker (2017)
+
+-- 109 of 159 --
+
+Einfaches Beispiel mit BPMN Basiselementen
+• Aufgaben sind das „Herz“
+des Prozesses
+• streng genommen gehört
+eine Aufgabe zur
+Kategorien der Aktivitäten
+110
+• Beschriftung der Aktivität nach dem Objekt-Verrichtungsprinzip, d.h.
+nach einer [Objekt] + [Verb] – Struktur
+„Lebensmittel einkaufen“
+und nicht
+„Zuerst muss der Einkauf der Lebensmittel erledigt werden“
+Atomare Aktivitäten heißen auch Task.
+Komplexe Aktivitäten werden als
+Subprozess bezeichnet und unterscheiden
+sich in der Notation durch ein +-Symbol
+Freund und Rücker (2017)
+
+-- 110 of 159 --
+
+Einfaches Beispiel mit BPMN Basiselementen
+• Ereignisse stellen etwas
+Betrachtenswertes dar
+• zunächst Blankoereignisse
+später mehr
+111
+• Startereignisse (engl.: catching events) definieren stets eintretende
+Ereignisse, auf die der Prozess wartet/ reagiert
+• Zwischenereignisse können eintreten oder durch den Prozess
+ausgelöst werden (engl.: throwing events). Blankoereignisse werden
+stets über den Prozess ausgelöst.
+• Endereignisse finden zu einem Zeitpunkt statt, an dem der Prozess
+nicht mehr auf sie reagieren kann. Sie werden vom Prozess ausgelöst.
+• Ereignisse sind bereits passiert, sodass wir schreiben [Objekt]+
+passiviertes [Verb] Freund und Rücker (2017)
+Wir definieren für die Vorlesung: Start- und
+Endereignisse müssen immer modelliert
+werden!
+
+-- 111 of 159 --
+
+Einfaches Beispiel mit BPMN Basiselementen
+• Sequenzflüsse
+beschreiben die zeitlich-
+sachlogische Reihenfolge,
+in der Flusselemente
+zueinander stehen
+112
+• Ein Sequenzfluss ist auch der Prozesspfad, über den unser Token
+wandert
+• Durch das Startereignis wird ein Token „geboren“, über die
+Sequenzflüsse gelangt es zu Aufgaben und Zwischenereignissen bis
+zum Endereignis, wo es „konsumiert“ wird und zum „Tod“ der
+Prozessinstanz führt
+Freund und Rücker (2017)
+
+-- 112 of 159 --
+
+Datenbasiertes exklusives Gateway
+• oftmals variieren einige Prozessflüsse über bestimmte Entscheidungen
+• zur Modellierung nutzen wir daher Gateways (z.B.: XOR-Gateway)
+113
+Freund und Rücker (2017)
+• ein Gateway ist keine
+Aufgabe! Diese muss vorher
+implementiert werden
+• im Gateway lassen sich
+lediglich Dinge vergleichen
+und entsprechende
+Sequenzflüsse folgen
+• Über dem Gateway ist die
+entscheidungsrelevante
+Frage platziert
+• mögliche Antworten an den
+jeweiligen Sequenzflüssen nach Standard
+leider identisch
+
+-- 113 of 159 --
+
+Paralleles Gateway
+• gleiches Beispiel: Salat soll es auf jeden Fall geben!
+• Textanmerkung via Assoziation an ein Flussobjekt angedockt
+• Erste Prozessanalyse: Durchlaufzeit des Prozesses?
+114
+Freund und Rücker (2017)
+
+-- 114 of 159 --
+
+Paralleles Gateway
+• gleiches Beispiel: Salat soll es auf jeden Fall geben!
+• Textanmerkung via Assoziation an ein Flussobjekt angedockt
+• Erste Prozessanalyse: Durchlaufzeit des Prozesses?
+48 min, wenn wir uns für Pasta entscheiden
+43 min, wenn wir uns für das Steak entscheiden
+115
+Freund und Rücker (2017)
+
+-- 115 of 159 --
+
+Paralleles Gateway
+• Am besten Salat gleichzeitig mit Steak oder Pasta zubereiten!
+• dafür nutzen wir das AND-Gateway
+• Prozessdurchlaufzeit?
+116
+Freund und Rücker (2017)
+
+-- 116 of 159 --
+
+Paralleles Gateway
+• Am besten Salat gleichzeitig mit Steak oder Pasta zubereiten!
+• dafür nutzen wir das AND-Gateway
+• Prozessdurchlaufzeit? 38 bzw. 33 min
+117
+Freund und Rücker (2017)
+
+-- 117 of 159 --
+
+Token Konzept am AND-Gateway
+• wie würde sich ein Token hier bei Prozessausführung verhalten?
+118
+
+-- 118 of 159 --
+
+Token Konzept am AND-Gateway
+• wie würde sich ein Token hier bei Prozessausführung verhalten?
+• Token wird beim Startereignis geboren
+• durchläuft die Aufgabe Rezept aussuchen und wandert in den AND-
+split
+• Es werden aus einem Token so viele, wie Pfade aus dem Gateway
+laufen (also 2)
+• Das erste Token wandert in den XOR-Split, wo es je nach Wahl auf den
+jeweiligen Sequenzfluss geschickt wird (verharrt bei Pasta bspw. 15
+min)
+• Das zweite Token wandert in die Aufgabe Salat zubereiten, wo es nur
+10 min bleibt
+• Beide wandern nach Abschluss der Aufgabe zum AND-join und
+verharren dort bis alle zugehörigen Tokens wieder angekommen sind
+119
+
+-- 119 of 159 --
+
+Was passiert hier?
+• Was passiert, wenn wir den Prozess instanziieren (mit der
+Entscheidung Pasta)?
+120
+Freund und Rücker (2017)
+
+-- 120 of 159 --
+
+Was passiert hier?
+• Was passiert, wenn wir den Prozess instanziieren (mit der
+Entscheidung Pasta)?
+• Beim XOR-Join laufen beide Tokens aus dem AND-Split einfach durch,
+sodass zweimal Mahlzeit verzehren ausgeführt wird (nicht unbedingt
+nach Intention)
+121
+Freund und Rücker (2017)
+
+-- 121 of 159 --
+
+Datenbasiertes inklusives Gateway
+• Wir möchten gerne, wenn wir Hunger bekommen
+• nur einen Salat oder
+• einen Salat und etwas „Ordentliches“ wie Pasta oder Steak
+• nur etwas „Ordentliches“
+122
+Freund und Rücker (2017)
+
+-- 122 of 159 --
+
+OR-Gateway
+• Das OR-Gateway beschreibt eine Und-oder Situation, bei der wir
+• entweder einen,
+• mehrere oder auch
+• alle ausgehenden Pfade gleichzeitig durchlaufen können
+• Je nachdem ob am OR-Gateway nur ein Token unterwegs ist oder
+mehrere wartet der OR-Join auf nur einen Token (Zusammenführung)
+oder auf mehrere (Synchronisation)
+• Dies kann in der praktischen Umsetzung sehr tückisch sein
+123
+
+-- 123 of 159 --
+
+Probleme mit dem OR-Gateway
+• Was kann hier passieren?
+124
+Freund und Rücker (2017)
+
+-- 124 of 159 --
+
+Probleme mit dem OR-Gateway
+• Was kann hier passieren?
+• Am OR-Gateway wird beides ausgewählt (2 Token losgeschickt)
+• Der zweite Token endet aber mit Antwort 1 auf die 2.Frage
+• Das OR-Join Gateway muss registrieren, dass das 2. Token
+verschwunden ist!
+125
+Freund und Rücker (2017)
+
+-- 125 of 159 --
+
+Standardfluss
+• Was passiert bei einem XOR-Gateway, wenn bei den bisherigen
+Beispielen weder Pasta noch Steak gegessen werden soll?
+126
+
+-- 126 of 159 --
+
+Standardfluss
+• Was passiert bei einem XOR-Gateway, wenn bei den bisherigen
+Beispielen weder Pasta noch Steak gegessen werden soll?
+• Es wird bei Prozessausführung eine „Exception geworfen“, es kommt
+zu einem Laufzeitfehler
+• Der sogenannte Standardfluss kann uns vor der Gefahr beschützen
+• Prinzip: wenn keiner der Pfade gewählt ist, wird dem Standardfluss
+gefolgt
+127
+Freund und Rücker (2017)
+
+-- 127 of 159 --
+
+Komplexes Gateway
+• Wenig genutztes Gateway, manchmal aber sinnvoll!
+• Beispiel: wir wollen eine Pizza bestellen,
+• schauen uns gleichzeitig die Speisekarte an und
+• recherchieren im Internet nach einer Alternative
+• sobald eines davon fertig ist, wollen wir bestellen
+• so?
+128
+Freund und Rücker (2017)
+
+-- 128 of 159 --
+
+Komplexes Gateway
+• Wenig genutztes Gateway, manchmal aber sinnvoll!
+• Beispiel: wir wollen eine Pizza bestellen,
+• schauen uns gleichzeitig die Speisekarte an und
+• recherchieren im Internet nach einer Alternative
+• sobald eines davon fertig ist, wollen wir bestellen
+• oder so?
+129
+Freund und Rücker (2017)
+
+-- 129 of 159 --
+
+Komplexes Gateway
+• Wenig genutztes Gateway, manchmal aber sinnvoll!
+• Beispiel: wir wollen eine Pizza bestellen,
+• schauen uns gleichzeitig die Speisekarte an und
+• recherchieren im Internet nach einer Alternative
+• sobald eines davon fertig ist, wollen wir bestellen
+• oder so?
+130
+Freund und Rücker (2017)
+
+-- 130 of 159 --
+
+Komplexes Gateway
+• Wenig genutztes Gateway, manchmal aber sinnvoll!
+• Beispiel: wir wollen eine Pizza bestellen,
+• schauen uns gleichzeitig die Speisekarte an und
+• recherchieren im Internet nach einer Alternative
+• sobald eines davon fertig ist, wollen wir bestellen
+• Lösung: komplexe Gateway
+• Das erste Token wird weitergeschickt und der zweite konsumiert
+131
+Freund und Rücker (2017)
+
+-- 131 of 159 --
+
+Wer ist für was zuständig?
+• BPMN hat für die Zuordnung, wer etwas im Prozess macht, Swimlanes
+übernommen
+• Die drei Mitbewohner sind dabei in einem Pool zusammengefasst
+132
+Freund und Rücker (2017)
+
+-- 132 of 159 --
+
+Verschachtelung von Lanes
+• Lanes müssen nicht an Personen verknüpft sein, sondern können auch
+Abteilungen oder übergeordnete Rollen darstellen
+• darüber hinaus lassen sich auch für Zuständigkeiten verschachtelte
+Lanes erzeugen
+133
+Freund und Rücker (2017)
+
+-- 133 of 159 --
+
+Lanes sind doch ganz einfach, oder?
+• Was machen wir wenn Falko und Robert auch essen möchten?
+134
+Freund und Rücker (2017)
+
+-- 134 of 159 --
+
+Lanes sind doch ganz einfach, oder?
+• Was machen wir wenn Falko und Robert auch essen möchten?
+135
+Freund und Rücker (2017)
+
+-- 135 of 159 --
+
+Ereignisse
+• kaum weniger wichtig als Aufgaben und Gateways
+• Wir unterscheiden zwischen
+• Eingetretenen Ereignissen und auslösende Ereignisse
+• Startereignisse, Zwischenereignisse und Endereignisse
+136
+
+-- 136 of 159 --
+
+Eingetretene Ereignisse
+• heißen auch catching events
+• sind auf einen definierten Auslöser (engl. trigger) bezogen
+• beeinflussen den Prozessverlauf und müssen daher explizit modelliert
+werden
+• Eingetretene Ereignisse können dazu führen, dass:
+• der Prozess gestartet wird
+• der Prozess oder Prozesspfad fortgesetzt wird
+• die aktuell in Bearbeitung befindliche Aufgabe oder der Teilprozess
+abgebrochen wird
+• während der Bearbeitung einer Aufgabe oder eines Teilprozesses
+ein weiterer Prozesspfad durchlaufen wird
+137
+
+-- 137 of 159 --
+
+Auslösende Ereignisse
+• heißen auch throwing events
+• Ereignisse, die selbst einen Auslöser feuern, anstatt darauf zu
+reagieren
+• „aktive Variante“ des eingetretenen Ereignisses
+• Ausgelöste Prozesse können
+• während des Prozesses ausgelöst werden
+• am Ende des Prozesses ausgelöst werden
+138
+
+-- 138 of 159 --
+
+Startereignisse
+• stets eingetretene Ereignisse
+• einfachste Verwendung:
+• theoretisch können auch unterschiedliche Ereignisse den Prozess
+auslösen:
+139
+Freund und Rücker (2017)
+
+-- 139 of 159 --
+
+Zwischenereignisse
+• Für die Fortsetzung eines Prozesses kann es notwendig sein, dass ein
+bestimmtes Zwischenereignis eintritt
+• z.B.
+• Wenn Aufgabe 1 erledigt ist, muss erst Ereignis 1 eintreten bevor
+Aufgabe 2 erledigt werden kann (hier liegt ein auslösendes Ereignis
+vor)
+140
+Freund und Rücker (2017)
+
+-- 140 of 159 --
+
+Zwischenereignisse
+• Wie modellieren wir, dass der Prozess auf zwei Ereignisse warten
+muss?
+• Wir probieren es zunächst so:
+• was passiert?
+141
+Freund und Rücker (2017)
+
+-- 141 of 159 --
+
+Zwischenereignisse
+• Wie modellieren wir, dass der Prozess auf zwei Ereignisse warten
+muss?
+• Wir probiere es zunächst so:
+• Wenn Aufgabe 1 abgeschlossen wandert der Token weiter und wartet
+auf Ereignis 1
+• Tritt zwischendurch Ereignis 2 auf, merkt dies der Token nicht und
+fährt erst fort, wenn Ereignis 1 feuert (strenge Verpuffungs-Semantik
+von Signalen)
+• danach wird der Token im Zweifel ewig auf Ereignis 2 warten ….
+142
+Freund und Rücker (2017)
+
+-- 142 of 159 --
+
+Zwischenereignisse
+• Wie modellieren wir, dass der Prozess auf zwei Ereignisse warten
+muss?
+• Abhilfe schafft nur ein AND-Gateway:
+143
+Freund und Rücker (2017)
+
+-- 143 of 159 --
+
+Unterbrechende Zwischenereignisse
+• es können auch Ereignisse modelliert werden, auf die nicht gewartet
+wird, sondern die eine laufende Aktivität unterbrechen können
+• das gilt für Aufgaben wie auch bei Teilprozessen
+• solche Zwischenereignisse sind „angeheftet“ (engl.: attached)
+• Wenn ein Token Aufgabe 1 abarbeitet und Ereignis 1 eintritt, wird die
+Aktivität unterbrochen und Aufgabe 3 wird abgearbeitet
+• Tritt das Ereignis 1 bei Aufgabe 2 ein, hat es keinen Einfluss
+144
+Freund und Rücker (2017)
+
+-- 144 of 159 --
+
+Nicht unterbrechende angeheftete
+Zwischenereignisse
+• Klingt sperrig, ist aber sehr praktisch
+• Ist ein Token bei Aufgabe 1 und Ereignis 1 tritt ein, wird es geklont und
+ein Token arbeitet weiter Aufgabe 1 ab, während das geklonte Token
+Aufgabe 3 abarbeitet
+145
+Freund und Rücker (2017)
+
+-- 145 of 159 --
+
+Nachrichten
+• Die meisten Prozesse erfordern früher oder später eine
+Kommunikation
+• Abbildung über das sogenannte Nachrichtenereignis (kleine
+Briefumschlag)
+• Nicht beschränkt auf Brief, E-Mail oder Anruf, sondern jede Nachricht,
+die sich auf einen spezifischen Adressaten bezieht
+146
+Freund und Rücker (2017)
+
+-- 146 of 159 --
+
+Beispiele für Nachrichtenevents
+147
+Freund und Rücker (2017)
+
+-- 147 of 159 --
+
+Zeit
+• Oftmals verwendet wird das Zeitereignis (dargestellt mit einer Uhr)
+148
+• Als Startereignis, um einen Prozess
+• in Intervallen zu starten
+• regelmäßig zu Zeitpunkten zu
+starten
+• in zeitlicher Relation zu einem
+anderen Ereignis oder
+• einmalig zu einem bestimmten
+Zeitpunkt zu starten
+• Als Zwischenereignis kann es den
+Prozess anhalten, bis
+• Ein definierter Zeitpunkt erreicht ist
+• Eine definierte Zeitspanne
+verstrichen ist
+• Ein Zeitpunkt erreicht ist, der in
+Relation zu einem anderen Ereignis
+steht Freund und Rücker (2017)
+
+-- 148 of 159 --
+
+Beispiele für Zeitevents
+149
+Freund und Rücker (2017)
+
+-- 149 of 159 --
+
+Fehler
+• Fehler können innerhalb von Prozessen immer wieder auftreten
+• Eine entsprechende Fehlerbehandlung kann auch im Prozessmodell
+berücksichtigt werden (durch einen Blitz symbolisiert)
+• Beispiele: Schufa-Prozess, Aufgabe Bonität prüfen nur möglich, wenn
+die Kundendaten korrekt -> sonst Fehler
+150
+Freund und Rücker (2017)
+
+-- 150 of 159 --
+
+Weitere Ereignistypen
+• Es gibt noch viele weitere Ereignistypen, z.B.
+• Bedingungen
+• Signale
+• Terminierungen
+• Links
+• Kompensation
+• Mehrfach
+• Abbruch
+• Diese findet man bspw. bei Freund und Rücker (2017)
+151
+
+-- 151 of 159 --
+
+Ereignisbasiertes Gateway
+• Neben den datenbasierten Gateways gibt es in BPMN die Möglichkeit
+eines ereignisbasierten Gateways (kurz: Event-Gateway)
+• Beispiel:
+• Nach 60 min Warten möchten wir gerne aktiv werden und anrufen
+• Das Event-Gateway wartet, dass eines der nachfolgenden Ereignisse
+eintritt
+• Sobald dies geschieht wird das Token den entsprechenden Pfad
+nehmen
+152
+
+-- 152 of 159 --
+
+Typisierung
+• bis jetzt Aufgaben undefinierten Typs verwendet
+• dabei bietet BPMN viele verschiedene Aufgabentypen:
+153
+
+-- 153 of 159 --
+
+Manuelle und Benutzeraufgaben
+• Manuelle Aufgabe wird von einem Menschen erledigt
+• Handelt sich nicht um eine von der Workflow-Engine zugewiesenen
+Aufgabe
+• Alle Aufgaben vom Pizza-Bestellprozess waren manuelle Aufgaben
+• Benutzeraufgaben werden ebenfalls von Menschen erledigt,
+allerdings wird sie durch die „Workflow-Engine“ beauftragt
+• Nach Erledigung erwartet die Engine zumindest eine Bestätigung
+• z.B.
+• die Prüfung einer Rechnung,
+• die Genehmigung eines Urlaubsantrags
+154
+
+-- 154 of 159 --
+
+Service Aufgaben
+• eine automatisch durch die SW ausgeführte Aufgabe
+• eine Programmfunktion, die automatisch im Rahmen der
+Prozessautomatisierung verwendet wird
+• BPMN geht davon aus, dass diese als Webservice bereit gestellt wird
+• z.B.
+• Bonitätsauskunft der Schufa, die als XML über HTTP automatisch
+während der Kreditprüfung gezogen wird
+• Automatische Verbuchung einer als EDIFACT über X.400 erhaltenen
+Rechnung in SAP R/3
+155
+
+-- 155 of 159 --
+
+Pools und Nachrichtenflüsse
+• Durchführungsverantwortung können mit Hilfe von Lanes zugeordnet
+werden
+• Diese Lanes befinden sich innerhalb eines bestimmten Pools, der
+gleichzeitig die Grenzen des Prozesses darstellt
+• Der Pool steht für eine übergeordnete Instanz, die die Steuerung des
+Prozesses übernimmt
+• Wir sprechen auch von der „Orchestrierung“
+156
+
+-- 156 of 159 --
+
+Wer ist denn der Dirigent?
+• Im Kontext von Prozessautomatisierung gibt es eine Workflow-Engine,
+die sämtliche Aufgabe im Prozess zentral ansteuert
+• Die Workflow-Engine ist also der mysteriöse Dirigent
+• z.B. gibt es immer eine natürliche Grenze zwischen Unternehmen und
+Kunden. Kunden gehören nicht in den Hoheitsbereich eines
+Unternehmens
+• Kunden können nicht orchestriert werden, daher müssten diese als
+„black-box“ Pools dargestellt werden
+• zwischen Pools düfen keine Sequenzflüsse laufen, sondern nur
+Nachrichtenflüsse
+157
+
+-- 157 of 159 --
+
+Beispiel von Pools und Nachrichtenflüsse
+• Beispiel des Pizza Bestellens von Kunde und Pizzalieferant
+158
+
+-- 158 of 159 --
+
+Thank you for your attention!
+161
+
+-- 159 of 159 --
+

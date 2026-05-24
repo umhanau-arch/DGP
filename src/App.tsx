@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import {
   GraduationCap,
+  Library,
   Moon,
   Sun,
   Sparkles,
@@ -9,8 +10,10 @@ import {
 } from "lucide-react";
 import GuidedMode from "./components/GuidedMode/GuidedMode";
 import ExamMode from "./components/ExamMode/ExamMode";
+import QuestionBank from "./components/Questions/QuestionBank";
 import { Card, Pill, ProgressBar, Stat } from "./components/UI/Card";
 import { chapters } from "./data/chapters";
+import { QUESTION_BANK } from "./data/questionBank";
 import {
   defaultProgress,
   loadProgress,
@@ -19,29 +22,14 @@ import {
 } from "./utils/storage";
 import type { ChapterId, ProgressState } from "./types";
 
-type View = "guided" | "exam" | "progress";
+type View = "guided" | "exam" | "questions" | "progress";
 
-const NAV: Array<{ id: View; label: string; Icon: typeof Sparkles; hint: string }> =
-  [
-    {
-      id: "guided",
-      label: "Geführter Modus",
-      Icon: Sparkles,
-      hint: "Kapitel 1-9 mit Theorie, Visualisierung, Trainer, Quiz, Übungen.",
-    },
-    {
-      id: "exam",
-      label: "Klausurmodus",
-      Icon: Target,
-      hint: "Randomisierte 8-Aufgaben-Klausur mit Timer und Export.",
-    },
-    {
-      id: "progress",
-      label: "Fortschritt",
-      Icon: TrendingUp,
-      hint: "Statistiken, Mastery, Reset.",
-    },
-  ];
+const NAV: Array<{ id: View; label: string; Icon: typeof Sparkles }> = [
+  { id: "guided", label: "Geführter Modus", Icon: Sparkles },
+  { id: "exam", label: "Klausurmodus", Icon: Target },
+  { id: "questions", label: "Fragenkatalog", Icon: Library },
+  { id: "progress", label: "Fortschritt", Icon: TrendingUp },
+];
 
 export default function App() {
   const [view, setView] = useState<View>("guided");
@@ -68,7 +56,7 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100">
-      <header className="sticky top-0 z-30 border-b border-slate-200 bg-white/95 backdrop-blur dark:border-slate-800 dark:bg-slate-950/95">
+      <header className="sticky top-0 z-30 border-b border-slate-200 bg-white/95 backdrop-blur dark:border-slate-800 dark:bg-slate-950/95 no-print">
         <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-3 px-4 py-3">
           <div className="flex items-center gap-3">
             <div className="rounded-lg bg-brand-600 p-2 text-white">
@@ -108,11 +96,7 @@ export default function App() {
               onClick={toggleTheme}
               className="rounded-lg border border-slate-200 p-2 dark:border-slate-700"
             >
-              {progress.theme === "dark" ? (
-                <Sun size={16} />
-              ) : (
-                <Moon size={16} />
-              )}
+              {progress.theme === "dark" ? <Sun size={16} /> : <Moon size={16} />}
             </button>
           </div>
         </div>
@@ -130,13 +114,21 @@ export default function App() {
         {view === "exam" && (
           <ExamMode progress={progress} onProgressChange={setProgress} />
         )}
+        {view === "questions" && (
+          <QuestionBank progress={progress} onProgressChange={setProgress} />
+        )}
         {view === "progress" && (
-          <ProgressView progress={progress} setProgress={setProgress} overall={overall} />
+          <ProgressView
+            progress={progress}
+            setProgress={setProgress}
+            overall={overall}
+          />
         )}
       </main>
 
-      <footer className="mx-auto max-w-7xl px-4 py-6 text-center text-xs text-slate-500">
-        DGP Klausurtrainer v2 · Geführter Lernkurs + Klausurmodus
+      <footer className="mx-auto max-w-7xl px-4 py-6 text-center text-xs text-slate-500 no-print">
+        DGP Klausurtrainer v3 · Originale Klausurstruktur · Petri-Drill ·
+        Fragenkatalog ({QUESTION_BANK.length} Fragen)
       </footer>
     </div>
   );
@@ -151,6 +143,14 @@ function ProgressView({
   setProgress: (p: ProgressState) => void;
   overall: number;
 }) {
+  const drillEntries = Object.entries(progress.petriDrill ?? {});
+  const masteredCount = drillEntries.filter(([, v]) => v.mastered).length;
+  const qStatus = Object.values(progress.questionStatus ?? {});
+  const qAnswered = qStatus.filter((s) => s.right > 0 || s.wrong > 0).length;
+  const qRight = qStatus.reduce((s, x) => s + x.right, 0);
+  const qWrong = qStatus.reduce((s, x) => s + x.wrong, 0);
+  const qStarred = qStatus.filter((s) => s.starred).length;
+
   return (
     <div className="space-y-5">
       <Card>
@@ -159,7 +159,7 @@ function ProgressView({
           Daten werden lokal im Browser gespeichert (kein Server).
         </p>
         <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-          <Stat label="Gesamtfortschritt" value={`${Math.round(overall)} %`} />
+          <Stat label="Gesamt-Mastery" value={`${Math.round(overall)} %`} />
           <Stat
             label="Mini-Checks"
             value={`${progress.miniCheckScore.right}✓ / ${progress.miniCheckScore.wrong}✗`}
@@ -171,10 +171,23 @@ function ProgressView({
           <Stat label="Klausuren generiert" value={progress.examsTaken} />
         </div>
         <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
-          <Stat label="Petri-Trainer Runs" value={progress.petriRuns} />
+          <Stat
+            label="Petri-Drill mastered"
+            value={`${masteredCount} / ${drillEntries.length}`}
+          />
           <Stat label="PKR-Trainer Runs" value={progress.pkrRuns} />
-          <Stat label="Mining-Trainer Runs" value={progress.miningRuns} />
           <Stat label="BPMN-Trainer Runs" value={progress.bpmnRuns} />
+          <Stat label="Mining-Trainer Runs" value={progress.miningRuns} />
+        </div>
+      </Card>
+
+      <Card>
+        <h3 className="text-lg font-black">Fragenkatalog</h3>
+        <div className="mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+          <Stat label="Beantwortet" value={`${qAnswered} / ${QUESTION_BANK.length}`} />
+          <Stat label="Richtig" value={qRight.toString()} />
+          <Stat label="Falsch" value={qWrong.toString()} />
+          <Stat label="Markiert" value={qStarred.toString()} />
         </div>
       </Card>
 
@@ -205,6 +218,30 @@ function ProgressView({
           })}
         </div>
       </Card>
+
+      {drillEntries.length > 0 && (
+        <Card>
+          <h3 className="text-lg font-black">Petri-Drill pro Netz</h3>
+          <div className="mt-3 grid gap-2 lg:grid-cols-2">
+            {drillEntries.map(([netId, v]) => (
+              <div
+                key={netId}
+                className="flex items-center justify-between rounded-lg border border-slate-200 bg-white p-3 dark:border-slate-800 dark:bg-slate-900"
+              >
+                <div>
+                  <p className="font-bold">{netId}</p>
+                  <p className="text-xs text-slate-500">
+                    {v.right}✓ / {v.wrong}✗ · Streak {v.streak}
+                  </p>
+                </div>
+                <Pill tone={v.mastered ? "emerald" : "slate"}>
+                  {v.mastered ? "✓ mastered" : "in Arbeit"}
+                </Pill>
+              </div>
+            ))}
+          </div>
+        </Card>
+      )}
 
       <Card>
         <h3 className="text-lg font-black">Reset</h3>

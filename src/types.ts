@@ -13,31 +13,19 @@ export type ChapterId =
 
 export type Priority = "A" | "B" | "C";
 
-/** A learning block inside a chapter (theory + visualization + checks). */
 export interface LearningBlock {
   id: string;
   title: string;
-  /** Very short summary used to set the scene. */
   intro: string;
-  /** Plain language explanation. */
   simple: string;
-  /** Deeper explanation, fachlich korrekt. */
   detail: string;
-  /** Short list of bullet point insights. */
   bullets?: string[];
-  /** Klausurbezug. */
   exam?: string;
-  /** Typische Falle. */
   trap?: string;
-  /** One-line memorable rule. */
   mnemonic?: string;
-  /** Worked example. */
   example?: string;
-  /** Optional table data: array of rows; first row is header. */
   table?: string[][];
-  /** Optional inline visualization keyword (rendered by VisualBlocks). */
   visual?: VisualKey;
-  /** Optional mini check at the end of the block. */
   miniCheck?: MiniCheck;
 }
 
@@ -102,34 +90,24 @@ export interface ChapterDefinition {
   number: number;
   title: string;
   subtitle: string;
-  /** Why is this chapter needed - 1-2 sentences */
   whyImportant: string;
-  /** What we will learn (Lernziele as bullets). */
   learningGoals: string[];
-  /** Priority on the exam (A = sicher, B = wahrscheinlich, C = möglich). */
   priority: Priority;
-  /** Short label like "Aufgabe 4" or "Aufgabe 6/7". */
   examReference: string;
-  /** Theory groups -> learning blocks. */
   groups: Array<{ title: string; color: string; blocks: LearningBlock[] }>;
-  /** Quiz at the end of chapter. */
   quiz: QuizItem[];
-  /** Practice tasks after the quiz. */
   tasks: PracticeTask[];
-  /** Optional embedded trainer keys to show in the practice section. */
   trainers?: TrainerKey[];
-  /** A final tip / warning / strategy. */
   examTip: string;
   commonMistakes: string[];
 }
 
 export type TrainerKey = "petri" | "pkr" | "bpmn" | "mining" | "exam-blueprint";
 
-// ---- Petri net types ----
+// ---------------- Petri net types ----------------
 export interface PetriPlace {
   id: string;
   label: string;
-  /** initial token count */
   tokens: number;
   x: number;
   y: number;
@@ -143,6 +121,7 @@ export interface PetriTransition {
 export interface PetriArc {
   from: string;
   to: string;
+  weight?: number;
 }
 export interface PetriNet {
   id: string;
@@ -160,11 +139,32 @@ export interface PetriNet {
   notes?: string[];
 }
 
-// ---- Process mining types ----
+// ---------------- Petri drill ----------------
+export type DrillExerciseKind =
+  | "select-enabled-transitions"
+  | "marking-after-fire"
+  | "is-bounded"
+  | "is-safe"
+  | "is-deadlockfree"
+  | "is-live"
+  | "fire-count"
+  | "reachable-marking-count";
+
+export interface DrillExercise {
+  id: string;
+  netId: string;
+  kind: DrillExerciseKind;
+  prompt: string;
+  options?: string[]; // for MC
+  expected: string | string[];
+  explain: string;
+}
+
+// ---------------- Process mining ----------------
 export interface MiningEvent {
   caseId: string;
   activity: string;
-  timestamp: string; // hh:mm
+  timestamp: string;
 }
 export interface MiningCase {
   id: string;
@@ -172,15 +172,12 @@ export interface MiningCase {
   difficulty: "leicht" | "mittel" | "schwer";
   description: string;
   events: MiningEvent[];
-  /** ordered traces per case in correct sequence */
   expectedTraces: Record<string, string[]>;
-  /** activities that appear */
   activities: string[];
-  /** ground truth footprint per (a,b) ; values "->", "<-", "||", "#" */
   footprint: Record<string, Record<string, ">" | "<" | "||" | "#">>;
 }
 
-// ---- BPMN training tasks ----
+// ---------------- BPMN training ----------------
 export interface BpmnSymbolTask {
   id: string;
   prompt: string;
@@ -191,14 +188,13 @@ export interface BpmnSymbolTask {
 export interface BpmnFlowTask {
   id: string;
   prompt: string;
-  /** kind: "sequence" or "message" */
   expected: "sequence" | "message";
   explain: string;
 }
 export interface BpmnOrderTask {
   id: string;
   description: string;
-  steps: string[]; // shuffled in UI; stored in correct order here
+  steps: string[];
   explain: string;
 }
 export interface BpmnCaseTask {
@@ -211,21 +207,201 @@ export interface BpmnCaseTask {
   exam: string;
 }
 
-// ---- Exam types ----
+// ---------------- Exam types (exam paper structure) ----------------
+
+export type ExamPayloadKind =
+  | "none"
+  | "pkr-table"
+  | "integration-table"
+  | "eventlog"
+  | "petri-net"
+  | "process-model"
+  | "scenario"
+  | "branche-list";
+
+export interface PkrTeilprozess {
+  name: string;
+  gesamt: number;
+  fix: number;
+  measureLabel: string;
+  gesamtmenge: number;
+}
+export interface PkrProductRow {
+  name: string;
+  values: number[]; // per Teilprozess
+}
+export interface PkrPayload {
+  kind: "pkr-table";
+  unternehmen: string;
+  produkte: [string, string];
+  teilprozesse: PkrTeilprozess[];
+  zuteilung: PkrProductRow[];
+}
+
+export interface IntegrationCostRow {
+  position: string;
+  intern: number | null;
+  extern: number | null;
+}
+export interface IntegrationPayload {
+  kind: "integration-table";
+  unternehmen: string;
+  branche: string;
+  scenario: string;
+  zukauf: string;
+  measure: string; // pro Stück / Modul / Maschine
+  rows: IntegrationCostRow[];
+  /** which row to "verkabeln intern komplett selbst" change scenario */
+  changeRowIndex: number;
+  /** integer EUR change to add/remove from intern in changed row */
+  changeIntern: number;
+  /** the matched extern in the change row (becomes 0) */
+  changeExternBefore: number;
+}
+
+export interface EventLogRow {
+  caseId: string;
+  activity: string;
+  timestamp: string;
+  resource?: string;
+}
+export interface EventLogPayload {
+  kind: "eventlog";
+  rows: EventLogRow[];
+  activities: string[];
+  expectedTraces: Record<string, string[]>;
+}
+
+export interface PetriExamPayload {
+  kind: "petri-net";
+  net: PetriNet;
+  /** computed properties for solution */
+  enabledInitial: string[];
+  fireCounts: Record<string, number>;
+  reachableCount: number;
+  k: number;
+  isSafe: boolean;
+  isDeadlockFree: boolean;
+  isLive: boolean;
+}
+
+export interface ProcessModelTracePayload {
+  kind: "process-model";
+  description: string;
+  /** activities used for traces */
+  activities: string[];
+  /** complete traces possible in the model */
+  completeTraces: string[];
+  /** trace examples to evaluate (true = possible) */
+  traceCheck: Array<{ trace: string; possible: boolean }>;
+  /** count of complete traces (might be ∞ for loops) */
+  completeTracesCount: number | "unendlich";
+  /** footprint of an L log */
+  footprintLog: string;
+  footprintActivities: string[];
+  footprintMatrix: Record<string, Record<string, "→" | "←" | "∥" | "#">>;
+}
+
+export interface ScenarioPayload {
+  kind: "scenario";
+  unternehmen: string;
+  branche: string;
+  text: string;
+  prozesse: Array<{
+    name: string;
+    expected: "kern" | "support" | "management";
+    begruendung: string;
+  }>;
+}
+
+export interface BrancheListPayload {
+  kind: "branche-list";
+  unternehmen: string;
+  branche: string;
+  text: string;
+  prozesse: string[];
+  expected: Array<"kern" | "support" | "management">;
+}
+
+export type ExamPayload =
+  | PkrPayload
+  | IntegrationPayload
+  | EventLogPayload
+  | PetriExamPayload
+  | ProcessModelTracePayload
+  | ScenarioPayload
+  | BrancheListPayload
+  | { kind: "none" };
+
 export interface ExamSubTask {
-  block: string; // A1..A8
-  title: string;
-  prompt: string;
+  label: string; // "1.", "2.", "(a)", "(b)" etc.
   points: number;
+  prompt: string;
   expected: string;
   grading: string[];
+}
+
+export interface ExamBlock {
+  block: string; // "A1".."A8"
+  title: string;
+  points: number;
+  /** intro text shown above the sub-tasks */
+  intro: string;
+  payload: ExamPayload;
+  subTasks: ExamSubTask[];
   commonErrors: string[];
 }
 
-// ---- Progress ----
+// ---------------- Question bank ----------------
+
+export type QuestionTopic =
+  | "Grundbegriffe"
+  | "GPM-Zyklus"
+  | "Prozessarten"
+  | "Modellierung"
+  | "ARIS"
+  | "BPMN"
+  | "Petrinetze"
+  | "Process-Mining"
+  | "Wertschöpfung"
+  | "Integration"
+  | "PKR"
+  | "Qualität"
+  | "KPI/SMART"
+  | "Digitalisierung"
+  | "Workflow/GPMS";
+
+export type QuestionDifficulty = "leicht" | "mittel" | "schwer";
+
+export interface QuestionItem {
+  id: string;
+  topic: QuestionTopic;
+  chapter: ChapterId;
+  difficulty: QuestionDifficulty;
+  question: string;
+  answer: string;
+  /** optional explanation / context */
+  why?: string;
+  /** optional choices for multiple-choice questions */
+  choices?: string[];
+  /** index in choices that is correct (only for MC) */
+  correctChoice?: number;
+  /** source (e.g. "Klausur WS 25/26", "Lernzettel") */
+  source?: string;
+}
+
+export interface QuestionStatus {
+  right: number;
+  wrong: number;
+  lastSeen?: number;
+  /** if user marked the question as still struggling */
+  starred?: boolean;
+}
+
+// ---------------- Progress ----------------
 export interface ProgressState {
   completedChapters: ChapterId[];
-  chapterProgress: Record<string, number>; // 0..100
+  chapterProgress: Record<string, number>;
   lastChapter: ChapterId;
   lastStep: number;
   xp: number;
@@ -237,4 +413,11 @@ export interface ProgressState {
   bpmnRuns: number;
   miningRuns: number;
   theme: "light" | "dark";
+  /** Petri drill state per net id */
+  petriDrill: Record<
+    string,
+    { right: number; wrong: number; streak: number; mastered: boolean }
+  >;
+  /** Question bank tracking per question id */
+  questionStatus: Record<string, QuestionStatus>;
 }

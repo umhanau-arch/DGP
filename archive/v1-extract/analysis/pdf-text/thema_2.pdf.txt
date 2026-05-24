@@ -1,0 +1,590 @@
+1
+Digitale Geschäftsprozesse
+Prozesskostenrechnung
+
+-- 1 of 47 --
+
+Lernziele des Kapitels
+Die Studierenden sind in der Lage
+• die Notwendigkeit und den Mehrwert der Prozesskostenrechnung zu
+erläutern
+• grundlegenden Begriffe der Kostenrechnung und insb. variable, fixe,
+Einzel- sowie Gemeinkosten zu erklären, zu benennen und zu
+berechnen
+• eine in drei Phasen unterteilte Prozesskostenrechnung mit
+Umlageverfahren durchzuführen
+• durchschnittliche Prozesskosten zu berechnen
+• Effekte der Prozesskostenrechnung zu erläutern
+2
+
+-- 2 of 47 --
+
+Warum überhaupt Prozesskostenrechnung?
+• wir möchten im Kontext des Geschäftsprozessmanagements Prozesse
+optimieren
+• eine Optimierung sollte jedoch nicht nur direkt auf
+Kundenerlebbarkeit und Zeitersparnis etc. abzielen, sondern auch auf
+eine monetäre Optimierung des Gewinns im Betrieb
+• daher ist es unabdinglich auch eine entsprechende
+Prozesskostenrechnung durchzuführen
+3
+
+-- 3 of 47 --
+
+Was gibt es überhaupt für Kostenbestandteile?
+4
+
+-- 4 of 47 --
+
+Recap KLR: Begrifflichkeiten
+• Kosten:
+betriebliche Aufwendungen, z.B. Personalaufwendungen, Mieten,
+Abschreibungen etc.
+• Leistungen:
+betriebliche Erträge, z.B. Umsatzerlöse, Eigenleistungen, Mehrbestand
+an Erzeugnissen
+• Leistungen > Kosten = Betriebsgewinn
+• Leistungen < Kosten = Betriebsverlust
+5
+
+-- 5 of 47 --
+
+Recap KLR: Ziele (unter anderem)
+• Ermittlung der Selbstkosten der Erzeugungseinheit als Basis für die
+Berechnung der Verkaufspreise
+• Ermittlung von Deckungsbeiträgen auf der Basis der
+Teilkostenrechnung:
+auf Basis der erzielbaren Umsatzerlöse soll mit der Teilkostenrechnung
+festgestellt werden, ob ein Erzeugnis einen ausreichenden Beitrag zur
+Deckung der fixen Kosten und zur Erzielung von Gewinn beiträgt
+• und einige mehr
+6
+
+-- 6 of 47 --
+
+Recap: Zurechnung der Kosten auf Kostenträger
+• nach Erfassung der Kosten besteht eine wesentliche Aufgabe der
+Vollkostenrechnung alle Kosten verursachungsgerecht auf die
+Leistungseinheiten zu verteilen
+• Kostenarten: Gliederung von Kosten in Kategorien (z.B.
+Materialkosten oder Personalkosten)
+• Kostenstellen: Einteilung des Betriebs in Kostenbereiche (z.B.
+Produktionsabteilung oder Marketingabteilung)
+[können nach Tätigkeiten oder auch Verantwortungen aufgeteilt
+werden]
+• Kostenträger: sind die Leistungseinheiten in Industriebetrieben, d.h.
+üblicherweise die fertigen und unfertigen Erzeugnisse (Produkte oder
+Dienstleistungen)
+7
+
+-- 7 of 47 --
+
+Recap: Überblick KLR
+8
+
+-- 8 of 47 --
+
+Abhängigkeit der Kosten von der Beschäftigung
+• Beschäftigung: unter Beschäftigung verstehen wir das
+Leistungsvermögen ausgedrückt in Produktionszahlen je Zeiteinheit
+• jede Produktionsanlage besitzt eine technische Kapazität, auf die sie
+konstruktionstechnisch ausgelegt ist und eine wirtschaftliche
+Kapazität, die die kostengünstige Auslastung angibt
+• Als Beschäftigungsgrad wird das Verhältnis aus tatsächlicher
+Ausnutzung der Kapazität und der technischen Kapazität bezeichnet
+Beschäftigungsgrad = tatsächliche Produktion
+technische Maximalproduktion
+9
+
+-- 9 of 47 --
+
+Beispiel
+Das Metallwerk Schmolmann KG rechnet aufgrund der Auftragslage im
+nächsten Jahr mit einer Zunahme der Absatzmenge. Im abgelaufenen
+Geschäftsjahr wurden insgesamt 200.000 Gehäuse unterschiedlicher
+Größe und Form produziert. 193.966 Gehäuse wurden abgesetzt.
+Hierbei konnten die Arbeitskräfte und die technischen Anlagen zu 80%
+ausgelastet werden.
+Die Schmollmann KG plant die Produktion im nächsten Jahr auf 225.000
+Gehäuse zu erhöhen.
+• Ist dies im Rahmen der bestehenden technischen Anlagen zu
+realisieren?
+• Wie hoch werden die Kosten dieser Produktion sein, wenn im
+aktuellen Jahr 9.700.000€ Kosten entstanden sind?
+10
+
+-- 10 of 47 --
+
+Beispiel
+Die technische Maximalproduktion beträgt bei einer Produktion von
+200.000 Gehäusen und 80% Auslastung:
+200.000 Gehäuse ∶ 0,8 = 250.000 Gehäuse max Prod/Jahr
+Die geplante Produktion lässt sich daher umsetzen und würde den
+folgenden Beschäftigungsgrad zur Folge haben:
+Beschäftigungsgrad = 225000
+250000 = 90%
+11
+
+-- 11 of 47 --
+
+Beispiel
+Eine erste Kostenplanung ist möglich auf Grundlage der
+Durchschnittskosten:
+200.000 Gehäuse verursachten Kosten von 9.700.000€, d.h. pro
+Gehäuse
+Stückkosten = 9.700.000
+200.000 Gehäuse = 48,50€
+Die Kosten im neuen Jahr betragen daher ungefähr
+48,50€ ⋅ 225.000 = 10.912.500,00 €
+• Warum stimmt das nur ungefähr?
+• Welche Annahmen liegen hier zugrunde?
+12
+
+-- 12 of 47 --
+
+Kostendifferenzierung (abh. Beschäftigung)
+• Gesamtkosten: setzen sich aus fixen und variablen Kosten zusammen
+𝐾 = 𝐾𝑓 + 𝐾𝑣 (lineare Kostenfunktion)
+• variable Kosten: Kosten, die sich in Abhängig von der Beschäftigung
+(z.B. Stückzahl x) verändern, z.B. durch Mengenrabatte oder
+Überstundenzuschläge bei Mitarbeitern bei Sonderschichten
+• fixe Kosten: Kosten, die innerhalb einer vorhandenen Kapazität
+unabhängig von der Stückzahl bzw. vom Beschäftigungsgrad sind, z.B.
+Zinsen für Kapitaleinsatz oder Miete für ein Büro
+• Stückkosten: durchschnittliche Kosten einer produzierenden Einheit.
+Gesamtkosten werden durch die Beschäftigungsmenge (x) dividiert.
+𝑘 = 𝐾
+𝑥 = 𝐾𝑓
+𝑥 + 𝐾𝑣
+𝑥
+13
+
+-- 13 of 47 --
+
+Beispiel: Unternehmen Klug & Schlau
+Das Unternehmen Klug & Schlau stellt Navigationsgeräte her. Die
+variablen Kosten pro Stück betragen 120 €. Außerdem fallen jeden
+Monat für Gehälter, Abschreibungen, Zinsen usw. 150.000 € fixe Kosten
+an. Die Kapazitätsgrenze liegt monatlich bei maximal 2.500
+Produkteinheiten.
+1. Berechnen Sie die variablen Kosten, die Gesamtkosten sowie die
+Stückkosten bei einer Produktionsmenge von 500, 1.000, 1.500,
+2.000 und 2.500 Stück.
+2. Das Unternehmen sieht deutliche Expansionsmöglichkeiten.
+Deshalb werden Erweiterungsinvestitionen durchgeführt. Die
+Kapazitätsgrenze liegt nun bei 4.500 Mengeneinheiten pro Monat.
+Gleichzeitig entstehen weitere fixe Kosten in Höhe von
+102.000€/Monat. Wie hoch sind nun die drei Kostentypen für 4.500
+Produktionseinheiten?
+14
+
+-- 14 of 47 --
+
+Beispiel: Unternehmen Klug & Schlau
+1. Berechnen Sie die variablen Kosten, die Gesamtkosten sowie die
+Stückkosten bei einer Produktionsmenge von 500, 1.000, 1.500,
+2.000 und 2.500 Stück.
+15
+
+-- 15 of 47 --
+
+Beispiel: Unternehmen Klug & Schlau
+2. Das Unternehmen sieht deutliche Expansionsmöglichkeiten.
+Deshalb werden Erweiterungsinvestitionen durchgeführt. Die
+Kapazitätsgrenze liegt nun bei 4.500 Mengeneinheiten pro Monat.
+Gleichzeitig entstehen weitere fixe Kosten in Höhe von
+102.000€/Monat. Wie hoch sind nun die drei Kostentypen für 4.500
+Produktionseinheiten?
+16
+
+-- 16 of 47 --
+
+Beispiel: Schmolmann KG
+Zur Beantwortung der Frage nach den geplanten Kosten für die erhöhte
+Produktionsmenge erstellt Unternehmer Schmolmann aufgrund einer
+Kostenanalyse folgende Übersicht über variable und fixe Kosten. Alle
+variablen Kosten sollen proportionale Kosten sein. Die fixen Kosten
+verändern sich bis zur Maximalauslastung nicht.
+Berechnen Sie ausgehend davon die präzisere Schätzung der Kosten für
+225.000 Gehäusen.
+17
+
+-- 17 of 47 --
+
+Beispiel: Schmolmann KG
+Bei der Produktion von 200.000 Gehäusen entstehen variable Kosten
+von 5.600.000€, daher ergibt sich pro Gehäuse:
+5.600.000€
+200.000 Stück = 28,00€
+𝑆𝑡ü𝑐𝑘
+Damit ergeben sich Gesamtkosten von
+28,00€ ⋅ 225.000 Gehäuse+4.100.000€ = 10.400.000€
+18
+Das sind 512.500€
+weniger als die
+initiale Schätzung!
+
+-- 18 of 47 --
+
+Bisher: Fokus auf ein Produkt
+• Was machen wir, wenn bestimmte Kosten sich nicht nur auf ein
+Produkt beziehen, sondern z.B. fixe Kosten sich über die komplette
+Produktpalette eines Unternehmens verteilen?
+19
+
+-- 19 of 47 --
+
+Kostendifferenzierung (abh. Zurechenbarkeit)
+• Differenzierung nach der Zurechenbarkeit auf den Kostenträger
+• Einzelkosten: Kosten, die durch die Erstellung von Gütern genau einer
+einzelnen Kostenträgereinheit direkt, das heißt ohne Schlüsselung
+zugerechnet werden können (z.B. Materialeinzelkosten)
+• Gemeinkosten: Kosten, die der einzelnen Kostenträgereinheit nur
+indirekt zugeordnet werden können (oder aus Gründen des
+Aufwandes nicht zugeordnet werden)
+20
+
+-- 20 of 47 --
+
+Beispiel: IDEA Palm Kommode
+Analysieren Sie die Kostenverteilung für die Produktion der IDEA Palm
+Kommode und ordnen Sie die einzelnen Kostenarten den Einzelkosten
+oder Gemeinkosten zu. Berücksichtigen Sie dabei die folgenden
+Produktions- und Vertriebsprozesse:
+1.Einkauf von Rohmaterial
+2.Verarbeitung des Rohmaterials
+3.Verkauf der fertigen Kommode
+Gehen Sie dabei systematisch vor und begründen Sie für jeden Prozess,
+welche Kosten direkt dem Produkt zugeordnet werden können
+(Einzelkosten) und welche als allgemeine betriebliche Kosten mehreren
+Produkten gemeinsam anfallen (Gemeinkosten).
+21
+
+-- 21 of 47 --
+
+Prozesse und Kostenarten:
+1. Einkauf Rohmaterial
+• Gemeinkosten: Allgemeine Beschaffungskosten (z. B. Lagerkosten,
+Transportkosten für Sammelbestellungen, Gehälter der
+Einkaufsabteilung)
+• Einzelkosten: Kosten für das spezifische Holz und Material, das genau für
+diese Kommode benötigt wird
+2. Verarbeitung Rohmaterial
+• Gemeinkosten: Kosten für Maschinenabschreibung, Energiekosten der
+Produktionshalle, Gehälter von nicht direkt zuweisbaren
+Produktionsmitarbeitern
+• Einzelkosten: Kosten für den konkreten Holzzuschnitt, Beschläge und
+Schrauben, die nur für diese Kommode verwendet werden, sowie direkte
+Lohnkosten für deren Verarbeitung
+3. Verkauf
+• Gemeinkosten: Marketing, Vertriebskosten, Ladenmiete, Gehälter der
+Verkaufsmitarbeiter, allgemeine Versandkosten
+• Einzelkosten: Falls eine spezielle Verkaufsaktion nur für dieses Modell
+gemacht wird (z. B. spezielle Verpackung oder individueller Versand)
+22
+
+-- 22 of 47 --
+
+Stop …
+Welchen Aussagen würden Sie jeweils zustimmen?
+„Einzelkosten sind in aller Regel variabel.“
+„Gemeinkosten sind immer Fixkosten.“
+„Variable Kosten sind immer Einzelkosten.“
+„Gemeinkosten können variabel oder fix sein.“
+23
+
+-- 23 of 47 --
+
+Vollkosten-/ Teilkostenrechnung
+• Vollkostenrechnung: alle Kosten, unabhängig ob es sich um Einzel-
+oder Gemeinkosten bzw. fixe oder variable Kosten handelt, werden
+den Kostenträgern zugeordnet.
+Damit wird auch eine Preisuntergrenze ermittelt. Nur bei einem
+Absatzpreis, der der langfristigen Preisuntergrenze entspricht, kann
+ein Unternehmen langfristig am Markt bestehen.
+• Teilkostenrechnung (Deckungsbeitragsrechnung): nur eine Teilmenge
+(die variablen Kosten) werden den Kostenträgern zugerechnet.
+Insbesondere für die kurzfristige Planung (Annahme von Aufträgen) ist
+diese Rechnung interessant.
+24
+
+-- 24 of 47 --
+
+Kostenstellenrechnung bei Schmolmann KG
+Im vergangenen Geschäftsjahr wurden im Unternehmen Schmolmann
+drei Gehäusetypen GI, GII und GIII gefertigt, die sich in ihren
+Abmessungen und in ihren vormontierten Ausstattungen
+unterscheiden. Es verbleibt die Frage:
+Wie hoch sind die auf jeden Gehäusetyp entfallenden anteiligen
+Gemeinkosten?
+25
+Kostenstellen-
+rechnung
+Kostenträger-
+stückrechnung
+
+-- 25 of 47 --
+
+Gliederung in Kostenstellen
+Bei Schmolmann ist der Gesamtbetrieb in vier Kostenbereiche
+eingeteilt, die sich aus den Funktionen des Betriebs ableiten. Diese sind
+die Grundlage für die Kostenstelleneinteilung:
+1. Materialbereich
+2. Fertigungsbereich
+3. Verwaltungsbereich
+4. Vertriebsbereich
+Für kleine Betriebe reicht eine direkte Zuordnung von Kostenstellen zu
+–bereichen.
+26
+
+-- 26 of 47 --
+
+Betriebsabrechnungsbogen
+Zur Kostenstellenrechnung hilft der Betriebsabrechnungsbogen (hier
+vereinfachte Form)
+27
+Kostenarten Kostenbereiche/
+-stellen
+
+-- 27 of 47 --
+
+Kostenstellenrechnung bei der Schmolmann KG
+Bei der Schmolmann KG liegt die folgende Aufteilung der Gemeinkosten
+auf die vier Kostenstellen vor.
+Es lassen sich Zuschlagssätze basierend auf Fertigungsmaterial/-löhne
+etc. erstellen, um die Kosten der Kostenstellen zu kontrollieren
+28
+
+-- 28 of 47 --
+
+Kostenträgerstückrechnung
+• Die Zuschlagskalkulation geht von den Einzelkosten des Kostenträgers
+aus und führt durch die schrittweise Einrechnung der anteiligen
+Gemeinkosten über Gemeinkostenzuschläge zu den Selbstkosten
+• Beispiel: IDEA stellt drei verschiedene Produkte her, deren
+Einzelkosten wie folgt sind
+• es fehlen jetzt noch die Gemeinkosten, die nicht direkt einem Produkt
+zugeordnet werden können
+29
+Kostenträger Produkt A Produkt B Produkt C Summe
+Mengeneinheit 200 400 500
+Einzelkosten 2.000€ 500€ 300€
+Summe Einzelkosten 400.000€ 200.000€ 150.000€ 750.000€
+
+-- 29 of 47 --
+
+Kostenträgerstückrechnung
+• Exemplarische Gemeinkosten sind dabei 50.000€ für den Einkauf,
+100.000€ für die Buchhaltung , 150.000€ für den Vertrieb
+• Berechnete Zuschlagssatz:
+Zuschlagssatz = ∑Gemeinkosten
+∑Einzelkosten
+= 50.000€ + 100.000€ + 150.000€
+750000€ = 40%
+30
+
+-- 30 of 47 --
+
+Ermittlung der Herstellkosten
+• Auf die Summen der Einzelkosten wird nun der Gemeinkosten-
+Zuschlag addiert:
+• Beobachtung: Die Gemeinkosten sind vollständig berücksichtigt!
+• Aber: Dies ist keine verursachungsgerechte Kostenzuordnung, da nicht
+berücksichtigt wird, wieviel Aufwand bei den Gemeinkosten
+tatsächlich in die Produktlinien fließt!
+31
+Kostenträger Produkt A Produkt B Produkt C Summe
+Mengeneinheit 200 400 500
+Einzelkosten 2.000€ 500€ 300€
+Summe Einzelkosten 400.000€ 200.000€ 150.000€ 750.000€
+GK-Zuschlag 40% 160.000€ 80.000€ 60.000€ 300.000€
+Gesamtkosten 560.000€ 280.000€ 210.000€ 1.050.000€
+Herstellkosten 2.800€ 700€ 420€
+
+-- 31 of 47 --
+
+Gründe für ein Umdenken
+• traditionelle Kosten Systeme sind zu stark auf den Produktionsbereich
+ausgerichtet
+• es gibt eine zunehmende Bedeutung sog. indirekter Bereiche
+(Forschungs, Entwicklung, Produktionsplanung, Beschaffung, Vertrieb,
+etc.)
+• Gemeinkosten nehmen im Vergleich zu Einzelkosten einen immer
+größeren werdenden Anteil der Kosten ein
+• insbesondere im Dienstleistungssektor wird oftmals mit 75%
+Gemeinkostenanteil gerechnet!
+32
+
+-- 32 of 47 --
+
+Verbesserung durch Prozesskostenrechnung
+• Die Methode des Gemeinkostenzuschlags unterstellt, dass sich die
+Gemeinkosten prozentual genauso verteilen wie die Einzelkosten,
+obwohl es keinen direkten kausalen Zusammenhang gibt.
+• Ziel: Verursachungsgerechte Zuordnung der Gemeinkosten zu den
+Kostenträgern
+• Methode: Gemeinkosten werden Prozessen zugeordnet
+• Vorgehen: Die Anzahl der vom Kostenträger tatsächlich genutzten
+Prozesse (und deren Aufwand) werden bestimmt und dann die Höhe
+der diesem Kostenträger zuzurechnenden Gemeinkosten berechnet.
+33
+
+-- 33 of 47 --
+
+Prozesskostenrechnung
+• Wie die klassische Kostenrechnung durchläuft die Prozesskosten-
+rechnung die Stufen
+• Kostenartenrechnung
+• Kostenstellenrechnung
+• Kostenträgerrechnung
+• Erstere ist gleichbleibend zu vorher
+• Bei der Kostenstellenrechnung wird hierbei ein dreistufiges Vorgehen
+verfolgt
+34
+
+-- 34 of 47 --
+
+Prozesskostenrechnung
+1. Anfallende Einzelaktivitäten werden durch eine Tätigkeitsanalyse
+bestimmt
+2. Diese werden zu Teilprozessen zusammengefasst. Die Häufigkeit der
+Prozessdurchführung wird über sog. Maßgrößen erfasst.
+3. Es erfolgt eine Zusammenfassung der Teilprozesse zu
+kostenstellenübergreifenden Hauptprozessen. Das Bindeglied zum
+Kostenträger stellen sog. Kostentreiber (cost driver) dar. Dabei ist zu
+ermitteln wie viele cost-driver Einheiten pro Kostenträger benötigt
+werden
+35
+
+-- 35 of 47 --
+
+Begrifflichkeiten
+• Tätigkeiten: die PKR geht davon aus, dass die in den Kostenstellen
+ausgeübten Tätigkeiten (=Aktivitäten) ursächlich für die Gemeinkosten
+sind
+• Teilprozesse: nicht jeder Tätigkeit ist es sinnvoll Maßgrößen
+zuzuordnen, daher werden alle Tätigkeiten zusammengefasst,
+• die zu einem gemeinsamen Arbeitsergebnis führen und
+• für die eine gemeinsame Maßgröße gefunden werden kann
+36
+
+-- 36 of 47 --
+
+Teilprozesse bei der Schmolmann KG
+Betrachtet wird die Kostenstelle I Material. Basierend auf Unterlagen
+wie Ablaufdiagrammen, Prozessbeschreibungen sowie
+Arbeitsplatzbeschreibungen und Interviews kann Herr Schmolmann
+folgende Teilprozesse identifizieren:
+37
+
+-- 37 of 47 --
+
+Maßgrößen der Teilprozesse
+• Nach der Gliederung von Teilprozessen müssen entsprechende
+Teilprozesskosten ermittelt werden, d.h. eine Zuordnung der
+vorliegenden Informationen über Kosten auf die vier Teilprozesse
+• Maßgrößen sind Mengengrößen und ein Maßstab für die
+Kostenverursachung sowie für die Kostenzurechnung auf die
+Kostenträger
+38
+
+-- 38 of 47 --
+
+Maßgrößen der Teilprozesse
+• Bei Herr Schmolmanns Teilprozessen hat er folgende Maßgrößen
+identifizert
+• Bei letztem Teilprozess findet er keine Maßgröße. Er muss sie im
+Umlageverfahren den anderen Teilprozessen zuordnen
+39
+
+-- 39 of 47 --
+
+Errechnung von Prozesskostensätzen
+• Im letzten Schritt wird für jeden Teilprozess ein zugehöriger
+Teilprozesskostensatz ermittelt
+• für alle Teilprozesse, für die eine Maßgröße vorliegt
+(leistungsmengeninduzierte (lmi) Prozesse), gilt
+Teilprozesskostensatz = Teilprozesskosten
+Teilprozessmenge
+• für alle anderen (leistungsmengenneutrale Prozesse) gilt:
+Umlagesatz = Teilprozesskosten ohne Mg
+Summe der TPKosten mit Mg ⋅ Teilprozesskostensatz
+• Gesamte Prozesskostensatz:
+Prozesskostensatz = Teilprozesskostensatz + Umlagesatz
+40
+
+-- 40 of 47 --
+
+Beispiel Teilprozess „Werkstoffe annehmen“
+• es gilt:
+Teilprozesskostensatz = 80.000€
+500 Anlieferungen = 160,00€
+Anlieferung
+• und
+Umlagesatz = 70.000€
+240.000€ ⋅ 160,00€ = 46,67€
+Anlieferung
+• Der Prozesskostensatz für den Teilprozess „Werkstoffe annehmen“
+beträgt dann 206,67€ je Anlieferung auf Basis von 1000
+Erzeugniseinheiten
+41
+
+-- 41 of 47 --
+
+Überblick Prozesskostensätze
+• Insgesamt ergibt sich:
+• nicht jeder Kundenauftrag ist jetzt gleich zu berücksichtigen. Manche
+verwenden eventuell verschiedene viele Teilprozesse
+• es lohnt sich daher typische betriebliche Abläufe zu sog.
+Hauptprozessen zusammen zu fassen
+42
+
+-- 42 of 47 --
+
+Prozesskostenkalkulation
+43
+
+-- 43 of 47 --
+
+Übung: durchschnittliche Prozesskosten
+Bearbeitungszeit: 30 min
+Wir betrachten das folgende Prozessmodell:
+In moodle finden Sie
+• einen Auszug der Prozessbearbeitung
+durch Mitarbeiter
+• eine Information zu den Gehältern
+der Mitarbeiter
+• eine Information zu den mit den Aktivitäten
+verbundenen Kosten
+Berechnen Sie die mittleren Prozesskosten für obigen Prozess und die
+gegebenen Laufzeitdaten!
+49
+
+-- 44 of 47 --
+
+Effekte
+• Recherchieren Sie Erklärungen für folgende Begriffe
+• Allokationseffekt
+• Komplexitätseffekt
+• Degressionseffekt
+50
+
+-- 45 of 47 --
+
+Effekte
+• Recherchieren Sie Erklärungen für folgende Begriffe
+• Allokationseffekt: Unterscheidung innerhalb der Zuordnung der
+Gemeinkosten durch die verursachen gerechte Zuordnung
+• Komplexitätseffekt: Zuordnung der Gemeinkosten berücksichtigt die
+Komplexität einzelner Produkte
+• Degressionseffekt: Sinkende Gemeinkosten pro Stück bei steigender
+Ausbringungsmenge
+51
+
+-- 46 of 47 --
+
+Thank you for your attention!
+52
+
+-- 47 of 47 --
+

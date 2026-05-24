@@ -515,7 +515,13 @@ function TrainerStep({
   onCount: (kind: string) => void;
 }) {
   if (trainer === "petri")
-    return <PetriTrainer onRunCounted={() => onCount("petri")} />;
+    return (
+      <PetriTrainer
+        progress={progress}
+        onProgressChange={onProgressChange}
+        onRunCounted={() => onCount("petri")}
+      />
+    );
   if (trainer === "pkr") return <PkrTrainer onRunCounted={() => onCount("pkr")} />;
   if (trainer === "mining")
     return <MiningTrainer onRunCounted={() => onCount("mining")} />;
