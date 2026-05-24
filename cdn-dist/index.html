@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="DGP Klausurtrainer - Geführter Lernkurs und Klausurmodus für Digitale Geschäftsprozesse"
+    />
+    <title>DGP Klausurtrainer · Digitale Geschäftsprozesse</title>
+
+    <!-- Inter font -->
+    <link rel="preconnect" href="https://rsms.me/" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+
+    <!-- Tailwind Play CDN with custom config -->
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: [
+                "Inter",
+                "ui-sans-serif",
+                "system-ui",
+                "-apple-system",
+                "Segoe UI",
+                "sans-serif",
+              ],
+            },
+            colors: {
+              brand: {
+                50: "#eef7ff",
+                100: "#d9eeff",
+                200: "#bce0ff",
+                300: "#8ecbff",
+                400: "#59afff",
+                500: "#2f93ff",
+                600: "#1577f0",
+                700: "#1361d1",
+                800: "#1551a8",
+                900: "#174784",
+              },
+            },
+            boxShadow: {
+              soft: "0 18px 45px rgba(15, 23, 42, 0.10)",
+              card: "0 4px 14px rgba(15, 23, 42, 0.06)",
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Base styles -->
+    <style type="text/tailwindcss">
+      @layer base {
+        html {
+          font-feature-settings: "cv11", "ss01", "ss03";
+        }
+        body {
+          @apply font-sans antialiased text-slate-900 dark:text-slate-100 bg-slate-50 dark:bg-slate-950;
+          text-rendering: optimizeLegibility;
+        }
+        ::selection {
+          @apply bg-brand-200 dark:bg-brand-800/60;
+        }
+      }
+      @layer utilities {
+        .text-balance {
+          text-wrap: balance;
+        }
+      }
+    </style>
+
+    <!-- Import map: React, framer-motion, lucide-react from CDN -->
+    <script type="importmap">
+      {
+        "imports": {
+          "react": "https://esm.sh/react@18.3.1",
+          "react/jsx-runtime": "https://esm.sh/react@18.3.1/jsx-runtime",
+          "react-dom": "https://esm.sh/react-dom@18.3.1",
+          "react-dom/client": "https://esm.sh/react-dom@18.3.1/client?deps=react@18.3.1",
+          "framer-motion": "https://esm.sh/framer-motion@11.18.2?deps=react@18.3.1,react-dom@18.3.1",
+          "lucide-react": "https://esm.sh/lucide-react@0.468.0?deps=react@18.3.1"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root">
+      <div
+        style="
+          min-height: 100vh;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          gap: 12px;
+          font-family: system-ui, sans-serif;
+        "
+      >
+        <div
+          style="
+            width: 36px;
+            height: 36px;
+            border: 3px solid #1577f0;
+            border-top-color: transparent;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+          "
+        ></div>
+        <p style="color: #475569">DGP Klausurtrainer wird geladen…</p>
+        <style>
+          @keyframes spin {
+            to {
+              transform: rotate(360deg);
+            }
+          }
+        </style>
+      </div>
+    </div>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
