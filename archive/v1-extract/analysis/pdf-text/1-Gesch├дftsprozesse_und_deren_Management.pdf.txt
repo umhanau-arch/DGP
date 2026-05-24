@@ -1,0 +1,1071 @@
+Digitale Geschäftsprozesse
+Kapitel 1
+Geschäftsprozesse und
+deren Management
+Version 1.0
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 1
+
+-- 1 of 86 --
+
+Outline
+1. Prozesse und Geschäftsprozesse
+1.1. Begriffserklärungen
+1.2. Struktur von Geschäftsprozessen
+1.3. Sichten auf Geschäftsprozesse
+2. Geschäftsprozessmanagement
+2.1. Rollen und Verantwortlichkeiten
+2.2. GPM-Lebenszyklus
+2.3. Prozessidentifikation
+2.4. Prozessgestaltung
+2.5. Prozessausführung
+3. Standardisierung und Qualität
+4. Digitalisierung, Digitale Transformation und Industrie 4.0
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 2
+
+-- 2 of 86 --
+
+Lernziele des Kapitels
+Studierende sind in der Lage
+die allgemeine Definition und wesentliche Elemente eines Prozesses zu erläutern
+Beispiele für typische Geschäftsprozesse zu nennen und verschiedene Sichten auf
+Geschäftsprozesse zu erklären
+die Prinzipien und Rollen des Geschäftsprozessmanagements sowie das GPM-Lebenszyklusmodell
+zu beschreiben
+das schrittweise Vorgehen zur Identifikation der wesentlichen Geschäftsprozesse eines Betriebs
+nachvollziehen zu können
+Informationstechnische Maßnahmen (z.B. GPMS-Systeme und Process-Mining Werkzeuge) zur
+Ausführung bzw. Automatisierung von Geschäftsprozesse unterscheiden zu können
+die wichtigsten Schritte bei der Gestaltung von Geschäftsprozessen darzustellen die Digitalisierung,
+digitale Transformation und Industrie 4.0 zu unterscheiden und Unterschiede zu erörtern
+die allgemeine Definition digitaler Geschäftsprozesse zu erläutern
+das Potential von IoT und digitalen Zwillingen zu diskutieren und Herausforderungen zu erläutern
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 3
+
+-- 3 of 86 --
+
+Geschäftsprozesse?
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 4
+
+-- 4 of 86 --
+
+Begriffserklärungen
+Was sind eigentlich Prozesse?
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 5
+
+-- 5 of 86 --
+
+Begriffserklärungen
+Unterschied zwischen Algorithmus und Prozess
+Ein Algorithmus ist eine exakte, klar definierte Schritt-für-Schritt-Anleitung, um ein Problem zu lösen.
+präzise und eindeutig
+endlich (er hat ein Ende)
+wiederholbar (liefert bei gleichen Eingaben immer das gleiche Ergebnis)
+typisch in der Informatik und Mathematik
+Ein Prozess ist ein allgemeiner Ablauf oder Vorgang, der aus mehreren Schritten bestehen kann –
+aber nicht unbedingt strikt oder exakt festgelegt ist.
+kann flexibel oder variabel sein
+oft langfristig oder wiederkehrend
+kann menschliche Entscheidungen enthalten
+häufig in Wirtschaft, Organisation oder Alltag
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 6
+
+-- 6 of 86 --
+
+Begriffserklärungen
+https://www.kuestenkiosk.de/Bierdeckel–Selbstgemacht-DIY.html
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 7
+
+-- 7 of 86 --
+
+Begriffserklärungen
+https://www.kuestenkiosk.de/Bierdeckel–Selbstgemacht-DIY.html
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 7
+
+-- 8 of 86 --
+
+Prozesse sind überall!
+generiert mit Nano Banana 2
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 8
+
+-- 9 of 86 --
+
+Begriffserklärungen
+Wann ist ein Prozess ein Geschäftsprozess (GP)?
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 9
+
+-- 10 of 86 --
+
+Struktur von Geschäftsprozessen
+Ein Geschäftsprozess kann gekapselt und Teil eines anderen Geschäftsprozesses sein und/oder
+andere Geschäftsprozesse enthalten bzw. diese anstoßen.
+Geschäftsprozesse gehen oft über Abteilungs- und Betriebsgrenzen hinweg und gehören zur
+Ablauforganisation eines Betriebs
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 10
+
+-- 11 of 86 --
+
+Struktur von Geschäftsprozessen
+Typischerweise haben GPs einen genau definierten Input und Output sowie auch seine
+Teilprozesse. Input und Output (Eingaben / Ergebnisse) können jeweils Informationen,
+Gegenstände, Ereignisse und/oder Zustände sein.
+Sie streben eine Wertschöpfung für das Unternehmen an, d.h. der erzielte output sollte für das
+jeweilige Unternehmen einen höheren Wert als der ursprünglich eingesetzte Input haben
+Geschäftsprozesse helfen Unternehmen, Aktivitäten zu strukturieren und in Form von klar definierten
+Arbeitsabläufen zu organisieren
+Ein GP ist damit ein sich wiederholender Vorgang
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 11
+
+-- 12 of 86 --
+
+Struktur von Geschäftsprozessen
+Typischerweise haben GPs einen genau definierten Input und Output sowie auch seine
+Teilprozesse. Input und Output (Eingaben / Ergebnisse) können jeweils Informationen,
+Gegenstände, Ereignisse und/oder Zustände sein.
+Sie streben eine Wertschöpfung für das Unternehmen an, d.h. der erzielte output sollte für das
+jeweilige Unternehmen einen höheren Wert als der ursprünglich eingesetzte Input haben
+Geschäftsprozesse helfen Unternehmen, Aktivitäten zu strukturieren und in Form von klar definierten
+Arbeitsabläufen zu organisieren
+Ein GP ist damit ein sich wiederholender Vorgang
+Was unterscheidet einen Geschäftsprozess von einem Projekt?
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 11
+
+-- 13 of 86 --
+
+Struktur von Geschäftsprozessen
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 12
+
+-- 14 of 86 --
+
+Beispiel: Order-To-Cash Prozess (OTC, O2C)
+Um GP verständlich zu machen, bedient man sich oft graphischer Darstellungsformen wie z.B. der
+Diagrammtechnik Business Process Model and Notation (BPMN)
+Hansen et al. 2019
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 13
+
+-- 15 of 86 --
+
+Beispiel: Order-To-Cash Prozess (OTC, O2C)
+Um GP verständlich zu machen, bedient man sich oft graphischer Darstellungsformen wie z.B. der
+Diagrammtechnik Business Process Model and Notation (BPMN)
+Hansen et al. 2019
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 13
+
+-- 16 of 86 --
+
+Beispiel: Procure-To-Pay Prozess
+typischer Beschaffungsprozess
+greift mit dem OTC Prozess eineinander aus verschiedenen Perspektiven
+Hansen et al. 2019
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 14
+
+-- 17 of 86 --
+
+Geschäftsprozessmodellierung
+Kennen Sie noch andere Möglichkeiten der
+Geschäftsprozessmodellierung?
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 15
+
+-- 18 of 86 --
+
+Sichten auf Geschäftsprozesse
+Architektur integrierter Informationssysteme (ARIS) ist ein von Prof. Scheer seit Beginn der 1990er
+Jahre entwickelter Ordnungsrahmen für die Modellierung von betrieblichen Informations- und
+Kommunikationssystemen (mit ursprünglichem Fokus auf Geschäftsprozesse)
+1993 als ARIS Toolset v1.0 von der IDS Scheer GmbH auf den Markt gebracht
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 16
+
+-- 19 of 86 --
+
+Sichten auf Geschäftsprozesse
+Aus der Perspektive der Funktionssicht (was?) ist ein Prozess
+eine Zerlegung einer komplexen Verrichtung in einzelne
+Teilfunktionen.
+Die Organisationssicht (wer?) beschreibt die verschiedenen
+Prozessteilnehmer. Teilnehmer können je nach
+Detaillierungsgrad der Beschreibung einzelne Aufgabenträger
+(z.B. Geschäftsführer, Buchhalter), aber auch ganze
+Organisationseinheiten und Betriebe sein (z.B. IT-Abteilung,
+Firma X).
+Die Datensicht beschreibt, welche Dokumente und sonstige
+Information für die verschiedenen Funktionen benötigt (Input)
+beziehungsweise durch diese erzeugt werden (output).
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 17
+
+-- 20 of 86 --
+
+Sichten auf Geschäftsprozesse
+Die Leistungssicht beschreibt, welche Vorleistungen von den
+einzelnen Funktionen benötigt (Input) und welche
+Zwischenleistungen produziert (Output) werden. Am Ende
+des Geschäftsprozesses steht dann die Bereitstellung eines
+Produkts und einer Dienstleistung (Output)
+Die Steuerungssicht (wie?) bezeichnet die Aspekte eines
+Prozesses, die mit der Ausführung von Funktionen (z.B.
+Reihenfolge) sowie den Ereignissen und Regeln zwischen
+diesen Funktionen zu tun haben.
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 17
+
+-- 21 of 86 --
+
+Beispiel: Funktionsbaum nach Scheer
+„Die Zerlegung der Funktionen kann über mehrere Hierarchieebenen erfolgen. In semantischen
+Funktionsbäumen stellen hierbei Elementarfunktionen die unterste Ebene dar.“
+„Elementarfunktionen sind Funktionen, die betriebswirtschaftlich nicht mehr sinnvoll zerlegbar sind.“
+„Die Gruppierung der Funktionen in einen Funktionsbaum kann nach vershiedenen Kriterien erfolgen.
+Häufig verwendete sind hierbei die Bearbeitung des gleichen Objekts (objektorientiert), die Zerlegung
+nach Prozesszugehörigkeit (prozessorientiert) oder die Zusammenfassung von Funktionen nach
+gleichen Verrichtungen (verrichtungsorientiert).“
+„Attribute sind u.a. die Gesamtdauer der Funktionsausführung. Die Gesamtdauer kann nochmals in
+Teilzeiten unterteilt werden.“ 1
+1IDS08
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 18
+
+-- 22 of 86 --
+
+Beispiel: Funktionsbaum nach Scheer
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 19
+
+-- 23 of 86 --
+
+Geschäftsprozessmanagement
+Definition: Unter Geschäftsprozessmanagement (GPM) versteht man die Gesamtheit aller Aufgaben
+und Maßnahmen, die darauf abzielen, Geschäftsprozesse effizienter und effektiver zu machen.
+Prinzipien
+Unter Koordination versteht man das Abstimmen von Aktivitäten, die von unterschiedlichen
+Akteuren ausgeführt werden, mit dem Ziel, einen Prozess effizient durchzuführen (Akteure können
+auch Maschinen/ Rechner sein)
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 20
+
+-- 24 of 86 --
+
+Geschäftsprozessmanagement
+Definition: Unter Geschäftsprozessmanagement (GPM) versteht man die Gesamtheit aller Aufgaben
+und Maßnahmen, die darauf abzielen, Geschäftsprozesse effizienter und effektiver zu machen.
+Prinzipien
+Ein Geschäftsprozesstyp/-modell beschreibt den allgemeinen Arbeitsablauf für eine Klasse von
+gleichartigen Geschäftsfällen (z.B. Bestellprozess)
+Ein Geschäftsfall oder Geschäftsprozessinstanz ist ein konkreter Arbeitsablauf gemäß den Vorgaben
+eines Geschäftsprozesstyps/-modells (z.B. Bestellprozess v. Fr. Maier)
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 20
+
+-- 25 of 86 --
+
+Geschäftsprozessmanagement
+Definition: Unter Geschäftsprozessmanagement (GPM) versteht man die Gesamtheit aller Aufgaben
+und Maßnahmen, die darauf abzielen, Geschäftsprozesse effizienter und effektiver zu machen.
+Prinzipien
+Prinzip der inkrementellen Verbesserung ist im GPM-Lebenszyklus verankert (Gegenstück ist das
+GP Reegineering)
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 20
+
+-- 26 of 86 --
+
+Rollen und Verantwortlichkeiten
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 21
+
+-- 27 of 86 --
+
+GPM-Lebenszyklus
+Definition: Der GPM-Lebenszyklus stellt die Aufgaben des
+GPMs als einen sich wiederholenden Ablauf dar.
+Der Lebenszyklus umfasst die ...
+1. Identifikation
+2. Erhebung
+3. Analyse
+4. Verbesserung
+5. Einführung und
+6. Überwachung
+... von Geschäftsprozessen
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 22
+
+-- 28 of 86 --
+
+Prozessidentifikation
+Definition: Die Prozessidentifikation bezeichnet die Er-
+fassung der wichtigsten Geschäftsprozesse eines Betriebs
+und deren Priorisierung.
+Ziel ist es insbesondere, die wichtigsten Prozesse
+zu benennen, bewerten und zu strukturieren
+Die Prozessidentifikation schafft die Grundlage für ein
+durchgängiges GPM, bei dem nach und nach die
+wichtigsten Einzelprozesse analysiert und
+inkrementell verbessert werden
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 23
+
+-- 29 of 86 --
+
+Prozessidentifikation
+Definition: Die Prozessidentifikation bezeichnet die Er-
+fassung der wichtigsten Geschäftsprozesse eines Betriebs
+und deren Priorisierung.
+Auch Betriebe, die bereits GPM betreiben, können
+von einer regelmäßigen Prozessidentifikation
+profitieren, da sich viele Prozesse über die Zeit
+verändern und somit ein Abgleich zwischen den
+dokumentierten und tatsächlichen Prozessen
+erforderlich wird
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 23
+
+-- 30 of 86 --
+
+Prozessidentifikation: Prozesse benennen
+Prozesslandkarte: graphische Darstellung der
+wesentlichen Prozesse (ungefähr 15-20) eines
+Betriebs
+Aufgabe, die Zusammenhänge und
+Schnittstellen zwischen den wesentlichen
+Prozessen übersichtlich in einem
+Diagramm darstellen
+Referenzmodell: Modell, das eine anerkannte
+gute Lösung für ein häufig auftretendes Problem
+bietet
+Bezugspunkt für mögliche
+Weiterentwicklungen eines konkreten
+Modells, das ähnliche Probleme abbildet
+Um dem Anspruch als Referenz gerecht zu
+werden, müssen Referenzmodelle
+veröffentlicht werden
+Becker und Schütte 2004
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 24
+
+-- 31 of 86 --
+
+Prozessidentifikation: Prozesse benennen
+Prozesslandkarte: graphische Darstellung der
+wesentlichen Prozesse (ungefähr 15-20) eines
+Betriebs
+Referenzmodell: Modell, das eine anerkannte
+gute Lösung für ein häufig auftretendes Problem
+bietet
+eTOM-Modell
+(Telekommunikationsbetrieb)
+ITIL (Information Technology Infrastructure
+Library)
+APQC (American Productivity and Quality
+Center)
+Becker und Schütte 2004
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 24
+
+-- 32 of 86 --
+
+IT-Service und ITIL
+Definition: IT-Service
+Dienstleistung für Kunden auf Basis von IT.
+Unterstützt gezielt Geschäftsprozesse.
+Besteht aus dem Dreiklang: Personen, Prozesse & Technik.
+ITIL Framework
+Ursprung CCTA (80er Jahre) zur Effizienzsteigerung.
+Standard Weltweiter Standard für IT-Service-Management (ITSM).
+ITIL v4 Fokus auf Agilität, Cloud und DevOps (seit 2019).
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 25
+
+-- 33 of 86 --
+
+Relevanz von ITIL
+Anteil verschiedener IT-Standards in
+Unternehmen, die IT-Standards einsetzen
+Einsatz von IT-Standards in Bezug zur Größe
+des Unternehmens
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 26
+
+-- 34 of 86 --
+
+Beispiel für ITIL
+Der Server eines Online Shops fällt aus . . . . was jetzt?
+https://diropa.at/wissenwertes/serverausfall/
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 27
+
+-- 35 of 86 --
+
+Beispiel für ITIL
+generiert mit Nano Banana 2
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 28
+
+-- 36 of 86 --
+
+Prozesshierarchie
+Die Prozesshierarchie stellt die Rangordnung der einzelnen Prozesse in einer Organisation dar.
+Hier am Beispiel eines produzierenden Unternehmens.
+generiert mit Nano Banana 2
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 29
+
+-- 37 of 86 --
+
+Prozesshierarchie
+Überlegen Sie sich jeweils ein Element pro Ebene einer Prozesshierarchie für ein Unternehmen im
+Bereich Onlineversandhandel
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 30
+
+-- 38 of 86 --
+
+Prozessidentifikation: Prozesse bewerten
+Kriterien:
+1. Strategische Wichtigkeit
+Beispiel: Gängige Unterscheidung zwischen
+Kernprozessen, Managementprozessen und
+Unterstützungsprozessen
+2. Verbesserungswürdigkeit
+Beispiele für mangelnde Prozessqualität: Einzelschritte
+müssen ad-hoc abgestimmt werden; Mitarbeiter werden
+überlastet; Kunden beschweren sich; Kosten und/oder
+Durchlaufzeiten sind zu hoch; etc.
+3. Verbesserungsfähigkeit
+Beispiel: Bereiche, in denen es innerhalb des Betriebs
+verschiedene Prozessverständnisse gibt und/ oder
+Konflikte bestehen
+Vorgehen:
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 31
+
+-- 39 of 86 --
+
+Kern-, Management- und Supportprozesse
+Der Kernprozess umfasst in Unternehmen alle
+Tätigkeiten, die der Wertschöpfung (den Begriff
+lernen wir später kennen) dienen. Er leitet sich
+aus der Kernkompetenz einer Organisation ab.
+Der Kernprozess umfasst alle direkt auf den
+Kunden gerichteten Prozesse, welche die
+Kernkompetenz und das Kerngeschäft eines
+Unternehmens darstellen und über die es sich
+vom Wettbewerb unterscheidet.
+Support Prozesse sind betriebliche Prozesse,
+die den Kernprozess unterstützen, aber selbst
+keinen Kundennutzen erzeugen wie bspw.
+Personalprozesse, Buchhaltung,
+Berichtswesen, Kantine
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 32
+
+-- 40 of 86 --
+
+Kern-, Management- und Supportprozesse
+Der Managementprozess umfasst die
+Steuerung von Kernprozessen in
+Organisationen bzgl. Strukturierung von
+organisatorischen Rollen und Aufgaben
+Manager definieren und beeinflussen
+Geschäftsprozesse
+Besteht auf 4 Phasen:
+Zielsetzung
+Planung
+Entscheidung
+Realisierung
+Oftmals erfolgt noch eine Ergebnisüberprüfung
+Beispiel: Hat ein Unternehmen ein erhöhtes
+Auftragsaufkommen beschließt das
+Management neue Mitarbeiter einzustellen. Es
+wird regelmäßig Ist und Soll Zustand überprüft
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 32
+
+-- 41 of 86 --
+
+PDCA-Kreis (Demming-Kreis)
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 33
+
+-- 42 of 86 --
+
+Kern- oder Supportprozess?
+Wie kann zwischen Kern- und Unterstützungsprozessen unterschieden werden?
+Nachdem alle gegenwärtigen Prozesse eines Unternehmes erhoben bzw. dokumentiert wurden,
+werden diese in zwei Rubriken eingeteilt: Kernprozesse & Unterstützungsprozesse.
+Bei der Einteilung hilft die Antwort auf die folgende Frage:”Steht der Prozess in direkter Verbindung
+zum Kunden?”
+Kann die Frage mit “Ja” beantwortet werden, dann handelt es sich um einen Kernprozess, andernfalls
+um einen Unterstützungsprozess.
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 34
+
+-- 43 of 86 --
+
+Kern-, Management- und Supportprozesse
+Gadatsch et al. 2023
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 35
+
+-- 44 of 86 --
+
+Kern-, Management- und Supportprozesse
+Handelt es sich bei folgenden Prozessen um einen Kern- oder Unterstützungsprozess?
+1. Die Mitarbeiter-Kantine eines Pharmakonzerns bereitet jeden Tag 3 verschiedene Mahlzeiten für das
+Personal vor.
+2. Ein Bauunternehmen bietet seinen Kunden Wartung & Service der erbauten Gebäude an.
+3. Ein Chiphersteller stellt Grafikkarten her.
+4. Das Facility Management eines Softwareanbieters beauftragt ein Fensterreinigungsunternehmen zur
+Reinigung der Glasfassade.
+5. Ein Fensterreinigungsunternehmen bietet Reinigung von Glasfassaden an.
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 36
+
+-- 45 of 86 --
+
+Kern-, Management- und Supportprozesse
+Handelt es sich bei folgenden Prozessen um einen Kern- oder Unterstützungsprozess?
+1. Die Mitarbeiter-Kantine eines Pharmakonzerns bereitet jeden Tag 3 verschiedene Mahlzeiten für das
+Personal vor.
+2. Ein Bauunternehmen bietet seinen Kunden Wartung & Service der erbauten Gebäude an.
+⇒ Kernprozess
+3. Ein Chiphersteller stellt Grafikkarten her.
+4. Das Facility Management eines Softwareanbieters beauftragt ein Fensterreinigungsunternehmen zur
+Reinigung der Glasfassade.
+5. Ein Fensterreinigungsunternehmen bietet Reinigung von Glasfassaden an.
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 36
+
+-- 46 of 86 --
+
+Prozesskategorien
+Um Prozesse gezielt zu steuern und zu digitalisieren, werden sie nach drei wesentlichen Dimensionen
+kategorisiert:
+1. Betriebliche Stellung (Der Wertbeitrag)
+Managementprozesse: Strategische Planung und Steuerung.
+Kernprozesse: Direkte Wertschöpfung für den externen Kunden.
+Unterstützungsprozesse: Interne Ressourcenbereitstellung.
+2. Determiniertheit (Der Grad der Vorhersehbarkeit)
+Stark determiniert: Starre, algorithmische Abläufe (ideal für Automatisierung/RPA).
+Schwach determiniert: Wissensintensive, kreative Aufgaben (Case Management).
+3. Fristigkeit (Der Zeithorizont)
+Operativ: Kurzfristige Abwicklung (Tagesgeschäft).
+Taktisch: Mittelfristige Planung (Quartalsressourcen).
+Strategisch: Langfristige Ausrichtung (Unternehmensvision).
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 37
+
+-- 47 of 86 --
+
+Antrags- und Zulassungsprozess
+Kategorisieren Sie das Beispiel des Zulassungsprozesses von Abschlussarbeiten
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 38
+
+-- 48 of 86 --
+
+Prozessidentifikation: Prozesse strukturieren
+Prozessarchitektur: Vorgabe zur systematischen Organisation/ Beschreibung von betrieblichen
+Prozessen
+Durch die Prozessarchitektur werden
+Abstraktionsebenen und die Beziehungen
+zwischen Prozessen definiert
+Abstraktionsebenen:
+1. Prozesslandkarte (siehe Prozesse benennen)
+2. Wertschöpfungsketten (im engeren Sinne)a
+3. Prozessmodelle (z.B. BPMN)
+aEine Wertschöpfungskette stellt aufeinander aufbauende
+Wertaktivitäten dar, die zur Herstellung eines Produkts oder einer
+Dienstleistung erbracht werden
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 39
+
+-- 49 of 86 --
+
+Prozessgestaltung
+Primäres Ziel ist es ausgewählte Einzelprozesse zu erheben, analysieren und verbessern.
+Prozesserhebung: Sammlung von Informationen, wie
+ein Geschäfts-prozess aktuell tatsächlich von den
+Prozessteilnehmern ausgeführt wird und dessen
+Aufbereitung in Form eines Istprozessmodells
+Prozessanalyse: Systematisches Aufspüren von
+Schwachstellen eines Istprozesses und deren
+Ursachen (z.B. mit einer Wertbeitragsanalyse)
+Prozessverbesserung: Systematische Entwicklung
+und Evaluierung von Vorschlägen zur Adressierung
+der identifizierten Schwachstellen (und Ursachen) zur
+Ableitung eines Sollprozessmodells
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 40
+
+-- 50 of 86 --
+
+Prozessgestaltung: Prozesse erheben
+Herausforderungen:
+Prozesse sind arbeitsteilig organisiert
+Teilnehmer erleben die gesamte Komplexität
+(z.B. Sonderfälle)
+Verwendung geeigneter/ präziser
+Terminologie
+Prozessteilnehmer haben oft wenige (oder
+keine) Kenntnisse von graphischen
+Modellierungssprachen
+Methoden:
+Bestehende Prozessdokumentation
+(Startpunkt)
+Prozessbeobachtung im betrieblichen Alltag
+Interviews und/ oder Workshops
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 41
+
+-- 51 of 86 --
+
+Prozessgestaltung: Prozesse analysieren
+Ausgewählte Methoden:
+Wertbeitragsanalyse:
+Ordnet jede Funktion/ Aktivität eines Prozesses
+den Kategorien wertschöpfend (kundenseitige
+Zahlungsbereitschaft?), geschäftserforderlich
+und nicht wertschöpfend zu
+Ziel: Eliminierung von Verschwendung (Lean
+Management)
+Ursache-Wirkungs-Diagramm
+Strukturierte Suche nach Fehlerquellen
+(6M-Modell):
+Mensch, Maschine, Milieu, Material, Methode,
+Messung.
+Ziel: Den "Point of Cause" finden, statt nur
+Symptome digital zu "pflastern".
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 42
+
+-- 52 of 86 --
+
+Prozessgestaltung: Prozesse analysieren
+Ausgewählte Methoden:
+Satz von Little:
+Verknüpft Bestand, Rate und Zeit:
+Bestand (𝐿): Anzahl der Vorgänge im System.
+Ankunftsrate (𝜆): Vorgänge pro Zeiteinheit.
+Durchlaufzeit (𝑊 ): Dauer eines einzelnen
+Vorgangs.
+Nutzen: Identifikation von Staus.
+Methode des kritischen Pfads: Analyse der
+zeitlichen Struktur:
+Identifiziert die zeitkritischste Kette von
+Aktivitäten.
+Berechnet Frühest- und Spätestlage von
+Prozessschritten.
+Zeigt Pufferzeiten auf (Aktivitäten ohne Einfluss
+auf das Enddatum).
+Nutzen: Fokus auf Engpässe (Bottlenecks).
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 42
+
+-- 53 of 86 --
+
+Satz von Little
+grundlegende Formel in der Warteschlangentheorie
+𝐿 = 𝜆 · 𝑊
+wobei 𝐿 die durchschnittliche Anzahl an Kunden/ Elemente im System
+𝜆 die durchschnittliche Ankunftsrate pro Zeiteinheit ist
+𝑊 die durchschnittliche Verweildauer eines Kunden/ Elements im System
+Der Satz von Little besagt im Wesentlichen, dass die durchschnittliche Anzahl der Aufträge,
+Kunden oder Einheiten in einem Prozess direkt von der Ankunftsrate und der Verweildauer
+abhängt.
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 43
+
+-- 54 of 86 --
+
+Satz von Little
+Stellen wir uns ein Callcenter vor:
+Durchschnittlich rufen 10 Kunden pro Stunde an (𝜆 = 10).
+Die Bearbeitung eines Anrufs dauert im Schnitt 5 Minuten (𝑊 = 5/60 Stunden).
+Dann beträgt die durchschnittliche Anzahl der gleichzeitig im System befindlichen Kunden:
+𝐿 = 10 · 5
+60 = 0.83
+Das bedeutet, dass sich im Schnitt 0.83 Kunden im System befinden (also entweder in der Warteschlange
+oder in Bearbeitung).
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 44
+
+-- 55 of 86 --
+
+Methode des kritischen Pfads
+Ein E-Commerce-Unternehmen möchte seinen Bestellprozess optimieren, um die Lieferzeiten zu
+verkürzen. Um herauszufinden, welche Prozessschritte den Gesamtprozess am stärksten beeinflussen,
+wird die Methode des kritischen Pfads (Critical Path Method, CPM) angewendet.
+Der Bestellprozess umfasst die folgenden Schritte:
+1. Bestellungseingang prüfen (2 Stunden)
+2. Zahlungsprüfung durchführen (3 Stunden, startet nach Schritt 1)
+3. Lagerbestand prüfen (1 Stunde, startet nach Schritt 1)
+4. Ware aus dem Lager holen (5 Stunden, startet nach Schritt 3)
+5. Verpacken und Versandetikett drucken (2 Stunden, startet nach Schritt 4)
+6. Versand durch Logistikdienstleister (8 Stunden, startet nach Schritt 5)
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 45
+
+-- 56 of 86 --
+
+Methode des kritischen Pfads
+Wie sind die Abhängigkeiten zwischen den Schritten?
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 46
+
+-- 57 of 86 --
+
+Methode des kritischen Pfads
+Erstellen Sie einen Ablaufplan und berechnen Sie die Dauer der Pfade.
+Bestimmen Sie den kritischen Pfad.
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 47
+
+-- 58 of 86 --
+
+Methode des kritischen Pfads
+Beschreiben Sie mögliche Optimierungspotentiale
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 48
+
+-- 59 of 86 --
+
+Prozessgestaltung: Prozesse verbessern
+Zentrales Problem:
+Dimensionen Durchlaufzeit, Kosten, Qualität
+und Flexibilität eines GP sind oft so
+miteinander verknüpft, dass Verbesserungen in
+einer Dimension eine Verschlechterung in einer
+anderen nach sich ziehen
+Redesign-Heuristik:
+Konkrete Maßnahme zur Umgestaltung eines
+Geschäftsprozesses, die mit der Erwartung
+einer Verbesserung in zumindest einer
+Dimension verbunden ist
+Kategorien (und Beispiele):
+Kunden (z.B. Kontrollzuordnung)
+Prozessdurchführung (z.B. Aufteilung oder
+Eliminierung von unnötigen Aktivitäten)
+Prozesslogik (z.B. Abfolgeveränderung)
+Organisationstruktur (z.B. flexible Zuordnung)
+Prozessteilnehmer (z.B. Zusatzressourcen)
+Informationssysteme (z.B. Automatisierung)
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 49
+
+-- 60 of 86 --
+
+Geschäftsprozesse verbessern!
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 50
+
+-- 61 of 86 --
+
+Prozessausführung
+In vielen Fällen kann ein Geschäftsprozess von
+einem Rechner schneller und verlässlicher als von
+einem Menschen ausgeführt werden.
+Beispiel: „Three-way match“ (Bestellschein vs.
+Lieferschein vs. Rechnung)
+Das übergeordnete Ziel des GPM ist es, die
+Prozessausführung zu automatisieren
+Prozessüberwachung: Werkzeuge zur Schaffung von
+Transparenz bezüglich der Prozessausführung und zur
+Identifikation von Situationen, die ein menschliches Ein-
+greifen erfordern
+Prozesseinführung: Informationstechnische und organ-
+isatorische Maßnahmen zur Bereitstellung der Infrastruk-
+tur, die ein Sollprozess erfordert
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 51
+
+-- 62 of 86 --
+
+Geschäftsprozessmanagementsystem (GPMS)
+Geschäftsprozessmanagementsystem: Softwaresys-
+tem, das die Definition, Entwicklung, Ausführung
+(inklusive Überwachung) und Analyse von Geschäft-
+sprozessen unterstützt.
+Bei der Ausführung wird der aktuelle Zustand
+der Prozessinstanzen überwacht und Aufgaben
+an Prozessteilnehmer verteilt
+Bei Überschreitung von Fristen ergreift das
+GPMS automatisch geeignete Maßnahmen
+(z.B. Versand von Dringlichkeitsmeldungen an
+Teilnehmern)
+Workflow: Geschäftsprozess, der durch ein GPMS
+oder ein anderes betriebliches Informationssystem
+zumindest teilweise automatisiert ist
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 52
+
+-- 63 of 86 --
+
+Beispiel: Camunda als modernes GPMS
+Camunda ist ein verbreitetes, Java-basiertes GPMS, das
+die Lücke zwischen Fachabteilung und IT schließt.
+Modellierung (Modeler): Erstellung von
+ausführbaren Prozessmodellen im BPMN 2.0
+Standard.
+Ausführung (Engine): Die Workflow-Engine steuert
+Instanzen und weist Aufgaben (User/Service Tasks)
+zu.
+Überwachung (Cockpit): Echtzeit-Monitoring von
+laufenden Prozessen und Fehlermanagement.
+Analyse (Optimize): Identifikation von
+Flaschenhälsen (Bottlenecks) auf Basis historischer
+Daten.
+Besonderheit
+Im Gegensatz zu "Low-Code"-Systemen
+setzt Camunda auf
+Entwicklerfreundlichkeit und die
+Integration komplexer IT-Landschaften.
+Anwendung im Onlineversand: Camunda entscheidet, ob nach der Zahlungsprüfung direkt die
+Lagerprüfung angestoßen wird oder eine Mahnung per E-Mail erfolgt.
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 53
+
+-- 64 of 86 --
+
+Prozessausführung: Prozesse überwachen
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 54
+
+-- 65 of 86 --
+
+Prozessausführung: Prozesse überwachen
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 55
+
+-- 66 of 86 --
+
+Kennzahlen
+Eine Kennzahl ist eine Zahl zur Quantifizierung eines naturwissenschaftlich-technischen,
+betrieblichen oder wirtschaftlichen Zusammenhangs (es existiert keine einheitliche Definition).
+Kennzahlen aus der Logistik lassen sich generell auch für die Verwaltung von Geschäftsprozessen
+anwenden. Beispiele sind:
+Durchlaufzeit: Wann kann man mit einem Ergebnis rechnen? Gesamter Zeitbedarf einer kompletten
+Prozessdurchführung.
+Liegezeit: Zeiten, in denen keine Aktivität im Prozess stattfindet (hohes Verbesserungspotenzial).
+Einarbeitungszeit / Rüstzeit: Steigt an, wenn Prozessbeteiligte zu oft die Aufgabe wechseln müssen
+(Kontextwechsel).
+Kommunikationskennzahlen: Wer schickt was zu wem? Ziel: Optimierung durch räumliche oder digitale
+Nähe.
+Bearbeitungszeit: Die Netto-Zeit, die benötigt wird, um eine spezifische Aufgabe aktiv zu erledigen.
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 56
+
+-- 67 of 86 --
+
+Key Performance Indicator (KPI)
+Definition: Key Performance Indicators (KPI) sind einfache und verständliche Leistungswerte.
+Die Leistung einer Einheit (Mitarbeiter, Team oder Abteilung) wird in Form einer Kennzahl gemessen und
+dargestellt.
+Die Kennzahl macht sichtbar, ob eine Einheit ihren Zweck erfüllt und in welchem Umfang sie vorgegebene
+Ziele erreicht.
+Motivation: Schneller Überblick für das Management, ob strategische und operative Ziele erreicht
+werden.
+Prozessbezug: KPIs zeigen, wie gut ein Prozess funktioniert und was die dort tätigen Mitarbeiter
+leisten.
+Die Kennzahl wird so gewählt, dass sichtbar wird, inwiefern am Ende des Prozesses das gewünschte
+Ergebnis vorliegt (Prozess-Output).
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 57
+
+-- 68 of 86 --
+
+Beispiele für KPIs
+Überlegen Sie sich beispielhaft KPIs für Prozesse in den Bereichen Fertigung, Kundenservice,
+Marketing sowie Forschung und Entwicklung
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 58
+
+-- 69 of 86 --
+
+Eigenschaften von KPIs
+SMART: Specific Measurable Achievable Reasonable Time-Bound dient als Kriterium zur eindeutigen
+Definition von Zielen im Rahmen einer Zielvereinbarung
+Fragen, die beantwortet müssen, um ein KPI zu erstellen:
+Was ist das Ziel?
+Warum ist das wichtig?
+Wie messe ich den Fortschritt?
+Wie kann ich das Ergebnis beeinflussen?
+Wer ist verantwortlich für das Ergebnis?
+Wie stelle ich fest, dass dieses Ziel erreicht ist?
+Wie überprüfe ich den Fortschritt auf dem Weg zum Ziel?
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 59
+
+-- 70 of 86 --
+
+Beispiel
+Strategische Zielsteuerung am Beispiel Umsatzerlös
+Was ist das Ziel?
+Der Umsatzerlös soll sich um 15% in den nächsten 6 Monaten erhöhen.
+Warum ist das wichtig?
+Das Geschäft wird profitabler, das bietet Raum für Investitionen.
+Wie messe ich den Fortschritt?
+Der Fortschritt wird gemessen am Umsatzerlös in Euro.
+Wie kann ich das Ergebnis beeinflussen?
+Durch mehr Mitarbeiter sowie mehr Marketing und Werbung.
+Wer ist verantwortlich für das Ergebnis?
+Der Chief Sales Officer (CSO) ist für dieses Ergebnis verantwortlich.
+Wie stelle ich fest, dass dieses Ziel erreicht ist?
+Es wird überprüft, ob der Umsatzerlös nach einem halben Jahr um 15% gestiegen ist.
+Wie überprüfe ich den Fortschritt auf dem Weg zum Ziel?
+Dieser KPI wird monatlich überprüft.
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 60
+
+-- 71 of 86 --
+
+KPI Darstellung in Dashboards
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 61
+
+-- 72 of 86 --
+
+SMARTE Ziele
+Smarte Zielformulierungen gibt es auch aus anderen Bereichen (Mitarbeiterbewertungen am Ende
+des Jahres)
+Denken Sie sich kurz zurück an den Jahresübergang und überlegen Sie ob Sie ihre Jahresvorsätze
+SMART formuliert haben bzw. können
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 62
+
+-- 73 of 86 --
+
+Balanced Scorecard (BSC)
+Die Balanced Scorecard ist ein ganzheitliches
+Steuerungskonzept, das über rein finanzielle Kenn-
+zahlen hinausgeht.
+Kernidee: Verbindung von Strategie und operativen Maß-
+nahmen durch ein „ausgewogenes“ (balanced) Verhältnis
+von vier Perspektiven:
+1. Finanzen: Wie sollen wir gegenüber Teilhabern
+auftreten?
+2. Kunden: Wie sollen wir gegenüber Kunden
+auftreten?
+3. Prozesse: Bei welchen Prozessen müssen wir
+glänzen?
+4. Lernen & Entwicklung: Wie fördern wir
+Wachstum/Wandel?
+Management-Vorteil
+Vermeidung von kurzfristigem
+„Zahlen-Dumping“ durch Einbezug von
+Vorlaufindikatoren (z.B.
+Mitarbeiterzufriedenheit).
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 63
+
+-- 74 of 86 --
+
+Balanced Scorecard (BSC)
+Das Problem: Rein finanzielle Kennzahlen (Gewinn, Umsatz) sind Spätindikatoren. Sie sagen dir, ob du
+gestern erfolgreich warst, aber nicht, ob du es morgen sein wirst.
+Die Lösung: Ein ausgewogenes Steuerungssystem
+Ganzheitlich: Verknüpft harte Finanzzahlen mit "weichen" Faktoren (Kundenzufriedenheit,
+Know-how).
+Zukunftsorientiert: Identifiziert Faktoren, die heute verbessert werden müssen, um morgen
+Gewinne zu erzielen.
+Ursache-Wirkungs-Logik: Erklärt, wie eine Schulung (unten) letztlich zu mehr Geld (oben) führt.
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 64
+
+-- 75 of 86 --
+
+Balanced Scorecard (BSC)
+Perspektive Strategische Frage Beispiel-Ziel (KPI)
+Finanzen Wie profitabel sind wir? Eigenkapitalrendite > 12%
+Kunden Wie zufrieden sind Kunden? Reklamationsquote < 1%
+Prozesse Wo müssen wir glänzen? Ausschussrate senken
+Lernen Wie bleiben wir agil? Fluktuation senken
+Die Logik dahinter (Bottom-Up):
+1. Start (Lernen): Wir halten die Experten im Unternehmen (Fluktuation senken).
+2. Effekt 1 (Prozess): Erfahrene Mitarbeiter machen weniger Fehler in der Produktion (Ausschussrate senken).
+3. Effekt 2 (Kunde): Hochwertige Produkte führen zu weniger Beschwerden (Reklamationsquote < 1%).
+4. Ziel (Finanzen): Weniger Ausschuss und zufriedene Kunden steigern den Gewinn (Eigenkapitalrendite > 12%).
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 65
+
+-- 76 of 86 --
+
+Standardisierung und Qualität
+Klar definierte Geschäftsprozesse bieten einige Vorteile:
+Effizientes Onboarding: Einarbeitung für neue Mitarbeiter ist wesentlich effizienter (kein
+Durchfragen mehr nötig).
+Kosteneinsparung: Verringerung interner Fehler und Reduktion von Reklamationen.
+Höhere Kundenorientierung:
+Schnellere und reibungslosere Abwicklung von Standardabläufen (z. B. Kundenanfragen).
+Vermeidung von Produkthaftungsfällen durch klare Vorgaben.
+Qualitätsmerkmal: Kunden bewerten Produkte/Services zunehmend anhand der zugrunde liegenden
+Prozessqualität (→ Service-Exzellenz).
+Zertifizierung: Der Reifegrad und die Definition von Geschäftsprozessen lassen sich über die ISO
+9001 offiziell zertifizieren.
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 66
+
+-- 77 of 86 --
+
+Qualitätsmanagement nach ISO 9001
+Die ISO 9001 ist der globale Standard für Qualitätsmanagementsysteme. Ihr Kern ist der
+prozessorientierte Ansatz.
+Zentrale Anforderungen der Norm:
+Kundenorientierung: Prozesse müssen darauf ausgerichtet sein, Kundenanforderungen zu erfüllen.
+Prozessverantwortung: Für jeden Prozess muss ein Verantwortlicher (Process Owner) benannt
+sein. Dokumentierte Information: Prozesse müssen nachvollziehbar beschrieben sein
+(Standardisierung).
+Risikobasierter Ansatz: Identifikation von Risiken, die die Prozessqualität gefährden könnten.
+„Qualität ist nicht das Ergebnis von Zufall, sondern von beherrschten Prozessen.“
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 67
+
+-- 78 of 86 --
+
+Qualitätsmanagement nach ISO 9001
+Die ISO 9001 fordert den KVP (Kontinuierlicher Verbesserungsprozess), den wir als PDCA-Kreis kennen
+gelernt haben.
+Phase Aktion Bezug zur Prozessqualität
+Plan Planen Ziele definieren, Prozesse modellieren.
+Do Umsetzen Prozesse im Alltag ausführen.
+Check Prüfen Messung der KPIs (z. B. Fehlerquote).
+Act Optimieren Ursachen für Fehler beheben, Standard
+anpassen.
+Ziel der Zertifizierung: Ein Unternehmen mit ISO 9001 Zertifikat weist nach, dass es fähig ist, dauerhaft
+Produkte/Dienstleistungen in der versprochenen Qualität zu liefern.
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 68
+
+-- 79 of 86 --
+
+Qualitätsmanagement nach ISO 9001
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 69
+
+-- 80 of 86 --
+
+Digitalisierung vs. Digitale Transformation
+Digitale Konvertierung (Digitization): Umwandlung von analogen Informationen in digitale Formate
+(z. B. PDF statt Papier-Lieferschein).
+Digitalisierung (Digitalization): Nutzung digitaler Technologien zur Verbesserung von
+Einzelprozessen (z. B. Camunda statt manueller E-Mail-Verteilung).
+Digitale Transformation: Ein tiefgreifender Change-Prozess für das gesamte Geschäftsmodell. Es
+ändert sich nicht nur der Prozess, sondern die Art, wie Wertschöpfung entsteht (z. B. Verkauf von
+Abos statt Einzelgeräten).
+Merksatz
+Digitalisierung optimiert den Prozess, die digitale Transformation verändert das Unternehmen.
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 70
+
+-- 81 of 86 --
+
+Industrie 4.0
+Definition: Die intelligente Vernetzung von Maschinen und Abläufen mit Hilfe von Informations- und
+Kommunikationstechnologie.
+Kernkonzepte:
+Smart Factory: Maschinen kommunizieren direkt miteinander (M2M).
+Internet der Dinge (IoT): Werkstücke "wissen", was sie sind und wohin sie müssen.
+Digitaler Zwilling: Ein virtuelles Abbild der realen Produktion zur Simulation und Optimierung.
+Auswirkung auf GPM: Prozesse steuern sich selbst (dezentrale Steuerung), anstatt starr von oben
+(zentral) vorgegeben zu werden.
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 71
+
+-- 82 of 86 --
+
+Dezentrale Steuerung im GPM
+In der Industrie 4.0 wandelt sich das GPM von einer zentralen Vorgabe hin zu einer autonomen
+Selbststeuerung.
+Klassisch (Zentral):
+„Top-Down“-Befehle.
+Starre Prozesspfade (BPMN).
+Zentrale Instanz plant alles.
+Bsp: Das ERP-System teilt Maschine A fest
+für Auftrag 1 ein.
+Modern (Dezentral):
+Selbstorganisation (IoT).
+Dynamische Wegfindung.
+Produkt steuert Prozess.
+Bsp: Ein Bauteil „bucht“ sich selbst die
+nächste freie Maschine.
+Das „Smart Product“ Prinzip
+Das Werkstück trägt seine Informationen (RFID/QR) mit sich und „verhandelt“ mit den Maschinen über
+den nächsten Bearbeitungsschritt.
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 72
+
+-- 83 of 86 --
+
+Implikationen für das Unternehmen
+Positive Auswirkungen:
+Agilität: Schnellere Reaktion auf
+Marktveränderungen.
+Individualisierung: "Losgröße 1" zu Kosten
+der Massenproduktion.
+Präzision: Weniger Ausschuss (Bezug zur
+ISO 9001).
+Herausforderungen:
+Skill-Gap: Mitarbeiter benötigen neue
+Kompetenzen (Python, Datenanalyse).
+Cyber-Security: Vernetzung schafft
+Angriffsflächen.
+Datenqualität: KI und Automatisierung
+brauchen saubere Daten.
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 73
+
+-- 84 of 86 --
+
+Enabler: Datenanalyse & Python
+Die dezentrale Steuerung verwandelt Prozesse in datengesteuerte Organismen. Dies erfordert neue
+Kompetenzen:
+Daten als Entscheidungsgrundlage: Autonome Systeme brauchen Fakten (Echtzeit-Sensordaten)
+statt starrer Pläne. Ohne Datenanalyse ist das System „blind“.
+Python als Werkzeug:
+Integration: Python verbindet IT (ERP/Camunda) mit OT (Maschinen/Sensoren).
+Intelligenz: Implementierung von Machine Learning (z. B. für vorausschauende Wartung).
+Agilität: Schnelle Anpassung der Prozesslogik ohne langwierige Software-Release-Zyklen.
+Fazit für das GPM
+Der Prozessmanager der Zukunft zeichnet nicht nur Bildchen (BPMN), sondern versteht die Datenflüsse,
+die den Prozess am Leben erhalten.
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 74
+
+-- 85 of 86 --
+
+Überblick
+Digitale Geschäftsprozesse Prof. Dr. N. Stein 75
+
+-- 86 of 86 --
+

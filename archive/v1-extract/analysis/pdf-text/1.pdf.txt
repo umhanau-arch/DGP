@@ -1,0 +1,227 @@
+Klausurdeckblatt KoV
+Name: Raum:
+Vorname: Sitzplatz:
+Matrikelnummer:
+Lehrveranstaltung: Digitale Geschäftsprozesse
+Semester: Wintersemester 2025/2026
+Prüfungsdatum: 15.01.2026
+Dozent: Prof. Dr. Nicolas Stein
+Bearbeitungszeit: 90 Minuten
+Hilfsmittel: Taschenrechner
+Für die Prüfungsdurchführung gilt:
+• Prüfen Sie, ob die vorliegende Klausur inklusive Deckblatt 14 Seiten umfasst.
+• Lassen Sie die Klausur geheftet! Die Heftklammern werden nicht entfernt.
+• Tragen Sie ihre Lösungen direkt in dieses Klausurheft ein. Sollte der Platz auf der
+Vorderseite nicht reichen, nutzen Sie die Rückseite und vermerken Sie dies.
+• Schreiben Sie nicht mit roter oder grüner Farbe und nicht mit Bleistift.
+• Mobiltelefone sind auszuschalten und außer Reichweite zu verstauen.
+• Zur erfolgreichen Bearbeitung der Aufgaben müssen alle notwendigen Zwischenschritte für
+Rechnungen nachvollziehbar angegeben und Aussagen stets begründet werden.
+• Jegliche Täuschung und Täuschungsversuche führen zum Ausschluss von der Prüfung.
+Punkte A1 A2 A3 A4 A5 A6 A7 A8 Summe
+Max. 9 8 10 16 13 14 12 18 100
+Erreicht
+Viel Erfolg!
+1
+
+-- 1 of 14 --
+
+Aufgabe 1 (3+3+3 = 9 Punkte)
+Erklären Sie mit eigenen Worten die folgenden Begriffe:
+• Geschhäftsprozessmodell:
+• Geschäftsprozessmanagement:
+• Prozesslandkarte:
+2
+
+-- 2 of 14 --
+
+Aufgabe 2 (4+4 = 8 Punkte)
+Im folgenden Text ist die Umsetzung eines Geschäftsprozessmanagementzyklus in einem mittelständi-
+schen Unternehmen beschrieben. Es wurden jedoch einzelne Phasen nicht berücksichtigt oder inkorrekt
+durchgeführt:
+"Das Unternehmen identifizierte Schwächen im Bestellprozess und führte sofort neue Softwarelösungen
+ein. Nach drei Monaten wurde geprüft, ob sich die Lieferzeiten verbessert hatten. Da keine signifikante Ver-
+besserung erkennbar war, übertrug man die Verantwortung für den Prozess auf einen anderen Mitarbeiter.
+Anschließend wurden die Ergebnisse dokumentiert."
+(a) Benennen Sie mindestens zwei Phasen des GPM-Zyklus, die in diesem Beispiel fehlen oder fehlerhaft
+umgesetzt wurden. Beschrieben Sie im Detail, was hier fehlt.
+(b) Erläutern Sie für jede der von Ihnen identifizierten Phasen, wie diese im Beispiel korrekt zu realisieren
+gewesen wäre.
+3
+
+-- 3 of 14 --
+
+Aufgabe 3 (2+2+2+2+2 = 10 Punkte)
+Ein mittelständisches Unternehmen betreibt einen Online-Shop für nachhaltige Mode. Es nutzt eine digi-
+tale Plattform, auf der Kundinnen und Kunden Produkte auswählen, bestellen und bezahlen können. Im
+Hintergrund laufen zahlreiche Geschäftsprozesse digital ab, z.B. Produktentwicklung, Personalbeschaffung,
+Marketingkampagnen, Logistiksteuerung und Buchhaltung.
+Bitte ordnen Sie den folgenden Geschäftsprozessen des Online-Shops jeweils eine der drei Prozessarten
+(Kernprozess, Managementprozess, unterstützender Prozess) zu und begründen Sie Ihre Zuordnung jeweils
+in 1–2 Sätzen.
+1. Entwicklung der Unternehmensstrategie
+2. Abwicklung des Online-Bestellvorgangs
+3. Wartung der IT-Infrastruktur
+4. Durchführung von Marketingkampagnen
+5. Erstellung der monatlichen Gehaltsabrechnung
+4
+
+-- 4 of 14 --
+
+Aufgabe 4 (2+4+8+2 = 16 Punkte)
+Die EcoTools AG stellt zwei Produkte her: Produkt Gamma und Produkt Delta. Um die Gemeinkosten
+besser zu analysieren, setzt das Unternehmen die Prozesskostenrechnung ein. Es wurden folgende vier
+Teilprozesse im Produktionsbereich identifiziert:
+Prozess Gesamtkosten (€) Fixkosten (€) Maßgröße Gesamtmenge
+Bestellabwicklung 54.000 18.000 Anzahl Bestellungen 1.200
+Warenausgangskontrolle 33.000 11.000 Anzahl Lieferpositio-
+nen
+1.650
+Maschinenumrüstung 27.000 9.000 Anzahl Umrüstungen 360
+Endkontrolle & Doku-
+mentation
+46.000 18.000 Anzahl geprüfter Lose 575
+Im letzten Quartal traten dabei folgende Maßgrößen pro Produkt auf:
+Produkt Bestellungen Lieferpositionen Umrüstungen Geprüfte Lose
+Gamma 700 950 230 350
+Delta 500 700 130 225
+1. Geben Sie an, ob die angegebenen Teilprozesse leistungsmengeninduzierte oder leistungsmengen-
+neutrale Prozesse sind.
+Prozess leistungsmengeninduziert leistungsmengenneutral
+Bestellabwicklung ○ ○
+Warenausgangskontrolle ○ ○
+Maschinenumrüstung ○ ○
+Endkontrolle & Dokumentation ○ ○
+2. Berechnen Sie die variablen Prozesskostensätze der vier Prozesse.
+5
+
+-- 5 of 14 --
+
+3. Berechnen Sie die gesamten Prozesskosten für das Produkt Gamma unter der Annahme, dass die
+Fixkosten anteilig zur Maßgröße auf die Produkte verteilt werden.
+4. Berechnen Sie die insgesamten Prozesskosten pro Bestellung für das Produkt Gamma.
+6
+
+-- 6 of 14 --
+
+Aufgabe 5 (2+3+3+3+2 = 13 Punkte)
+Die SoliPanel AG ist ein mittelständisches Unternehmen aus der Solarindustrie. Sie produziert Solar-Module
+und übernimmt dabei viele Fertigungsschritte selbst, etwa das Zuschneiden der Glasplatten, das Verschalten
+der Solarzellen und die Endmontage. Andere Bauteile, wie spezielle Wechselrichter und Anschlusskabel,
+werden jedoch von externen Zulieferern eingekauft.
+Vor Kurzem hat die SoliPanel AG außerdem einen kleineren Modulhersteller übernommen, der ebenfalls
+Solar-Module herstellt, jedoch in einer anderen Region produziert. Beide Unternehmen stellen ähnliche
+Produkte her, arbeiten aber mit unterschiedlichen Zulieferern.
+1. Erläutern Sie den Unterschied zwischen horizontaler und vertikaler Integration anhand der obigen
+Situation. Bitte antworten Sie in ganzen Sätzen.
+2. Ordnen Sie die folgenden Maßnahmen jeweils als vertikale (Rückwärts- oder Vorwärts-) oder hori-
+zontale Integration ein. Begründen Sie kurz.
+(a) Die SoliPanel AG übernimmt ihren bisherigen Zulieferer für Wechselrichter.
+(b) Die SoliPanel AG fusioniert mit einem direkten Modulhersteller-Konkurrenten in einer anderen
+Region.
+3. Die Kostenstruktur pro Solarmodul ist wie folgt:
+Leistung intern in € fremdbezogen in €
+Glaszuschnitt 850 -
+Wechselrichter - 1.200
+Verkabelung 250 800
+Anschlusskabel - 400
+Endmontage 650 -
+Qualitätskontrolle 600 -
+7
+
+-- 7 of 14 --
+
+Durch die Übernahme des anderen Modulherstellers produziert die SoliPanel AG nun einen Teil der
+Verkabelung intern.
+(a) Berechnen Sie den Integrationsgrad.
+(b) SoliPanel plant, die Verkabelung künftig komplett selbst zu übernehmen. Die internen Kosten
+dafür steigen um 800€ auf , die externen sinken entsprechend auf 0€.
+Berechnen Sie den neuen Integrationsgrad.
+(c) Benennen sowie erläutern Sie mindestens einen Vor- und einen Nachteil, den diese Entschei-
+dung mit sich bringt. Die Antwort soll in vollständigen Sätzen erfolgen.
+8
+
+-- 8 of 14 --
+
+Aufgabe 6 (2+6+2+4 = 14 Punkte)
+Wir betrachten folgendes Petrinetz mit angegebener Markierung:
+In der Abbildung sind Transitionen (transitions) als schwarz gefüllte Rechtecke, Stellen (places) als weiß
+gefüllte Kreise und Marken (tokens) als schwarze Punkte dargestellt.
+1. Welche Transitionen sind bei gegebener Markierung aktiviert und wie oft können diese ausgehend
+von der dargestellten Startmarkierung feuern?
+2. Erstellen Sie den zum Petrinetz gehörenden Erreichbarkeitsgraphen.
+9
+
+-- 9 of 14 --
+
+3. Ist das Petrinetz k-beschränkt? Wenn ja, geben Sie bitte k mit an!
+4. Ist das Petrinetz sicher, deadlockfrei und lebendig? Begründen Sie jeweils ihre Wahl.
+10
+
+-- 10 of 14 --
+
+Aufgabe 7 (12 Punkte)
+In einem Online-Shop werden gelegentlich Bestellungen von Kundinnen und Kunden storniert. Der folgende
+Prozess beschreibt den Ablauf von der Stornierungsanfrage bis zur abschließenden Rückmeldung an den
+Kunden.
+1. Der Kunde füllt ein Webformular für die Stornierungsanfrage aus und sendet dieses an das Unter-
+nehmen.
+2. Die Abteilung Kundenservice prüft beim Eingang, ob die Stornierungsanfrage alle benötigten Daten
+enthält.
+• Falls Daten fehlen, wird der Kunde informiert und zur Ergänzung aufgefordert. Nach Einreichen
+der fehlenden Angaben beginnt die Prüfung erneut.
+3. Ist die Anfrage vollständig, wird sie an die Versandabteilung weitergeleitet.
+4. Die Versandabteilung prüft, ob die Bestellung bereits versandt wurde.
+• Falls ja, wird eine Rücksendung organisiert und der Kunde erhält einen Rücksendeschein.
+• Falls nein, wird die Bestellung im System storniert.
+5. Danach informiert der Kundenservice den Kunden entweder über die erfolgreiche Stornierung und
+Rückerstattung oder darüber, dass eine Rücksendung erforderlich ist (inklusive Versand des Rück-
+sendescheins).
+Modellieren Sie den oben beschriebenen Prozess nach BPMN 2.0.
+Hinweise:
+• Modellieren Sie den Prozess End-to-End: Kunde und Unternehmen in separaten Pools.
+• Verwenden Sie Nachrichtenzwischenereignisse für den Informationsaustausch.
+• Verwenden Sie für Aktivitäten und Ereignisse klare textuelle Beschreibungen.
+11
+
+-- 11 of 14 --
+
+Leerseite für die Prozessdarstellung
+12
+
+-- 12 of 14 --
+
+Aufgabe 8 (2+5+5+6 = 18 Punkte)
+Im Folgenden betrachten wir Konzepte des Process minings sowie Teile des α-Algorithmus.
+1. Erläutern Sie kurz den Unterschied zwischen einem Petrinetz und einem Workflownetz im Kontext
+der Prozessmodellierung.?
+2. Gegeben ist folgender Eventlog:
+(a) Benennen Sie die Elemente, die ein Eventlog mindestens haben muss.
+(b) Geben Sie drei traces aus dem Eventlog an.
+13
+
+-- 13 of 14 --
+
+3. Wir betrachten folgendes Prozessmodell:
+(a) Welche der folgenden Traces sind im Prozessmodell möglich?
+Trace möglich nicht möglich
+adbeh ⃝ ⃝
+acdeg ⃝ ⃝
+acbdefg ⃝ ⃝
+adcefbdeh ⃝ ⃝
+bcdeg ⃝ ⃝
+acbdefdbch ⃝ ⃝
+(b) Wie viele komplette Traces gibt es für dieses Prozessmodell?
+4. Gegeben sei folgender Eventlog:
+L = [⟨a, b, c, e⟩, ⟨a, c, b, e⟩2, ⟨a, b, d, e⟩, ⟨a, e⟩2]
+Vervollständigen Sie den Fußabdruck von L:
+a b c d e
+a # → → # →
+b ← # ∥ →
+c ← ∥ # →
+d # ← →
+e ← ← ← #
+14
+
+-- 14 of 14 --
+

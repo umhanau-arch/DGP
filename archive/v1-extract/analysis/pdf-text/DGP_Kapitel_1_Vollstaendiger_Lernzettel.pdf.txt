@@ -1,0 +1,610 @@
+Digitale Geschäftsprozesse - Kapitel 1 Lernzettel Seite 1
+Digitale Geschäftsprozesse
+Kapitel 1 - Geschäftsprozesse und deren
+Management
+Vollständiger Lernzettel aus den Folien - einfach, übersichtlich, klausurorientiert
+So lernst du damit:
+1. Erst die Merksätze lesen.
+2. Danach Tabellen auswendig lernen.
+3. Am Ende die Klausur-Checkliste abhaken.
+Klausurblock Musst du können
+Definitionen Geschäftsprozess, Prozessmodell, GPM, Workflow, Prozesslandkarte
+GPM-Lebenszyklus 6 Phasen in Reihenfolge + erklären, was dort passiert
+Prozessarten Kern-, Support- und Managementprozesse sicher unterscheiden
+Methoden Wertbeitragsanalyse, 6M, Satz von Little, kritischer Pfad,
+Redesign-Heuristiken
+Qualität & Digitalisierung ISO 9001, PDCA, BSC, Industrie 4.0, digitale Transformation
+
+-- 1 of 12 --
+
+Digitale Geschäftsprozesse - Kapitel 1 Lernzettel Seite 2
+1. Überblick des Kapitels
+Oberthema Was gehört dazu? Wofür wichtig?
+Prozesse und
+Geschäftsprozesse
+Begriffe, Struktur, Input/Output, Beispiele O2C und
+P2P, ARIS-Sichten
+Definitionen und
+Verständnisfragen
+Geschäftsprozessmanagem
+ent
+Rollen, Prinzipien, GPM-Lebenszyklus,
+Prozessidentifikation, Prozessgestaltung,
+Prozessausführung
+Sehr klausurrelevant
+Standardisierung und
+Qualität
+ISO 9001, QMS, PDCA, Vorteile klarer Prozesse Theoriefragen
+Digitalisierung, digitale
+Transformation, Industrie
+4.0
+Digitization, Digitalization, Transformation, Smart
+Factory, IoT, Digital Twin, dezentrale Steuerung
+Begriffe unterscheiden
+Super-Merksatz: In Kapitel 1 geht es darum, Prozesse erst zu verstehen, dann zu
+strukturieren, danach zu verbessern und schließlich digital/automatisiert auszuführen.
+2. Prozess, Algorithmus und Geschäftsprozess
+Ein Prozess ist ein Ablauf oder Vorgang aus mehreren Schritten. Er kann flexibel sein, menschliche
+Entscheidungen enthalten und in Organisationen oder im Alltag vorkommen.
+Begriff Einfach erklärt Beispiel
+Algorithmus Exakte Schritt-für-Schritt-Anleitung. Präzise, endlich
+und bei gleichen Eingaben immer gleich.
+Rezept mit festen Mengen
+oder
+Berechnungsvorschrift
+Prozess Allgemeiner Ablauf. Kann variabel sein und
+Entscheidungen enthalten.
+Kundenanfrage
+bearbeiten
+Geschäftsprozess Prozess in Unternehmen, der Unternehmensziele
+unterstützt und Wertschöpfung erzeugt.
+Bestellung abwickeln
+Merksatz: Algorithmus = exakt. Prozess = Ablauf. Geschäftsprozess = Ablauf im
+Unternehmen mit Nutzen/Wertschöpfung.
+3. Struktur von Geschäftsprozessen
+• Ein Geschäftsprozess kann Teil eines größeren Geschäftsprozesses sein.
+• Er kann andere Prozesse enthalten oder anstoßen.
+• Er geht oft über Abteilungs- und sogar Unternehmensgrenzen hinweg.
+• Er gehört zur Ablauforganisation eines Betriebs.
+• Er besitzt normalerweise klaren Input und Output.
+• Input und Output können Informationen, Gegenstände, Ereignisse oder Zustände sein.
+• Ziel ist Wertschöpfung: Der Output soll wertvoller sein als der Input.
+• Ein Geschäftsprozess ist wiederholbar.
+Bestandteil Bedeutung
+Auslöser Ereignis startet den Prozess, z.B. Bestellung kommt rein
+Input Was in den Prozess hineingeht, z.B. Kundendaten, Material, Auftrag
+Aktivitäten Einzelne Arbeitsschritte des Prozesses
+Rollen/Personen Wer die Aktivitäten durchführt
+Hilfsmittel/IT Systeme, Maschinen, Software
+Output Ergebnis, z.B. Lieferung, Rechnung, Dienstleistung
+Regeln Entscheidungslogik, Reihenfolge, Bedingungen
+4. Geschäftsprozess vs. Projekt
+
+-- 2 of 12 --
+
+Digitale Geschäftsprozesse - Kapitel 1 Lernzettel Seite 3
+Geschäftsprozess Projekt
+Dauerhaft und wiederholend Temporär und einmalig
+Ziel: Effizienz und Stabilität Ziel: Veränderung und Innovation
+Meist klare Routine Meist neuartig und interdisziplinär
+Beispiel: Auftragsabwicklung, Produktion Beispiel: Einführung neuer Software, Bau eines
+Gebäudes
+Merksatz: Prozess = immer wieder. Projekt = einmalig.
+5. Typische Geschäftsprozesse
+Prozess Was passiert? Typische Schritte
+Order-to-Cash
+(O2C/OTC)
+Verkaufsprozess vom Auftrag
+bis zur Zahlung.
+Bestellung prüfen - Bestellung bestätigen -
+Lieferung anlegen - kommissionieren -
+verpacken - versenden - Rechnung senden -
+Zahlung erhalten
+Procure-to-Pay (P2P) Beschaffungsprozess vom
+Bedarf bis zur Bezahlung.
+Bedarf feststellen - Bestand prüfen - Budget
+freigeben - Lieferant auswählen - Bestellung
+aufgeben - Lieferung erhalten - Rechnung
+bezahlen
+Klausur-Merker: O2C ist aus Verkäufersicht. P2P ist aus Einkaufssicht. Beide greifen
+ineinander.
+6. Geschäftsprozessmodellierung und ARIS
+Geschäftsprozesse werden grafisch modelliert, damit sie leichter verstanden, analysiert, verbessert und
+automatisiert werden können. Eine bekannte Modellierungssprache ist BPMN.
+ARIS - 5 Sichten auf Prozesse
+ARIS-Sicht Leitfrage Einfach erklärt Beispiel
+Funktionssicht Was? Zerlegung in Aufgaben/Funktionen. Rechnung prüfen
+Organisationssicht Wer? Beteiligte Personen, Rollen,
+Abteilungen.
+Buchhaltung, Geschäftsführer
+Datensicht Welche Infor
+mationen?
+Benötigte und erzeugte
+Daten/Dokumente.
+Kundendaten, Rechnung
+Leistungssicht Welche
+Leistung?
+Vorleistungen, Zwischenleistungen,
+Endprodukt.
+Ware, Dienstleistung
+Steuerungssicht Wie? Reihenfolge, Ereignisse, Regeln. Wenn Zahlung ok, dann
+Lieferung
+Merksatz: ARIS = Was? Wer? Welche Daten? Welche Leistung? Wie?
+7. Funktionsbaum nach Scheer
+• Ein Funktionsbaum zerlegt Unternehmensabläufe in kleinere Funktionen.
+• Die Zerlegung kann über mehrere Hierarchieebenen erfolgen.
+• Unterste Ebene: Elementarfunktionen.
+• Elementarfunktionen sind betriebswirtschaftlich nicht mehr sinnvoll zerlegbar.
+• Gruppierung kann objektorientiert, prozessorientiert oder verrichtungsorientiert erfolgen.
+• Attribute können z.B. Gesamtdauer und Teilzeiten der Funktionsausführung sein.
+Ebene Beispiel
+Unternehmensabläufe Gesamtübersicht
+Hauptbereiche Lager, Einkauf, Produktion, Vertrieb
+
+-- 3 of 12 --
+
+Digitale Geschäftsprozesse - Kapitel 1 Lernzettel Seite 4
+Ebene Beispiel
+Teilfunktionen Produktion planen, Kundenauftrag annehmen
+Elementarfunktion kleinste sinnvolle Aufgabe
+8. Geschäftsprozessmanagement (GPM)
+Definition: GPM umfasst alle Aufgaben und Maßnahmen, die darauf abzielen, Geschäftsprozesse effizienter
+und effektiver zu machen.
+Prinzip Bedeutung Beispiel
+Koordination Aktivitäten verschiedener Akteure
+abstimmen.
+Vertrieb, Lager und Buchhaltung
+arbeiten abgestimmt.
+Geschäftsprozesstyp/-m
+odell
+Allgemeiner Ablauf für gleichartige Fälle. Standard-Bestellprozess
+Geschäftsfall/Prozessinst
+anz
+Konkreter Einzelfall nach dem Modell. Bestellung von Frau Maier
+Inkrementelle
+Verbesserung
+Schrittweise Verbesserung im Zyklus. Jeden Monat kleine Optimierungen
+Gegenteil:
+Reengineering
+Radikale Neugestaltung statt kleiner
+Schritte.
+Kompletter Prozess wird neu
+erfunden
+9. Rollen und Verantwortlichkeiten im GPM
+Rolle Verantwortung
+Geschäftsführung Grundsätzliche Gestaltung der Geschäftsprozesse. Zuständig für
+strategische Ausrichtung und Ressourcen.
+Prozessverantwortlicher Gestaltet Prozesse effizient und effektiv. Plant, führt und kontrolliert
+Verbesserungen.
+Prozessteilnehmer Führen Aufgaben innerhalb des Prozesses aus. Sind oft wichtige
+Wissensträger.
+Systemanalytiker Übernimmt Aufgaben bei Erhebung, Analyse und Verbesserung von
+Prozessen.
+Anwendungsentwickler Setzt Prozessvorgaben zusammen mit Systemanalytikern technisch in
+Informationssystemen um.
+10. GPM-Lebenszyklus - Herzstück
+Der GPM-Lebenszyklus stellt die Aufgaben des GPM als wiederholenden Ablauf dar.
+Nr. Phase Was passiert? Ergebnis
+1 Prozessidentifikation Wichtigste Prozesse erfassen, benennen,
+bewerten und strukturieren.
+Prozessarchitektur /
+Prozesslandkarte
+2 Prozesserhebung Ist-Zustand aufnehmen: Wie wird aktuell
+gearbeitet?
+Istprozessmodell
+3 Prozessanalyse Schwachstellen und Ursachen systematisch
+finden.
+Einsicht in Schwächen
+4 Prozessverbesserung Verbesserungsvorschläge entwickeln und
+bewerten.
+Sollprozessmodell
+5 Prozesseinführung Sollprozess organisatorisch und technisch
+umsetzen.
+Prozessausführung
+6 Prozessüberwachung Laufende Prozesse kontrollieren und Leistung
+messen.
+Einsicht in Prozessleistung
+Auswendiglern-Satz: Identifizieren, Erheben, Analysieren, Verbessern, Einführen,
+Überwachen.
+
+-- 4 of 12 --
+
+Digitale Geschäftsprozesse - Kapitel 1 Lernzettel Seite 5
+11. Prozessidentifikation im Detail
+Definition: Prozessidentifikation bedeutet, die wichtigsten Geschäftsprozesse eines Betriebs zu erfassen und
+zu priorisieren.
+Unterpunkt Inhalt
+Ziel Wichtigste Prozesse benennen, bewerten und strukturieren.
+Warum wichtig? Grundlage für durchgängiges GPM. Nur bekannte Prozesse können verbessert
+werden.
+Regelmäßigkeit Auch Unternehmen mit GPM müssen regelmäßig prüfen, ob dokumentierte
+und tatsächliche Prozesse noch übereinstimmen.
+Prozesslandkarte Grafische Darstellung der wesentlichen Prozesse eines Betriebs, ca. 15-20
+Prozesse. Zeigt Zusammenhänge und Schnittstellen.
+Referenzmodell Anerkannte gute Lösung für häufige Probleme; dient als Vergleichs- und
+Orientierungspunkt. Muss veröffentlicht sein.
+Beispiele Referenzmodelle eTOM, ITIL, APQC.
+12. IT-Service und ITIL
+Begriff Erklärung
+IT-Service Dienstleistung auf Basis von IT, die Geschäftsprozesse unterstützt. Besteht aus
+Personen, Prozessen und Technik.
+ITIL Framework / Sammlung bewährter Praktiken für IT-Service-Management.
+Ursprung CCTA in den 1980er Jahren zur effizienteren Nutzung von
+IT-Ressourcen/Services.
+Bedeutung Weltweiter Standard für Gestaltung, Implementierung und Management
+wichtiger IT-Steuerungsprozesse.
+ITIL v4 Seit 2019 mit Fokus auf Agilität, Cloud und DevOps.
+Beispiel Server eines Online-Shops fällt aus: ITIL hilft, Incident, Wiederherstellung und
+Service-Kommunikation strukturiert zu steuern.
+Merksatz: ITIL sorgt dafür, dass IT nicht chaotisch reagiert, sondern Services planbar und
+zuverlässig liefert.
+13. Prozesshierarchie und Prozessarchitektur
+Begriff Bedeutung
+Prozesshierarchie Rangordnung der Prozesse in einer Organisation - von grob nach fein.
+Prozessarchitektur Vorgabe zur systematischen Organisation und Beschreibung betrieblicher
+Prozesse.
+Abstraktionsebene 1 Prozesslandkarte: grobe Übersicht über Hauptprozesse.
+Abstraktionsebene 2 Wertschöpfungsketten: aufeinander aufbauende Wertaktivitäten.
+Abstraktionsebene 3 Prozessmodelle: detaillierte Darstellung, z.B. BPMN.
+14. Prozessidentifikation: Prozesse bewerten
+Kriterium Frage Beispiele
+Strategische Wichtigkeit Wie wichtig ist der Prozess für den
+Unternehmenserfolg?
+Kernprozesse, Managementprozesse,
+Unterstützungsprozesse unterscheiden
+Verbesserungswürdigkei
+t
+Wie schlecht läuft der Prozess
+aktuell?
+Ad-hoc-Abstimmungen, überlastete
+Mitarbeiter, Beschwerden, hohe Kosten,
+lange Durchlaufzeiten
+
+-- 5 of 12 --
+
+Digitale Geschäftsprozesse - Kapitel 1 Lernzettel Seite 6
+Kriterium Frage Beispiele
+Verbesserungsfähigkeit Kann man den Prozess realistisch
+verbessern?
+Unterschiedliche Prozessverständnisse,
+Konflikte, klare Ansatzpunkte
+Klausur-Merker: Bewertung = wichtig + problematisch + verbesserbar.
+15. Kern-, Management- und Supportprozesse
+Prozessart Definition Beispiele
+Kernprozess Direkt auf Kunden gerichtet. Dient der
+Wertschöpfung und bildet
+Kerngeschäft/Kernkompetenz.
+Produktion, Verkauf, Versand,
+Service beim
+Bauunternehmen
+Supportprozess Unterstützt Kernprozesse, erzeugt aber selbst
+keinen direkten Kundennutzen.
+Personal, Buchhaltung,
+Berichtswesen, Kantine,
+IT-Infrastruktur
+Managementprozess Steuert Kernprozesse und legt Rollen, Ziele und
+Aufgaben fest.
+Zielsetzung, Planung,
+Entscheidung, Realisierung,
+Ergebnisüberprüfung
+Prüffrage: Steht der Prozess in direkter Verbindung zum Kunden? Ja = Kernprozess. Nein =
+meistens Supportprozess.
+Beispiel Einordnung
+Mitarbeiter-Kantine eines Pharmakonzerns Supportprozess
+Bauunternehmen bietet Wartung der gebauten Gebäude
+an
+Kernprozess
+Chiphersteller stellt Grafikkarten her Kernprozess
+Facility Management beauftragt Fensterreinigung Supportprozess
+Fensterreinigungsunternehmen reinigt Glasfassaden Kernprozess
+16. PDCA-Kreis
+Phase Deutsch Bedeutung im Prozessmanagement
+Plan Planen Ziele definieren, Prozesse planen/modellieren.
+Do Durchführen Prozess im Alltag ausführen.
+Check Prüfen KPIs messen, Ergebnisse bewerten.
+Act Verbessern Ursachen beheben und Standard anpassen.
+Merksatz: PDCA ist kontinuierliche Verbesserung in 4 Schritten.
+17. Prozesskategorien
+Dimension Ausprägungen Bedeutung
+Betriebliche Stellung /
+Wertbeitrag
+Managementprozess, Kernprozess,
+Unterstützungsprozess
+Welche Rolle spielt der Prozess im
+Unternehmen?
+Determiniertheit stark determiniert, schwach
+determiniert
+Wie vorhersehbar/regelbasiert ist der
+Ablauf? Stark determiniert eignet sich
+gut für Automatisierung/RPA.
+Fristigkeit operativ, taktisch, strategisch Zeithorizont: Tagesgeschäft,
+mittelfristige Planung, langfristige
+Ausrichtung.
+18. Prozessgestaltung - Erheben, Analysieren,
+Verbessern
+
+-- 6 of 12 --
+
+Digitale Geschäftsprozesse - Kapitel 1 Lernzettel Seite 7
+Primäres Ziel: Ausgewählte Einzelprozesse erheben, analysieren und verbessern.
+Teil der
+Prozessgestaltung
+Ziel Ergebnis
+Prozesserhebung Informationen sammeln, wie ein Prozess aktuell
+wirklich von Teilnehmern ausgeführt wird.
+Istprozessmodell
+Prozessanalyse Schwachstellen des Istprozesses und ihre Ursachen
+aufspüren.
+Problem- und
+Ursachenverständnis
+Prozessverbesserung Vorschläge entwickeln und bewerten, um
+Schwachstellen zu beheben.
+Sollprozessmodell
+19. Prozesserhebung
+Herausforderungen Methoden
+• Prozesse sind arbeitsteilig organisiert.
+• Teilnehmer erleben oft nur Teile oder
+Sonderfälle.
+• Präzise Terminologie ist schwierig.
+• Prozessteilnehmer kennen grafische
+Modellierungssprachen oft nicht.
+• Bestehende Prozessdokumentation als
+Startpunkt.
+• Prozessbeobachtung im betrieblichen Alltag.
+• Interviews mit Beteiligten.
+• Workshops mit mehreren Prozessbeteiligten.
+20. Prozessanalyse - Methoden
+Methode Was macht sie? Ziel/Nutzen
+Wertbeitragsanalyse Ordnet jede Aktivität ein: wertschöpfend,
+geschäftserforderlich oder nicht
+wertschöpfend.
+Verschwendung finden und
+reduzieren.
+Ursache-Wirkungs-Diagra
+mm
+Strukturierte Suche nach Fehlerquellen mit
+6M.
+Nicht nur Symptome, sondern
+Ursachen finden.
+Satz von Little Verknüpft Bestand, Ankunftsrate und
+Durchlaufzeit.
+Staus und Wartezeiten
+verstehen.
+Kritischer Pfad Analysiert zeitliche Abhängigkeiten zwischen
+Prozessaktivitäten.
+Engpässe und zeitkritische
+Ketten erkennen.
+21. Wertbeitragsanalyse
+Kategorie Bedeutung Beispiel
+Wertschöpfend Kunde ist bereit dafür zu zahlen. Produkt herstellen, Ware liefern
+Geschäftserforderlich Nicht direkt wertschöpfend, aber notwendig. Rechtliche Prüfung,
+Dokumentation
+Nicht wertschöpfend Verschwendung, sollte reduziert/eliminiert
+werden.
+Doppelte Dateneingabe,
+unnötiges Warten
+22. Ursache-Wirkungs-Diagramm: 6M
+M Bedeutung Frage
+Mensch Personen/Qualifikation Fehlt Wissen oder Aufmerksamkeit?
+Maschine Technik/Anlagen Ist Technik fehlerhaft oder langsam?
+Material Material/Input Ist das Material fehlerhaft?
+Methode Vorgehen/Prozess Ist die Methode ungeeignet?
+Milieu Umgebung Stört Umfeld/Arbeitsumgebung?
+Messung Messsystem/Kennzahlen Sind Daten/KPIs falsch oder unvollständig?
+
+-- 7 of 12 --
+
+Digitale Geschäftsprozesse - Kapitel 1 Lernzettel Seite 8
+23. Satz von Little
+Formel: L = λ · W
+L = durchschnittliche Anzahl an Kunden/Elementen im System
+λ = durchschnittliche Ankunftsrate pro Zeiteinheit
+W = durchschnittliche Verweildauer/Durchlaufzeit
+Beispiel aus den Folien: 10 Kunden pro Stunde, Bearbeitung dauert 5 Minuten = 5/60 Stunden. Also: L = 10 ·
+5/60 = 0,83 Kunden im System.
+24. Methode des kritischen Pfads
+Die Methode des kritischen Pfads analysiert die zeitliche Struktur eines Prozesses. Sie zeigt, welche Kette
+von Aktivitäten die Gesamtdauer bestimmt.
+Schritt im Beispiel Dauer Abhängigkeit
+1. Bestellungseingang prüfen 2 h Start
+2. Zahlungsprüfung 3 h nach 1
+3. Lagerbestand prüfen 1 h nach 1
+4. Ware holen 5 h nach 3
+5. Verpacken und Etikett drucken 2 h nach 4
+6. Versand 8 h nach 5
+Merksatz: Der kritische Pfad ist der längste abhängige Pfad. Verkürzt man dort etwas,
+verkürzt man oft den Gesamtprozess.
+25. Prozessverbesserung und Redesign-Heuristiken
+Problem: Durchlaufzeit, Kosten, Qualität und Flexibilität hängen zusammen. Eine Verbesserung in einer
+Dimension kann eine Verschlechterung in einer anderen auslösen.
+Kategorie Idee Beispiel
+Kunden Kundenkontakt/-kontrolle verbessern. Kunde erhält Statusinformationen
+automatisch.
+Prozessdurchführung Aktivitäten aufteilen, zusammenlegen
+oder eliminieren.
+Doppelte Prüfung entfernen.
+Prozesslogik Reihenfolge oder Verzweigungen ändern. Prüfung parallel statt nacheinander.
+Organisationsstruktur Zuständigkeiten flexibler gestalten. Vertretungsregel bei Krankheit.
+Prozessteilnehmer Ressourcen/Qualifikation anpassen. Zusätzliche Mitarbeiter in
+Spitzenzeiten.
+Informationssysteme IT nutzen oder automatisieren. Automatische Rechnungsprüfung.
+26. Prozessausführung
+• Viele Geschäftsprozesse können von Rechnern schneller und verlässlicher ausgeführt werden als von
+Menschen.
+• Beispiel: Three-way match - Vergleich von Bestellschein, Lieferschein und Rechnung.
+• Übergeordnetes Ziel des GPM ist die Automatisierung der Prozessausführung.
+• Prozesseinführung stellt IT- und Organisationsinfrastruktur für den Sollprozess bereit.
+• Prozessüberwachung schafft Transparenz und zeigt, wo menschliches Eingreifen nötig ist.
+27. GPMS und Workflow
+
+-- 8 of 12 --
+
+Digitale Geschäftsprozesse - Kapitel 1 Lernzettel Seite 9
+Begriff Definition
+GPMS Softwaresystem, das Definition, Entwicklung, Ausführung, Überwachung und
+Analyse von Geschäftsprozessen unterstützt.
+Prozessinstanz im GPMS Der aktuelle Zustand wird überwacht und Aufgaben werden an Teilnehmer
+verteilt.
+Fristüberschreitung GPMS kann automatisch Maßnahmen auslösen, z.B. Dringlichkeitsmeldung.
+Workflow Geschäftsprozess, der durch GPMS oder anderes Informationssystem zumindest
+teilweise automatisiert ist.
+28. Beispiel Camunda als GPMS
+Baustein Funktion
+Modeler Erstellung ausführbarer BPMN-2.0-Prozessmodelle.
+Engine Workflow-Engine steuert Instanzen und weist User Tasks/Service Tasks zu.
+Cockpit Echtzeit-Monitoring laufender Prozesse und Fehlermanagement.
+Optimize Analyse historischer Daten und Identifikation von Bottlenecks.
+Besonderheit Entwicklerfreundlich und gut für Integration komplexer IT-Landschaften.
+Onlineversand-Beispiel: Nach der Zahlungsprüfung entscheidet Camunda automatisch, ob die Lagerprüfung
+gestartet wird oder eine Mahnung per E-Mail erfolgt.
+29. Kennzahlen
+Eine Kennzahl quantifiziert einen technischen, betrieblichen oder wirtschaftlichen Zusammenhang.
+Kennzahl Bedeutung
+Durchlaufzeit Gesamter Zeitbedarf einer vollständigen Prozessdurchführung.
+Liegezeit Zeit ohne Aktivität im Prozess; zeigt Verbesserungspotenzial.
+Einarbeitungszeit/Rüstzeit Zeit durch Aufgabenwechsel/Kontextwechsel.
+Kommunikationskennzahlen Wer schickt was zu wem? Hilft Wege/Kommunikation zu optimieren.
+Bearbeitungszeit Netto-Zeit zur aktiven Bearbeitung einer Aufgabe.
+30. KPI und SMART
+KPI: Key Performance Indicators sind einfache und verständliche Leistungswerte. Sie zeigen, ob Ziele erreicht
+werden und wie gut Prozesse funktionieren.
+SMART Bedeutung Kontrollfrage
+S - Specific spezifisch Was genau ist das Ziel?
+M - Measurable messbar Woran messe ich Fortschritt?
+A - Achievable erreichbar Ist das Ziel realistisch?
+R - Reasonable angemessen/sinnvoll Warum ist es wichtig?
+T - Time-Bound zeitgebunden Bis wann soll es erreicht werden?
+Beispiel: Der Umsatzerlös soll sich in den nächsten 6 Monaten um 15 Prozent erhöhen. Fortschritt wird
+monatlich am Umsatzerlös in Euro gemessen. Verantwortlich: CSO.
+31. Balanced Scorecard
+Die Balanced Scorecard ist ein ganzheitliches Steuerungskonzept. Sie verbindet Strategie mit operativen
+Maßnahmen und betrachtet nicht nur Finanzzahlen.
+
+-- 9 of 12 --
+
+Digitale Geschäftsprozesse - Kapitel 1 Lernzettel Seite 10
+Perspektive Leitfrage Beispiel-KPI
+Finanzen Wie profitabel sind wir? Eigenkapitalrendite > 12 Prozent
+Kunden Wie zufrieden sind Kunden? Reklamationsquote < 1 Prozent
+Prozesse Wo müssen wir glänzen? Ausschussrate senken
+Lernen & Entwicklung Wie bleiben wir agil? Fluktuation senken
+Bottom-up-Logik: Lernen verbessert Prozesse, bessere Prozesse verbessern
+Kundenzufriedenheit, zufriedene Kunden verbessern Finanzen.
+32. Standardisierung und Qualität
+• Klar definierte Prozesse erleichtern das Onboarding neuer Mitarbeiter.
+• Sie reduzieren interne Fehler und Reklamationen.
+• Sie verbessern Kundenorientierung und Servicequalität.
+• Sie helfen Produkthaftungsfälle zu vermeiden.
+• Sie können durch ISO 9001 zertifiziert werden.
+33. ISO 9001 und Qualitätsmanagement
+Aspekt Bedeutung
+ISO 9001 Globaler Standard für Qualitätsmanagementsysteme.
+Kernidee Prozessorientierter Ansatz: Qualität entsteht durch beherrschte Prozesse.
+Kundenorientierung Prozesse müssen Kundenanforderungen erfüllen.
+Prozessverantwortung Für jeden Prozess braucht es Verantwortliche.
+Dokumentierte Information Prozesse müssen nachvollziehbar beschrieben sein.
+Risikobasierter Ansatz Risiken für Prozessqualität erkennen und behandeln.
+Zertifizierungsziel Nachweis, dass dauerhaft Qualität geliefert werden kann.
+ISO-Merksatz: Qualität ist kein Zufall, sondern das Ergebnis beherrschter Prozesse.
+34. Digitalisierung vs. digitale Transformation
+Begriff Einfach erklärt Beispiel
+Digitale Konvertierung /
+Digitization
+Analoge Informationen werden digital
+gemacht.
+Papier-Lieferschein wird PDF.
+Digitalisierung / Digitalization Digitale Technologien verbessern
+Einzelprozesse.
+Camunda statt manueller
+E-Mail-Verteilung.
+Digitale Transformation Tiefgreifender Wandel des
+Geschäftsmodells und der Wertschöpfung.
+Abo-Modell statt
+Einzelverkauf.
+Merksatz: Digitalisierung optimiert den Prozess. Digitale Transformation verändert das
+Unternehmen.
+35. Industrie 4.0
+Definition: Industrie 4.0 ist die intelligente Vernetzung von Maschinen und Abläufen mit Hilfe von
+Informations- und Kommunikationstechnologie.
+Kernkonzept Bedeutung
+Smart Factory Maschinen kommunizieren direkt miteinander.
+Internet der Dinge (IoT) Produkte, Geräte oder Werkstücke sind identifizierbar und können Daten
+senden.
+Digitaler Zwilling Virtuelles Abbild realer Produktion zur Simulation und Optimierung.
+
+-- 10 of 12 --
+
+Digitale Geschäftsprozesse - Kapitel 1 Lernzettel Seite 11
+Kernkonzept Bedeutung
+Dezentrale Steuerung Prozesse steuern sich selbst statt starr zentral geplant zu werden.
+36. Dezentrale Steuerung im GPM
+Klassisch zentral Modern dezentral
+Top-down-Befehle Selbstorganisation durch IoT
+Starre Prozesspfade Dynamische Wegfindung
+Zentrale Instanz plant alles Produkt steuert Prozess
+ERP teilt Maschine fest zu Bauteil bucht nächste freie Maschine
+Smart Product Prinzip: Das Werkstück trägt Informationen z.B. RFID/QR mit sich und
+verhandelt mit Maschinen den nächsten Bearbeitungsschritt.
+37. Auswirkungen auf Unternehmen
+Positive Auswirkungen Herausforderungen
+• Agilität: schnellere Reaktion auf
+Marktveränderungen.
+• Individualisierung: Losgröße 1 zu Kosten der
+Massenproduktion.
+• Präzision: weniger Ausschuss und bessere
+Qualität.
+• Skill-Gap: neue Kompetenzen wie
+Python/Datenanalyse.
+• Cyber-Security: Vernetzung erzeugt
+Angriffsflächen.
+• Datenqualität: Automatisierung braucht
+saubere Daten.
+38. Enabler: Datenanalyse und Python
+• Dezentrale Steuerung macht Prozesse zu datengesteuerten Organismen.
+• Autonome Systeme brauchen Echtzeit-Sensordaten statt starrer Pläne.
+• Python kann IT-Systeme wie ERP/Camunda mit Maschinen und Sensoren verbinden.
+• Python ermöglicht Machine Learning, z.B. vorausschauende Wartung.
+• Prozessmanager der Zukunft verstehen nicht nur BPMN, sondern auch Datenflüsse.
+39. Alles auf einer Seite - Super-Lernübersicht
+Thema Auswendiglernen
+Geschäftsprozess Wiederholender Unternehmensablauf mit Input, Output und Wertschöpfung.
+ARIS Funktionssicht, Organisationssicht, Datensicht, Leistungssicht,
+Steuerungssicht.
+GPM Prozesse effizienter und effektiver machen.
+GPM-Zyklus Identifikation - Erhebung - Analyse - Verbesserung - Einführung -
+Überwachung.
+Prozessidentifikation Prozesse benennen, bewerten, strukturieren.
+Bewertungskriterien Strategische Wichtigkeit, Verbesserungswürdigkeit, Verbesserungsfähigkeit.
+Prozessgestaltung Einzelprozesse erheben, analysieren, verbessern.
+Redesign Kunden, Durchführung, Logik, Organisation, Teilnehmer,
+Informationssysteme.
+GPMS Software für Modellierung, Ausführung, Überwachung, Analyse.
+KPI Einfache Leistungskennzahl zur Zielkontrolle.
+BSC Finanzen, Kunden, Prozesse, Lernen.
+ISO 9001 Qualitätsmanagement durch beherrschte Prozesse.
+
+-- 11 of 12 --
+
+Digitale Geschäftsprozesse - Kapitel 1 Lernzettel Seite 12
+Thema Auswendiglernen
+Digitalisierung analog zu digital / Prozess verbessern.
+Transformation Geschäftsmodell verändert sich.
+Industrie 4.0 Smart Factory, IoT, Digital Twin, dezentrale Steuerung.
+40. Klausur-Checkliste
+Kann ich ...? Ja/Nein
+Geschäftsprozess, Prozessmodell, Workflow und GPM erklären?
+den GPM-Lebenszyklus vollständig in Reihenfolge nennen?
+zu jeder Phase sagen, was passiert und welches Ergebnis entsteht?
+Kern-, Management- und Supportprozesse sicher zuordnen?
+Prozessidentifikation mit Kriterien erklären?
+Prozessgestaltung mit Erhebung, Analyse, Verbesserung erklären?
+Wertbeitragsanalyse, 6M, Little und kritischen Pfad unterscheiden?
+Redesign-Heuristiken mit Beispielen nennen?
+GPMS und Workflow erklären?
+KPI, SMART und Balanced Scorecard erklären?
+ISO 9001 und PDCA erklären?
+Digitalisierung, Transformation und Industrie 4.0 unterscheiden?
+Ende - wenn du diese Übersicht beherrschst, bist du für Kapitel 1 sehr gut vorbereitet.
+
+-- 12 of 12 --
+

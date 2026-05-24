@@ -1,0 +1,1660 @@
+1
+Digitale Geschäftsprozesse
+Process mining
+
+-- 1 of 98 --
+
+Lernziele des Kapitels
+Die Studierenden sind in der Lage
+• Process mining in die Welt der Geschäftsprozesse einzuordnen
+• Begriffe wie Event log, trace, case, Play-Out/In und Replay zu erklären
+• Workflownetze zu erkennen, zu modellieren und Korrektheit zu
+bestimmen
+• den 𝛼 − Algorithmus zu erklären und anzuwenden
+2
+
+-- 2 of 98 --
+
+Agenda
+1. Einführung Process mining
+2. Workflow Netze
+3. Alpha Algorithmus
+3
+
+-- 3 of 98 --
+
+Worum geht‘s?
+• Was ist Process mining?
+4
+
+-- 4 of 98 --
+
+Woher kommts?
+• Internet of Events:
+• die heutige Gesellschaft ist mit wenigen Ausnahmen heute stets
+vernetzt und digital („always on“)
+• Daten werden immer, überall und an jedem Ort gesammelt in
+Form von Events
+• auch viele Geschäftsprozesse laufen heute
+rein digital
+• Flugtickets kaufen wir über Services auf
+Websiten der Fluglinien
+• wir erhalten ein e-ticket, dass wir in unser apple oder google wallet
+integrieren und zahlen per paypal oder hinterlegter Kreditkarte
+• das e-ticket wird beim Boarding per scanner ausgelesen
+• Es gibt zu keiner Zeit einen physischen Nachweis eines Flugtickets!
+5
+van der Aalt – Process mining, 2016
+
+-- 5 of 98 --
+
+Woher kommts?
+• Data Scientists unterstützen
+Organisationen, um den Wert in Daten
+zu heben
+• dabei kann er basierend auf Daten
+einige datengetriebene Fragen
+beantworten:
+• (Reporting) What happened?
+• (Diagnosis) Why did it happen?
+• (Prediction) What will happen?
+• (Recommendation) What is the best
+that can happen?
+6
+van der Aalt – Process mining, 2016
+“Data science is an interdisciplinary field
+aiming to turn data into real value.”
+DS Methoden werden z.B. in WK_1609
+Predictive Analytics behandelt
+
+-- 6 of 98 --
+
+Woher kommts?
+• Process science umfasst viele
+Disziplinen, die sie in ihrem Studium
+bisher kennen gelernt haben
+• Darstellung, Modellierung,
+Optimierung, Automatisierung und
+workflow Management
+z.B. Kapitel 1 und 4
+7
+„Process science is a discipline that combines
+knowledge from information technology and
+knowledge from management sciences to
+improve and run operational processes.”
+van der Aalt – Process mining, 2016
+
+-- 7 of 98 --
+
+Woher kommts?
+8
+Process mining can be viewed as the link between
+data science and process science
+• Process mining berücksichtigt
+dynamisches Verhalten von
+Prozessen durch die Analyse von
+Eventdaten
+van der Aalt – Process mining, 2016
+
+-- 8 of 98 --
+
+Ist das relevant?
+9
+2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024
+Gründung der
+Firma Celonis
+Veröffentlichung
+erstes PM Buch
+Coursera PM
+MOOC Market Guide
+für PM von
+Gartner
+30+ PM
+Unternehmen
+IPCM 2019:
+erste PM
+Konferenz
+Erste Magischer
+Quadrant von
+Gartner für PM
+IEEE Task Force on PM
+Top 10 Technology
+Trends nach Gartner
+> 6000 Celonis Nutzer
+40+ PM tools und
+Acquisitions von
+IBM, SAP, MS, etc.
+PM Handbuch
+steigende Anzahl an kommerziellen Tools
+
+-- 9 of 98 --
+
+Einführung Process Mining (top down view)
+10
+discover
+align
+replay
+enrich
+apply
+compare
+information
+systems
+extract
+process
+models
+explore select
+filter
+clean
+conformance
+performance
+diagnostics
+predictions
+improvements
+transform
+act	show
+model
+adapt
+show interpret
+drill down
+ML
++ +
+event
+data
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 10 of 98 --
+
+Einführung Process Mining (bottom up view)
+• Startpunkt: Event log als Sammlung von Events zugehörig zu Fällen
+(cases)
+11
+Case ID Activity Resource Timestamp product prod-price quantity address
+… … …. … …. … … …
+6350 place order Aiden 2018/02/13 14:29:45.000 APPLE iPhone 6 16 GB 639,00 € 5 NL-7751DG-21
+6283 pay Lily 2018/02/13 14:39:25.000 SAMSUNG Galaxy S6 32 GB 543.99 3 NL-7828AM-11a
+6253 prepare delivery Sophia 2018/02/13 15:01:33.000 APPLE iPhone 6 16 GB 639,00 € 3 NL-7887AC-13
+6257 prepare delivery Aiden 2018/02/13 15:03:43.000 SAMSUNG Galaxy S6 32 GB 543.99 1 NL-9521KJ-34
+6185 confirm payment Emily 2018/02/13 15:05:36.000 SAMSUNG Galaxy S4 329,00 € 1 NL-9521GC-32
+6218 confirm payment Emily 2018/02/13 15:08:11.000 APPLE iPhone 6s Plus 64 GB 969,00 € 2 NL-7948BX-10
+6245 make delivery Michael 2018/02/13 15:14:04.000 APPLE iPhone 6 16 GB 639,00 € 3 NL-7905AX-38
+6272 pay Emily 2018/02/13 15:20:36.000 APPLE iPhone 6 16 GB 639,00 € 1 NL-7821AC-3
+6269 pay Charlotte 2018/02/13 15:25:21.000 SAMSUNG Galaxy S4 329,00 € 1 NL-7907EJ-42
+6212 prepare delivery Sophia 2018/02/13 15:43:39.000 HUAWEI P8 Lite 234,00 € 1 NL-7905AX-38
+6323 send invoice Alexander 2018/02/13 15:46:08.000 APPLE iPhone 6 16 GB 639,00 € 1 NL-7833HT-15
+6246 confirm payment Jack 2018/02/13 15:56:03.000 SAMSUNG Galaxy S4 329,00 € 3 NL-7833HT-15
+6347 send invoice Jack 2018/02/13 15:57:42.000 SAMSUNG Galaxy S4 329,00 € 3 NL-7905AX-38
+6351 place order Zoe 2018/02/13 16:17:37.000 APPLE iPhone 5s 16 GB 449,00 € 3 NL-9521GC-32
+6204 prepare delivery Sophia 2018/02/13 16:31:28.000 SAMSUNG Core Prime G361 135,00 € 1 NL-7828AM-11a
+6204 make delivery Kaylee 2018/02/13 16:51:54.000 SAMSUNG Core Prime G361 135,00 € 1 NL-7828AM-11a
+6265 confirm payment Lily 2018/02/13 16:55:55.000 SAMSUNG Galaxy S4 329,00 € 4 NL-9521GC-32
+6250 confirm payment Jack 2018/02/13 17:03:26.000 MOTOROLA Moto G 199,00 € 4 NL-7942GT-2
+6328 send invoice Lily 2018/02/13 17:30:16.000 APPLE iPhone 6s 64 GB 858,00 € 4 NL-9514BV-16
+6352 place order Aiden 2018/02/13 17:53:22.000 APPLE iPhone 6 16 GB 639,00 € 2 NL-9514BV-16
+6317 send invoice Jack 2018/02/13 18:45:30.000 APPLE iPhone 6s 64 GB 858,00 € 5 NL-7907EJ-42
+6353 place order Sophia 2018/02/13 20:16:20.000 APPLE iPhone 5s 16 GB 449,00 € 4 NL-7751AR-19
+… … …. … … … … …
+event
+71,043 events
+12,666 cases
+7 activities
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 11 of 98 --
+
+Einführung Process Mining (bottom up view)
+• Startpunkt: Event log als Sammlung von Events zugehörig zu Fällen
+(cases)
+12
+Case ID Activity Resource Timestamp product prod-price quantity address
+… … …. … …. … … …
+6350 place order Aiden 2018/02/13 14:29:45.000 APPLE iPhone 6 16 GB 639,00 € 5 NL-7751DG-21
+6283 pay Lily 2018/02/13 14:39:25.000 SAMSUNG Galaxy S6 32 GB 543.99 3 NL-7828AM-11a
+6253 prepare delivery Sophia 2018/02/13 15:01:33.000 APPLE iPhone 6 16 GB 639,00 € 3 NL-7887AC-13
+6257 prepare delivery Aiden 2018/02/13 15:03:43.000 SAMSUNG Galaxy S6 32 GB 543.99 1 NL-9521KJ-34
+6185 confirm payment Emily 2018/02/13 15:05:36.000 SAMSUNG Galaxy S4 329,00 € 1 NL-9521GC-32
+6218 confirm payment Emily 2018/02/13 15:08:11.000 APPLE iPhone 6s Plus 64 GB 969,00 € 2 NL-7948BX-10
+6245 make delivery Michael 2018/02/13 15:14:04.000 APPLE iPhone 6 16 GB 639,00 € 3 NL-7905AX-38
+6272 pay Emily 2018/02/13 15:20:36.000 APPLE iPhone 6 16 GB 639,00 € 1 NL-7821AC-3
+6269 pay Charlotte 2018/02/13 15:25:21.000 SAMSUNG Galaxy S4 329,00 € 1 NL-7907EJ-42
+6212 prepare delivery Sophia 2018/02/13 15:43:39.000 HUAWEI P8 Lite 234,00 € 1 NL-7905AX-38
+6323 send invoice Alexander 2018/02/13 15:46:08.000 APPLE iPhone 6 16 GB 639,00 € 1 NL-7833HT-15
+6246 confirm payment Jack 2018/02/13 15:56:03.000 SAMSUNG Galaxy S4 329,00 € 3 NL-7833HT-15
+6347 send invoice Jack 2018/02/13 15:57:42.000 SAMSUNG Galaxy S4 329,00 € 3 NL-7905AX-38
+6351 place order Zoe 2018/02/13 16:17:37.000 APPLE iPhone 5s 16 GB 449,00 € 3 NL-9521GC-32
+6204 prepare delivery Sophia 2018/02/13 16:31:28.000 SAMSUNG Core Prime G361 135,00 € 1 NL-7828AM-11a
+6204 make delivery Kaylee 2018/02/13 16:51:54.000 SAMSUNG Core Prime G361 135,00 € 1 NL-7828AM-11a
+6265 confirm payment Lily 2018/02/13 16:55:55.000 SAMSUNG Galaxy S4 329,00 € 4 NL-9521GC-32
+6250 confirm payment Jack 2018/02/13 17:03:26.000 MOTOROLA Moto G 199,00 € 4 NL-7942GT-2
+6328 send invoice Lily 2018/02/13 17:30:16.000 APPLE iPhone 6s 64 GB 858,00 € 4 NL-9514BV-16
+6352 place order Aiden 2018/02/13 17:53:22.000 APPLE iPhone 6 16 GB 639,00 € 2 NL-9514BV-16
+6317 send invoice Jack 2018/02/13 18:45:30.000 APPLE iPhone 6s 64 GB 858,00 € 5 NL-7907EJ-42
+6353 place order Sophia 2018/02/13 20:16:20.000 APPLE iPhone 5s 16 GB 449,00 € 4 NL-7751AR-19
+… … …. … … … … …
+event
+71,043 events
+12,666 cases
+7 activities
+event =
+case +
+activity +
+timestamp +
+…
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 12 of 98 --
+
+Order 6350, 6351 und 6352
+• Untersuchen von sogenannten Traces
+• Trace: Abfolge von Aktivitäten, die zu
+einem bestimmten Case gehören
+13
+Case ID Activity Timestamp
+6350 place order 2018/02/13 14:29:45.000
+6351 place order 2018/02/13 16:17:37.000
+6352 place order 2018/02/13 17:53:22.000
+6352 send invoice 2018/02/19 09:20:28.000
+6351 send invoice 2018/02/19 16:08:07.000
+6350 send invoice 2018/02/21 09:38:16.000
+6350 pay 2018/03/02 12:39:37.000
+6352 pay 2018/03/05 15:46:47.000
+6351 cancel order 2018/03/06 10:17:01.000
+6350 prepare delivery 2018/03/07 13:50:35.000
+6350 make delivery 2018/03/07 16:41:01.000
+6350 confirm payment 2018/03/07 16:53:00.000
+6352 prepare delivery 2018/03/07 17:05:59.000
+6352 confirm payment 2018/03/07 17:59:55.000
+6352 make delivery 2018/03/08 09:54:36.000
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 13 of 98 --
+
+Order 6350, 6351 und 6352
+Order 6350
+14
+Case ID Activity Timestamp
+6350 place order 2018/02/13 14:29:45.000
+6351 place order 2018/02/13 16:17:37.000
+6352 place order 2018/02/13 17:53:22.000
+6352 send invoice 2018/02/19 09:20:28.000
+6351 send invoice 2018/02/19 16:08:07.000
+6350 send invoice 2018/02/21 09:38:16.000
+6350 pay 2018/03/02 12:39:37.000
+6352 pay 2018/03/05 15:46:47.000
+6351 cancel order 2018/03/06 10:17:01.000
+6350 prepare delivery 2018/03/07 13:50:35.000
+6350 make delivery 2018/03/07 16:41:01.000
+6350 confirm payment 2018/03/07 16:53:00.000
+6352 prepare delivery 2018/03/07 17:05:59.000
+6352 confirm payment 2018/03/07 17:59:55.000
+6352 make delivery 2018/03/08 09:54:36.000
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+Place
+order
+Send
+invoice pay Prepare
+delivery
+Make
+delivery
+Confirm
+payment
+
+-- 14 of 98 --
+
+Place
+order
+Send
+invoice pay Prepare
+delivery
+Make
+delivery
+Confirm
+payment
+Order 6350, 6351 und 6352
+Order 6350
+Order 6351
+15
+Case ID Activity Timestamp
+6350 place order 2018/02/13 14:29:45.000
+6351 place order 2018/02/13 16:17:37.000
+6352 place order 2018/02/13 17:53:22.000
+6352 send invoice 2018/02/19 09:20:28.000
+6351 send invoice 2018/02/19 16:08:07.000
+6350 send invoice 2018/02/21 09:38:16.000
+6350 pay 2018/03/02 12:39:37.000
+6352 pay 2018/03/05 15:46:47.000
+6351 cancel order 2018/03/06 10:17:01.000
+6350 prepare delivery 2018/03/07 13:50:35.000
+6350 make delivery 2018/03/07 16:41:01.000
+6350 confirm payment 2018/03/07 16:53:00.000
+6352 prepare delivery 2018/03/07 17:05:59.000
+6352 confirm payment 2018/03/07 17:59:55.000
+6352 make delivery 2018/03/08 09:54:36.000
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+Place
+order
+Send
+invoice
+cancel
+order
+
+-- 15 of 98 --
+
+Place
+order
+Send
+invoice pay Prepare
+delivery
+Make
+delivery
+Confirm
+payment
+Order 6350, 6351 und 6352
+Order 6350
+Order 6351
+Order 6352
+16
+Case ID Activity Timestamp
+6350 place order 2018/02/13 14:29:45.000
+6351 place order 2018/02/13 16:17:37.000
+6352 place order 2018/02/13 17:53:22.000
+6352 send invoice 2018/02/19 09:20:28.000
+6351 send invoice 2018/02/19 16:08:07.000
+6350 send invoice 2018/02/21 09:38:16.000
+6350 pay 2018/03/02 12:39:37.000
+6352 pay 2018/03/05 15:46:47.000
+6351 cancel order 2018/03/06 10:17:01.000
+6350 prepare delivery 2018/03/07 13:50:35.000
+6350 make delivery 2018/03/07 16:41:01.000
+6350 confirm payment 2018/03/07 16:53:00.000
+6352 prepare delivery 2018/03/07 17:05:59.000
+6352 confirm payment 2018/03/07 17:59:55.000
+6352 make delivery 2018/03/08 09:54:36.000
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+Place
+order
+Send
+invoice
+cancel
+order
+Place
+order
+Send
+invoice pay Prepare
+delivery
+Confirm
+payment
+Make
+delivery
+
+-- 16 of 98 --
+
+Bezogen auf den ganzen Event log
+17
+71,043 events
+12,666 cases
+7 activities
+Place
+order
+Send
+invoice pay Prepare
+delivery
+Make
+delivery
+Confirm
+payment
+Place
+order
+Send
+invoice
+cancel
+order
+Place
+order
+Send
+invoice pay Prepare
+delivery
+Confirm
+payment
+Make
+delivery
+8016 x
+1651 x
+2962 x
+Place
+order pay send
+invoice
+Prepare
+delivery
+Make
+delivery
+Confirm
+payment
+30 x
+Place
+order pay send
+invoice
+Prepare
+delivery
+Confirm
+payment
+Make
+delivery	7 x
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 17 of 98 --
+
+Automatisierte Erzeugung von Prozessmodellen
+18
+Place
+order
+Send
+invoice pay Prepare
+delivery
+Make
+delivery
+Confirm
+payment
+Place
+order
+Send
+invoice
+cancel
+order
+Place
+order
+Send
+invoice pay Prepare
+delivery
+Confirm
+payment
+Make
+delivery
+8016 x
+1651 x
+2962 x
+Place
+order pay send
+invoice
+Prepare
+delivery
+Make
+delivery
+Confirm
+payment	30 x
+Place
+order pay send
+invoice
+Prepare
+delivery
+Confirm
+payment
+Make
+delivery	7 x
+ohne Modellierung!
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 18 of 98 --
+
+Performanz und Compliance
+19
+What happens?
+Where are the bottlenecks?
+Where do we deviate from the happy path?
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 19 of 98 --
+
+Realität
+20
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 20 of 98 --
+
+Realität
+21
+Es ist üblich, Tausende von
+verschiedenen Varianten für
+einfache Kernprozesse zu finden wie
+P2P und O2C!
+verursacht durch Übergaben, Nacharbeit,
+Doppelarbeit, ineffiziente Kommunikation usw.
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 21 of 98 --
+
+Auch hier hilft process mining
+22
+Aufzeigen von Leistungs- und
+Konformitätsproblemen und Vorschlagen
+von Maßnahmen.
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 22 of 98 --
+
+Wir generieren ständig Event Daten
+23
+https://www.dreamstime.com/
+Zug fahren
+E-Mail schreiben
+eine Besprechung ausmachen
+Auto betanken
+Kaffee kaufen
+Urlaub buchen
+Temperatur am
+Thermostat einstellen
+
+-- 23 of 98 --
+
+Wir generieren ständig Event Daten
+24
+GPS
+Bluetooth
+Touchscreen
+GSM/HSDPA/LTE
+Ambient light Sensor
+(Front)kamera
+Gyroskopischer Sensor
+Magnetometer
+Beschleunigungsmesser
+WIFI
+Microphone
+Fingerprint scanner
+(Rück)- kamera
+Lidarsensor
+https://www.apple.com/de/iphone-16/
+
+-- 24 of 98 --
+
+Event Daten in Unternehmen
+25
+https://bsscommerce.com/services/what-is-erp/
+
+-- 25 of 98 --
+
+Event Daten können viele Quellen haben
+• ein Datenbanksystem (z. B. Patientendaten in einem Krankenhaus),
+• eine Datei mit kommagetrennten Werten (CSV) oder eine
+Tabellenkalkulation,
+• ein Transaktionsprotokoll (z. B. ein Handelssystem),
+• ein Business-Suite/ERP-System (SAP, Oracle, etc.),
+• ein Nachrichtenprotokoll (z. B. von IBM Middleware),
+• eine offene API, die Daten von Websites oder sozialen Medien
+bereitstellt, u.v.m. ...
+26
+
+-- 26 of 98 --
+
+Event Daten Beispiele
+27
+Studiernde/r Kurs Event date Note
+Peter Jones EWI 16-01-2024 3,0
+Sandy Scott EWI 16-01-2024 3,1
+Hamdir Allet EWI 16-01-2024 2,3
+Hallid Hamdir EWI 16-01-2024 1,3
+Peter Jones AD 25-01-2024 1,5
+Hamdir Allet AD 25-01-2024 2,0
+Hamdir Allet BWL 29-01-2024 2,6
+Sophia Berns AD 25-01-2024 1,3
+Sophia Berns EWI 16-01-2024 2,0
+Peter Jones BWL 29-01-2024 3,0
+Hege Moniah EWI 16-01-2024 4,0
+Hege Moniah Process Mining 03-02-2024 3,0
+… … … …
+Case ID activity timestamp
+Jede Zeile ist
+ein Event
+
+-- 27 of 98 --
+
+Event Daten Beispiele
+28
+Patient/in Aktivität Timestamp Doktor Alter Kosten
+Peter Jones Röntgen 31-01-2021@10:30 Dr. Peters 20 35,00
+Sandy Scott Bluttest 01-02-2021@09:30 Dr. Peters 25 41,25
+Hamdir Allet Bluttest 02-02-2021@16:30 Dr. Schultheis 55 41,25
+Hallid Hamdir CT 02-02-2021@15:30 Dr. Jung 54 132,00
+Peter Jones MRT 03-02-2021@12:30 Dr. Schultheis 20 256,00
+Hamdir Allet CT 03-02-2021@10:30 Dr. Jung 55 132,00
+Hamdir Allet Röntgen 04-02-2021@09:30 Dr. Schultheis 55 35,00
+Sophia Berns Visite 04-02-2021@08:30 Dr. Parenthes 16 26,25
+Sophia Berns Röntgen 05-02-2021@10:30 Dr. Schultheis 16 35,00
+Peter Jones Visite 06-02-2021@11:30 Dr. Parenthes 20 26,25
+Hege Moniah Visite 06-02-2021@13:30 Dr. Parenthes 35 26,25
+Hege Moniah Massage 07-02-2021@12:30 Dr. Jung 35 23,50
+… … … … … …
+Case ID activity timestamp ressource andere Daten
+
+-- 28 of 98 --
+
+XES (eXtensible Event Stream)
+• Official IEEE standard since 2016
+(development started in 2010).
+• Supported by 15+ tools (e.g., ProM)
+• Compared to normal event logs:
+• Case attributes
+• Lifecycle information (start, complete,
+etc.)
+• Classifiers
+• Resources, roles, and groups
+• Costs
+• Etc.
+29
+
+-- 29 of 98 --
+
+Play-In, Play-Out und Replay
+• eine der Schlüsselelemente von PM ist die starke Beziehung zwischen
+Realität (in Form des Event logs) und Prozessmodellen
+• wir unterscheiden dabei drei Arten von Beziehungen
+• Play-In, Play-Out und Replay
+30
+
+-- 30 of 98 --
+
+Play-Out
+• klassische Nutzen von Prozessmodellen
+• mit einem gegebenen Prozessmodell ist es möglich event logs zu
+erstellen durch mehrmaliges „Durchspielen“ des Prozesses
+• sinnvoll zur Analyse und Testen vor dem Deployment eines Prozesses
+• eine workflow engine ist in diesem Sinne eine „play-out engine“
+• Workflowautomatisierung ist im Prinzip Play-Out
+31
+van der Aalt – Process mining, 2016
+
+-- 31 of 98 --
+
+Beispiel: Play-Out
+32
+XOR-
+join
+XOR-
+split
+AND-
+split
+XOR-
+join
+AND-
+join
+XOR-
+split
+XOR-
+join
+Case Activity Timestamp Resource
+432 Anfrage registrieren (a) 25-03-2025:15:54 John
+432 eingehend prüfen (b) 25-03-2025:16:00 Mary
+432 Ticket prüfen (d) 25-03-2025:16:15 John
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 32 of 98 --
+
+Beispiel: Play-Out
+33
+XOR-
+join
+XOR-
+split
+AND-
+split
+XOR-
+join
+AND-
+join
+XOR-
+split
+XOR-
+join
+Case Activity Timestamp Resource
+432 Anfrage registrieren (a) 25-03-2025:15:54 John
+432 eingehend prüfen (b) 25-03-2025:16:00 Mary
+432 Ticket prüfen (d) 25-03-2025:16:15 John
+432 entscheide (e) 25-03-2025:16:15 Sue
+432 Kompensation zahlen (g) 25-03-2025:16:15 Mary
+abdeg acdeh adbeg abdefbeg
+adceh …Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 33 of 98 --
+
+Play-In
+• Play-In ist das Gegenteil von Play-Out, d.h. ein Event log wird als Input
+verwendet um ein Prozessmodell als Output zu erzeugen
+• Aufgabe unterscheidet sich von klassischen prädiktiven Methoden des
+Data minings
+• Algorithmen sind spezifisch für Process mining wie bspw. 𝛼 −
+Algorithmus, werden Process discovery approaches genannt
+34
+van der Aalt – Process mining, 2016
+
+-- 34 of 98 --
+
+Beispiel: Play-In
+35
+abdeg
+abdeh
+adbeg
+adbeh
+abdeg
+abdeh
+abdeg
+abdeg
+adbeg
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 35 of 98 --
+
+Aufgabe: Erstelle ein Prozessmodell
+• erstellen Sie mit dem Wissen bis hierhin aus den folgenden
+traces ein Prozessmodell
+36
+abde acde
+adbe
+acdf
+abdf
+adbf
+adbe
+adce
+adcf
+abdf
+
+-- 36 of 98 --
+
+Warum ist Play-In interessant?
+• Durch play-in ist es möglich sogenannte desire-lines in Prozessen zu
+finden
+• nicht geplante Folgen von Sequenzen in Prozessen, die in Realität
+statt finden
+37
+https://en.wikipedia.org/wiki/Desire_path
+desire line
+
+-- 37 of 98 --
+
+Replay
+• beim replay sind sowohl ein Event log als auch ein Prozessmodell
+Eingangsgrößen
+• das Event log wird auf Basis des Prozessmodells simuliert
+• Motivation
+• Konformitätscheck (passt das Modell zur Realität)
+• Sammeln von Frequenz und zeitlichen Daten (gemittelte
+Durchlaufzeiten)
+• als Basis für prädiktive Modelle
+• Operational support
+38
+van der Aalt – Process mining, 2016
+
+-- 38 of 98 --
+
+Beispiel: Replay
+39
+a c d e g
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 39 of 98 --
+
+Beispiel: Replay
+40
+a c e g
+? Ticket prüfen (d) fehlt!
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 40 of 98 --
+
+Beispiel: Replay
+41
+a c e g
+? Anfrage ablehnen ist
+nicht möglich (h)
+d	h
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 41 of 98 --
+
+Aufgabe: Konformitätscheck
+• Welche traces sind im dargestellten Prozessmodell möglich?
+1. abdceh
+2. acdeh
+3. aceh
+4. adcefbdeh
+42
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 42 of 98 --
+
+Überblick
+43
+Play-Out
+Play-In
+Replay van der Aalt – Process mining, 2016
+
+-- 43 of 98 --
+
+Relevanz?
+44
+www.processmining.org
+
+-- 44 of 98 --
+
+Relevanz?
+• einige der Celonis Kunden:
+45
+Tausende von großen Unternehmen nutzen Celonis (ca. 50% der Fortune 500) und in einigen
+dieser Unternehmen gibt es Tausende von aktiven Nutzern (z.B. Siemens, BMW, etc.)
+
+-- 45 of 98 --
+
+Demo
+46
+https://promtools.org/prom-6-12/
+
+-- 46 of 98 --
+
+Probleme der klassischen GP Modellierung
+„das Modell beschreibt eine idealisierte Version der Realität“
+• handgemachte Modelle konzentrieren sich auf die Hauptstränge
+eines Prozesses und deckt damit nur ungefähr 80% der Fälle ab
+• Allerdings könnten die fehlenden 20% 80% der Probleme
+verursachen
+• Es könnte sein, dass die Prozessteilnehmer sich über
+Abweichungen nicht bewusst sind
+• handgemachte Modelle scheinen subjektiv zu sein
+47
+
+-- 47 of 98 --
+
+Probleme der klassischen GP Modellierung
+„Unfähigkeit, menschliches Verhalten adäquat zu erfassen“
+• in Multitasking Situationen verhalten sich Menschen mit einer
+gewissen Unsicherheit
+• auch Durchführungszeiten variieren massiv
+• Menschen sind komplex
+48
+
+-- 48 of 98 --
+
+Probleme der klassischen GP Modellierung
+„Das Modell ist auf der falschen Abstraktionsebene“
+• Basierend auf der Problemstellung muss eine entsprechende
+Abstraktionsebene betrachtet werden
+• Modell können zu komplex sein oder zu abstrakt, um bestimmte
+Fragestellung klären zu können
+49
+
+-- 49 of 98 --
+
+Recall: Petrinetze
+• Ist das Petrinetz beschränkt?
+• Ist das Petrinetz sicher?
+• Ist das Petrinetz deadlock-frei?
+• Ist das Petrinetz lebendig?
+50
+p2
+p3
+p4
+p1
+t1 t2
+t3
+t4
+t5
+
+-- 50 of 98 --
+
+Erreichbarkeitsgraph (Reachability graph)
+• Der Erreichbarkeitsgraph eines
+Petrinetzes ist ein
+Transitionssystem (engl.
+transition system) mit einer
+initialen Markierung und keiner
+expliziten finalen Markierung
+51
+r2
+g2
+y2
+rg2
+yg2
+yr2
+r1
+g1
+y1
+rg1
+yg1
+yr1
+x
+[r1, r2, x]
+[y1, r2]
+[g1, r2]
+[r1, o2]
+[r1, g2]
+yr1 yr2
+rg2
+go2
+rg1
+go1
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 51 of 98 --
+
+Transitionssysteme
+• Ein Erreichbarkeitsgraph ist eine
+besondere Art eines
+Transitionssystems
+• Sequenzen von
+Transitionsübergängen sind durch
+Pfade im Transitionssystem
+dargestellt
+• Ein Transitionssystem besteht aus
+Zuständen und Transitionen
+• es gibt ein oder mehrere initiale
+Zustände und keine oder mehrere
+finale Zustände
+52
+s1
+s2
+s3
+s4
+s5
+s6
+s7
+s8
+s9
+a
+b d
+d
+f
+f
+c
+c
+e
+e
+g
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 52 of 98 --
+
+Komplette traces
+• <a,g,g,c,e> ist ein kompletter Trace
+• <b,d,f> ist ein kompletter Trace
+• <b,g,g,g,g,g> ist ein nicht
+kompletter Trace
+• <b,f> ist ein nicht kompletter Trace
+• Das Transitionssystem hat
+unendlich viele (nicht) komplette
+Traces (aufgrund von g)
+53
+s1
+s2
+s3
+s4
+s5
+s6
+s7
+s8
+s9
+a
+b d
+d
+f
+f
+c
+c
+e
+e
+g
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 53 of 98 --
+
+Komplette traces
+• Wie viele komplette
+Traces gibt es hier?
+54
+s1
+s2
+s3
+s4
+s5
+s6
+s7
+s8
+s9
+a
+b d
+d
+f
+f
+c
+c
+e
+e
+g
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 54 of 98 --
+
+Ein Petrinetz kann auch Anfangs- und
+Endmarkierungen haben
+55
+p1
+p2
+p3
+p4 p5
+p6
+p7
+a
+b
+c
+d
+e
+f
+Finale Markierungen: [p6] und [p7]
+s1 s2
+s3
+s4
+s7
+a d
+f
+eb
+s5 s6
+s8	c
+b
+c [p6]
+[p7]
+[p1] [p2,p3]
+[p2,p4]
+[p3,p4]
+[p42] [p5]
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 55 of 98 --
+
+Play-Out
+56
+p1
+p2
+p3
+p4 p5
+p6
+p7
+a
+b
+c
+d
+e
+f
+Finale Markierungen: [p6] und [p7]
+<a,b,c,d,e>
+<a,b,c,d,f>
+<a,c,b,d,e>
+<a,c,b,d,f>
+s1 s2
+s3
+s4
+s7
+a d
+f
+eb
+s5 s6
+s8	c
+b
+c [p6]
+[p7]
+[p1] [p2,p3]
+[p2,p4]
+[p3,p4]
+[p42] [p5]
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 56 of 98 --
+
+Workflow Netze
+• In process mining fokusieren wir uns auf
+sogenannte Workflow Netze
+• Eine Unterklasse
+von Petrinetzen, die oft im Rahmen von
+Workflow Management und GPM(S)
+verwendet werden
+• Workflownetze haben einen
+wohldefinierten Start und Ende
+• sollten frei von Anomalien sein (Korrektheit,
+engl. soundness)
+57
+start Ende
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 57 of 98 --
+
+Beispiel für ein Workflow Netz, das korrekt ist
+58
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 58 of 98 --
+
+Beispieldurchlauf eines Workflows
+59
+✓
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 59 of 98 --
+
+Beispieldurchlauf eines Workflows
+60
+✓
+✓
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 60 of 98 --
+
+Beispieldurchlauf eines Workflows
+61
+✓
+✓
+✓
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 61 of 98 --
+
+Beispieldurchlauf eines Workflows
+62
+✓
+✓
+✓
+✓
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 62 of 98 --
+
+Beispieldurchlauf eines Workflows
+63
+Eine von unendlich vielen möglichen Feuersequenzen der Transitionen!
+✓
+✓
+✓
+✓
+✓
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 63 of 98 --
+
+Erreichbarkeitsgraph
+64
+✓
+✓
+✓
+✓
+✓
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 64 of 98 --
+
+Ist das ein gutes Modell?
+65
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 65 of 98 --
+
+Ist das ein gutes Modell?
+66
+Deadlock bei [c3], wenn einmal f gefeuert wurde!
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 66 of 98 --
+
+Ist das ein gutes Modell?
+67
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 67 of 98 --
+
+Ist das ein gutes Modell?
+68
+Pay compensation ist tot …
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 68 of 98 --
+
+Korrektheit
+• ein Workflow Netz ist korrekt genau dann, wenn die folgenden
+Eigenschaften erfüllt sind:
+• safeness: Stellen können nicht mehrere Token zur gleichen Zeit
+beinhalten
+• ordentliche Komplettierung: wenn die Endstelle markiert ist, sind alle
+anderen Stellen leer
+• Option zur Komplettierung: es ist immer möglich die Markierung zu
+erreichen, die nur das Ende markiert
+• kein Vorhandensein von toten Teilen: für jede Transition gibt es eine
+Feuersequenz von Transitionen, die diese aktiviert
+69
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 69 of 98 --
+
+Korrekt?
+• safeness: Stellen können nicht mehrere Token zur gleichen Zeit beinhalten
+• ordentliche Komplettierung: wenn die Endstelle markiert ist, sind alle
+anderen Stellen leer
+• Option zur Komplettierung: es ist immer möglich die Markierung zu
+erreichen, die nur das Ende markiert
+• kein Vorhandensein von toten Teilen: für jede Transition gibt es eine
+Feuersequenz von Transitionen, die diese aktiviert
+70
+p1
+p2
+p3
+p4
+p5
+p6
+t1
+t2
+t3
+t4
+t5
+t6
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 70 of 98 --
+
+Korrekt?
+• safeness: Stellen können nicht mehrere Token zur gleichen Zeit beinhalten
+• ordentliche Komplettierung: wenn die Endstelle markiert ist, sind alle
+anderen Stellen leer
+• Option zur Komplettierung: es ist immer möglich die Markierung zu
+erreichen, die nur das Ende markiert
+• kein Vorhandensein von toten Teilen: für jede Transition gibt es eine
+Feuersequenz von Transitionen, die diese aktiviert
+71
+p1
+p2
+p3
+p4
+p5
+p6
+t1
+t2
+t3
+t4
+t5
+t6
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 71 of 98 --
+
+Korrekt?
+72
+• safeness: Stellen können nicht mehrere Token zur gleichen Zeit beinhalten
+• ordentliche Komplettierung: wenn die Endstelle markiert ist, sind alle anderen
+Stellen leer
+• Option zur Komplettierung: es ist immer möglich die Markierung zu erreichen, die
+nur das Ende markiert
+• kein Vorhandensein von toten Teilen: für jede Transition gibt es eine Feuersequenz
+von Transitionen, die diese aktiviert
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 72 of 98 --
+
+Ordentliche Komplettierung
+• Die Eigenschaft Option zur Komplettierung (es ist immer möglich eine
+Markierung zu finden, die nur das Ende besetzt)
+impliziert bereits die Eigenschaft ordentliche Komplettierung (wenn
+die Endstelle markiert ist, sind alle anderen Stellen leer)
+73
+start Ende
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 73 of 98 --
+
+Korrektheit und bisherige Petrinetzeigenschaften
+Ein Workflow Netz ist korrekt genau dann, wenn das zugehörige
+kurzgeschlossene Netz lebendig und beschränkt ist!
+74
+t*
+Wenn Sicherheit gefordert ist, muss das
+kurzgeschlossene Netz sicher sein!
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 74 of 98 --
+
+Process discovery
+75
+Alpha Algorithmus zur Modellierung von Workflow Netzen aus Event logs
+𝐿1 = 𝑎, 𝑏, 𝑐, 𝑑 3, 𝑎, 𝑐, 𝑏, 𝑑 2, 𝑎, 𝑒, 𝑑
+van der Aalt – Process mining, 2016
+
+-- 75 of 98 --
+
+Vereinfachte Darstellung von Event logs zur
+Kontrollflussdarstellung
+Order number Activity Timestamp User Product quantity
+9901 Register order 22-1-2014@09.15 Sara iPhone10S 1
+9902 Register order 22-1-2014@09.18 Sara iPhone10S 2
+9903 Register order 22-1-2014@09.27 Sara iPhone9S 1
+9901 Check stock 22-1-2014@09.49 Peter iPhone10S 1
+9901 Ship order 22-1-2014@10.11 Jan iPhone10S 1
+9903 Check stock 22-1-2014@10.34 Peter iPhone9S 1
+9901 Handle payment 22-1-2014@10.45 Carol iPhone10S 1
+9902 Check stock 22-1-2014@10.57 Peter iPhone10S 2
+9902 Cancel order 22-1-2014@11.04 Carol iPhone10S 2
+… …
+76
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+register order, check stock, ship order, handle payment
+, register order, check stock, cancel order
+, register order, check stock
+
+-- 76 of 98 --
+
+Vereinfachtes Event log
+• ein Event log ist ein Multiset von Traces (theoretisch kann die gleiche
+trace mehrmals enthalten sein)
+• Ein Trace ist eine Sequenz von Aktivitäten (alle anderen Attribute sind
+abstrahiert, Aktivitäten sind jedoch geordnet)
+77
+𝐿1 = 𝑎, 𝑏, 𝑐, 𝑑 3, 𝑎, 𝑐, 𝑏, 𝑑 2, 𝑎, 𝑒, 𝑑
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 77 of 98 --
+
+Ziel des 𝜶-Algorithmus
+78
+𝐿1 = 𝑎, 𝑏, 𝑐, 𝑑 3, 𝑎, 𝑐, 𝑏, 𝑑 2, 𝑎, 𝑒, 𝑑
+Start Ende
+p1
+p2
+p3
+p4
+Event log enthält alle Traces
+des Modells und vice versa
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 78 of 98 --
+
+Beispiel
+𝐿2 = [ 𝑎, 𝑏, 𝑐, 𝑑 3, 𝑎, 𝑐, 𝑏, 𝑑 4, 𝑎, 𝑏, 𝑐, 𝑒, 𝑓, 𝑏, 𝑐, 𝑑 2, 𝑎, 𝑏, 𝑐, 𝑒, 𝑓, 𝑐, 𝑏, 𝑑 ,
+𝑎, 𝑐, 𝑏, 𝑒, 𝑓, 𝑏, 𝑐, 𝑑 2, 𝑎, 𝑐, 𝑏, 𝑒, 𝑓, 𝑏, 𝑐, 𝑒, 𝑓, 𝑐, 𝑏, 𝑑 ]
+79
+p1
+p2
+p3
+p4
+p5
+a
+b
+c
+d	e	f
+Start Ende
+Generalisierung: Event log
+enthält nur ein Teil der
+möglichen Traces des Modells
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 79 of 98 --
+
+Notation ist weniger relevant
+80
+Start Ende
+p1
+p2
+p3
+p4
+𝐿1 = 𝑎, 𝑏, 𝑐, 𝑑 3, 𝑎, 𝑐, 𝑏, 𝑑 2, 𝑎, 𝑒, 𝑑
+Ende	Start
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 80 of 98 --
+
+>, →,∥, # Beziehungen
+• Direkte Nachfolger: x>y genau dann, wenn
+auf Aktivität x direkt y folgt
+• Kausalität: x → y, gdw
+x>y und nicht y>x
+• Parallel: x ∥ y, gdw
+x>y und y>x
+• Wahl: x#y, gdw nicht
+x>y und nicht y>x
+81
+𝐿1 = 𝑎, 𝑏, 𝑐, 𝑑 3, 𝑎, 𝑐, 𝑏, 𝑑 2, 𝑎, 𝑒, 𝑑
+abcd
+acbd
+aed
+a>b
+a>c
+a>e
+b>c
+b>d
+c>b
+c>d
+e>d
+a → b
+a → c
+a → e
+b → d
+c → d
+e → d
+b ∥ c
+c ∥ b
+b # e
+e # b
+c # e
+a # d
+…
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 81 of 98 --
+
+Idee des 𝜶 − Algorithmus (1)
+82
+van der Aalt – Process mining, 2016
+
+-- 82 of 98 --
+
+Idee des 𝜶 − Algorithmus (2)
+83
+van der Aalt – Process mining, 2016
+
+-- 83 of 98 --
+
+Idee des 𝜶 − Algorithmus (3)
+84
+van der Aalt – Process mining, 2016
+
+-- 84 of 98 --
+
+Initiales Beispiel
+85
+a>b
+a>c
+a>e
+b>c
+b>d
+c>b
+c>d
+e>d
+a → b
+a → c
+a → e
+b → d
+c → d
+e → d
+b ∥ c
+c ∥ b
+b # e
+e # b
+c # e
+a # d
+…
+Start Ende
+p1
+p2
+p3
+p4
+Ergebnis, des alpha Algos
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 85 of 98 --
+
+Fußabdruck von 𝑳𝟏
+86
+𝐿1 = 𝑎, 𝑏, 𝑐, 𝑑 3, 𝑎, 𝑐, 𝑏, 𝑑 2, 𝑎, 𝑒, 𝑑 Jede der Zellen
+weist →, ←, ∥, #
+auf
+van der Aalt – Process mining, 2016
+
+-- 86 of 98 --
+
+Erstellte Modell hat den gleichen Fußabdruck
+87
+Start Ende
+p1
+p2
+p3
+p4
+𝐿1 = 𝑎, 𝑏, 𝑐, 𝑑 3, 𝑎, 𝑐, 𝑏, 𝑑 2, 𝑎, 𝑒, 𝑑
+Log und Modell haben den gleichen Fußabdruck
+van der Aalt – Process mining, 2016
+
+-- 87 of 98 --
+
+Der 𝜶 − Algorithmus
+88
+van der Aalt – Process mining, 2016
+Sei L ein Event Log über T. Dann ist 𝛼(L) wie folgt definiert
+
+-- 88 of 98 --
+
+Der 𝜶 − Algorithmus
+Sei L ein Event Log über T. Dann ist 𝛼(L) wie folgt definiert
+1. 𝑇𝐿 = 𝑡 ∈ 𝑇 ∃𝜎∈𝐿 𝑡 ∈ 𝜎}
+Jede Aktivität in L gehört zu einer Transition in 𝛼(L), 𝜎 ist ein Trace
+2. 𝑇𝐼 = {𝑡 ∈ 𝑇|∃𝜎∈𝐿 𝑡 ∈ first(𝜎)}
+Definiere die Menge an Startaktivitäten – das heißt die ersten
+Elemente eines jeden Traces 𝑡1, … , 𝑡𝑛 , 𝑡1′, … , 𝑡𝑚′
+3. 𝑇𝑂 = {𝑡 ∈ 𝑇|∃𝜎∈𝐿 𝑡 ∈ last(𝜎)}
+Definiere die Menge an Endaktivitäten – das heißt die letzten
+Elemente eines jeden Traces 𝑡1, … , 𝑡𝑛 , 𝑡1′, … , 𝑡𝑚′
+89
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 89 of 98 --
+
+Nächste Schritte zum Finden von Stellen
+Schritt 4: Berechne alle Paare
+(A,B)
+Schritt 5: Eliminiere nicht
+maximale Paare (A,B)
+Schritt 6: Identifiziere Stellen
+𝑝(𝐴,𝐵) aus den Paaren (A,B,
+90
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 90 of 98 --
+
+Der 𝜶 − Algorithmus
+4. 𝑋𝐿 = 𝐴, 𝐵 𝐴 ⊆ 𝑇𝐿 ٿ 𝐴 ≠ ∅ ٿ 𝐵 ⊆ 𝑇𝐿 ٿ 𝐵 ≠ ∅
+ٿ∀𝑎∈𝐴∀𝑏∈𝐵 𝑎 →𝐿 𝑏
+ٿ∀𝑎1,𝑎2∈𝐴 𝑎1#𝐿𝑎2
+ٿ∀𝑏1,𝑏2∈𝐵 𝑏1#𝐿𝑏2},
+91
+1
+2
+3
+1
+2
+#
+#
+A
+B
+Finde alle Paare (A,B) als Menge von
+Aktivitäten, sodass jede Aktivität 𝑎 ∈ 𝐴 und
+jede Aktivität 𝑏 ∈ 𝐵 kausal in
+Zusammenhang
+stehen (z.B. 𝑎 →𝐿 𝑏), alle Elemente in A
+unabhängig sind (𝑎1#𝐿𝑎2) und alle
+Elemente
+in B unabhängig sind (𝑏1#𝐿𝑏2)
+Credits: van der Aalt – Lecture Notes RWTH Aachen
+
+-- 91 of 98 --
+
+Stellen als Fußabdruck
+92
+
+-- 92 of 98 --
+
+Der 𝜶 − Algorithmus
+5. 𝑌𝐿 = 𝐴, 𝐵 ∈ 𝑋𝐿
+∀ 𝐴′,𝐵′ ∈𝑋𝐿 𝐴 ⊆ 𝐴′ٿ𝐵 ⊆ 𝐵′ ⇒ 𝐴, 𝐵 = (𝐴′, 𝐵′)}
+93
+1
+2
+3
+1
+2
+#
+#
+A
+B
+⇒
+1
+2
+1
+2
+#	#
+A‘ B‘
+3
+1
+#
+#
+A
+B
+Lösche aus 𝑋𝐿 alle Paare,
+die nicht maximal sind
+
+-- 93 of 98 --
+
+Der 𝜶 − Algorithmus
+6. 𝑃𝐿 = 𝑝 𝐴,𝐵 𝐴, 𝐵 ∈ 𝑌𝐿} ∪ {𝑖𝐿, 𝑜𝐿}
+94
+𝑖𝐿 𝑜𝐿
+Identifiziere die Menge an Stellen:
+Jedes Element (A,B) von Y_L ist
+eine Stelle. Um das Workflow Netz
+zu erhalten, werden die Start und
+Endstellen hinzugefügt
+
+-- 94 of 98 --
+
+Der 𝜶 − Algorithmus
+7. 𝐹𝐿 = 𝑎, 𝑝 𝐴,𝐵 𝐴, 𝐵 ∈ 𝑌𝐿 ∧ 𝑎 ∈ 𝐴
+∪ 𝑝 𝐴,𝐵 , 𝑏 𝐴, 𝐵 ∈ 𝑌𝐿 ∧ 𝑏 ∈ 𝐵}
+∪ 𝑖𝐿, 𝑡 𝑡 ∈ 𝑇𝑙} ∪ { t, oL | t ∈ 𝑇𝑂}
+8. 𝛼 𝐿 = (𝑃𝐿, 𝑇𝐿, 𝐹𝐿)
+95
+Identifiziere den Kontrollfluss: Verknüpfe jede Stelle 𝑝(𝐴,𝐵) mit
+jedem Element a des Sets A der ausgehenden Transitionen und mit
+jedem Element b des Sets B der Zieltransitionen. Berücksichtige
+zusätzlich jeweils Kontrollflüsse von der Startstelle zu allen
+Starttransitionen sowie von jeder Endtransition zur Endstelle
+
+-- 95 of 98 --
+
+Anwendung des 𝜶 − Algorithmus
+𝑋𝐿1 = { 𝑎 , 𝑏 , 𝑎 , 𝑐 , 𝑎 , 𝑒 , 𝑎 , 𝑏, 𝑒 , 𝑎 , 𝑐, 𝑒 ,
+𝑏 , 𝑑 , 𝑐 , 𝑑 , 𝑒 , 𝑑 , 𝑏, 𝑒 , 𝑑 , ( 𝑐, 𝑒 , 𝑑 )}
+𝑌𝐿1 = { 𝑎 , 𝑏, 𝑒 , 𝑎 , 𝑐, 𝑒 , 𝑏, 𝑒 , 𝑑 , ( 𝑐, 𝑒 , 𝑑 )}
+96
+𝐿1 = 𝑎, 𝑏, 𝑐, 𝑑 3, 𝑎, 𝑐, 𝑏, 𝑑 2, 𝑎, 𝑒, 𝑑
+Start Ende
+p1
+p2
+p3
+p4
+
+-- 96 of 98 --
+
+Demo Log L1
+97
+
+-- 97 of 98 --
+
+Thank you for your attention!
+98
+
+-- 98 of 98 --
+

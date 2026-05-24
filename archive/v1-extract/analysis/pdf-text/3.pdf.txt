@@ -1,0 +1,647 @@
+1
+Digitale Geschäftsprozesse
+Wertschöpfung und Organisation
+
+-- 1 of 48 --
+
+Lernziele des Kapitels
+Die Studierenden sind in der Lage
+• die Wertschöpfung anhand eines Wertschöpfungsprozesses zu
+berechnen
+• die Wertschöpfungskette von Porter zu erläutern
+• zwischen wertschöpfenden und Kernprozessen zu differenzieren
+• eine ABC-Analyse anhand geeigneter Bezugsgrößen durchzuführen
+und Ergebnisse zu interpretieren
+• den Bezug von IT zur Wertschöpfungskette und digitale
+Wertschöpfung zu erläutern
+• die Begriffe vertikale Integration, vorwärts- und Rückwärtsintegration
+sowie horizontale Integration zu erläutern und zu differenzieren
+• die strategische Entscheidung der Integration argumentativ zu
+diskutieren
+2
+
+-- 2 of 48 --
+
+Recall: Digitale GPs & Wertschöpfung
+• Ein Geschäftsprozess beschreibt eine Folge von Einzeltätigkeiten,
+die schrittweise ausgeführt werden, um ein geschäftliches oder
+betriebliches Ziel zu erreichen. Im Gegensatz zum Projekt kann der
+Prozess öfter durchlaufen werden. Ein Geschäftsprozess kann Teil
+eines anderen Geschäftsprozesses sein oder andere
+Geschäftsprozesse enthalten bzw. diese anstoßen.
+Geschäftsprozesse gehen oft über Abteilungen und Betriebsgrenzen
+hinweg und gehören zur Ablauforganisation eines Betriebs.
+• Wir wollen unter Digitalen Geschäftsprozessen solche
+Geschäftsprozesse verstehen, die durch den Einsatz und die
+Weiterentwicklung von Information und Kommunikation (IuK)
+unterstützt werden, optimiert werden oder sogar neu entstehen.
+• Digitale Geschäftsprozesse sollen die Wertschöpfung in
+Unternehmen steigern.
+
+-- 3 of 48 --
+
+Wertschöpfung
+• Wertschöpfung misst den Ertrag aus wirtschaftlicher Tätigkeit als Differenz
+zwischen der Leistung einer Wirtschaftseinheit (z.B. gesamte
+Volkswirtschaft, ein Unternehmen oder auch ein einzelner
+Leistungsprozess) und der zur Leistungserstellung benötigten Vorleistung.
+• Also kurz:
+𝑊𝑒𝑟𝑡𝑠𝑐ℎö𝑝𝑓𝑢𝑛𝑔 = 𝐿𝑒𝑖𝑠𝑡𝑢𝑛𝑔 − 𝑉𝑜𝑟𝑙𝑒𝑖𝑠𝑡𝑢𝑛𝑔
+• wobei
+Leistung = Wert des Endproduktes und
+Vorleistung = Vorleistungen sind eingekaufte Güter und Dienste, die im
+Leistungserstellungsprozess (z.B. Produktion) verbraucht werden (z.B.
+zugelieferte Materialien und bezogene Serviceleistungen).
+Quelle: www.vimentis.ch
+
+-- 4 of 48 --
+
+Beispiel: Wertschöpfung
+Betrachten wir die Wertschöpfung, die in einer Brauerei bei der Herstellung
+eines Fasses Bier entsteht:
+Kosten für Vorleistungen: Hopfen und weitere Rohstoffe 10€, Energie 20€,
+Fass 5€, weitere Produktionsmittel (Gebäude, Maschinen etc.) 5€.
+Verkauf an einen Großhändler für 80€.
+Die Wertschöpfung pro Fass Bier beim Hersteller beträgt also 40€.
+Der Großhändler verkauft das Fass an den Einzelhändler für 90€.
+Er hat wiederum Kosten für Vorleistungen von 2€, vorwiegend aus seiner
+Logistik (Lagerfläche, Fahrzeuge).
+Wie groß ist die Wertschöpfung pro Fass Bier beim Großhändler?
+Der Einzelhändler verkauft das Fass Bier für 100€ an den Endkunden …
+Idee: www.wikipedia.de
+
+-- 5 of 48 --
+
+Verwendung der Wertschöpfung
+• Die Wertschöpfung eines Unternehmens ist nach unserer Definition
+gleich dem gesamten Umsatz des Unternehmens minus der
+eingekauften - heißt fremd erstellten - Güter.
+• Was passiert mit der Wertschöpfung?
+• Lohn an die Mitarbeiter
+• Steuern
+• Gewinn an die Inhaber/Kapitalgeber
+• Steigerung des Unternehmensvermögens
+Quelle: www.vimentis.ch
+
+-- 6 of 48 --
+
+Beispiel: Verwendung der Wertschöpfung
+Die Wertschöpfung pro Fass Bier in unserer Brauerei lag bei 40€.
+Diese wurden eingesetzt um
+• die Löhne der Mitarbeiter zu zahlen:
+Die Mitarbeiterlöhne lagen im Geschäftsjahr bei 2 Mio. €. Es wurden
+100.000 Fässer verkauft. Also flossen pro Fass 20€ der Wertschöpfung
+in die Löhne. (2 Mio. / 100.000 = 20)
+• Steuern zu zahlen:
+Das Unternehmen hatte im Geschäftsjahr an das Finanzamt Steuern in
+Höhe von 500.000€ zu zahlen. Pro Fass flossen also 5€ ans Finanzamt.
+• Gewinn an die Inhaber auszuschütten:
+Die 3 Inhaber genehmigten sich eine Ausschüttung von jeweils
+200.000€, macht pro Fass 6€.
+Welcher Betrag der Wertschöpfung verbleibt nun pro Fass bzw. insgesamt zur
+Steigerung des Unternehmensvermögens?
+
+-- 7 of 48 --
+
+Beispiel: Verwendung der Wertschöpfung
+• 40 – 20 – 5 – 6 = 𝟗 €, die zur Steigerung des
+Unternehmensvermögens verbleiben (pro Fass).
+• Also 9 € × 100.000 = 900.000 € Unternehmensvermögens-
+steigerung.
+
+-- 8 of 48 --
+
+Wertschöpfungskette nach Porter
+Wertschöpfungskette nach Porter:
+Gesamtheit der Primär- und Sekundärprozesse,
+die in einem Unternehmen zur Wertschöpfung beitragen.
+Quelle: http://www.carta.info
+
+-- 9 of 48 --
+
+Wertschöpfungsprozess vs Wertschöpfungskette
+• Der Wertschöpfungsprozess spiegelt die Beanspruchung der
+Ressourcen zur Entwicklung, Erzeugung und Vermarktung eines
+Produktes wider und ermittelt, was diese Inanspruchnahme je
+Ressource und Einheit kostet
+𝑊𝑒𝑟𝑡𝑠𝑐ℎö𝑝𝑓𝑢𝑛𝑔 = 𝐿𝑒𝑖𝑠𝑡𝑢𝑛𝑔 − 𝑉𝑜𝑟𝑙𝑒𝑖𝑠𝑡𝑢𝑛𝑔
+• Der Wertschöpfungsprozess kann über eine oder mehrere
+Unternehmen betrachtet werden
+• Die Wertschöpfungskette gliedert die Aktivitäten und Prozesse eines
+Unternehmens in strategisch relevante Tätigkeiten, um dadurch
+Kostenverhalten sowie vorhandene und potenzielle
+Differenzierungsquellen zu verstehen.
+10
+
+-- 10 of 48 --
+
+Wertschöpfungsprozess vs Wertschöpfungskette
+• Die Wertschöpfungskette zeigt den Gesamtwert, den die Abnehmer
+zu zahlen bereit sind … und setzt sich aus den Wertaktivitäten und der
+Gewinnspanne zusammen. Wertaktivitäten sind die physisch und
+technologisch unterscheidbaren, von einem Unternehmen
+ausgeführten Tätigkeiten
+• Die Gewinnspanne ist der Unterschied aus dem Gesamtwert und der
+Summe der Kosten, die durch die Ausführung der Wertaktivitäten
+entstanden sind
+• Ziel des Analysemodells von Porter: Wettbewerbsstrategien
+identifizieren, Kostenstrukturen analysieren und Wettbewerbsvorteile
+aufbauen (strategische Analyse)
+11
+Porter, 2000, S.63/68
+
+-- 11 of 48 --
+
+Stop, da gab es doch noch etwas?!
+• neben der Gewinnspanne als Leistungsmerkmal gibt es doch
+auch Begriffe wie EBIT, EBITDA, Nettogewinn, ROI und
+Bruttomarge
+• Recherchieren Sie die jeweiligen Bedeutungen der Begriffe!
+12
+
+-- 12 of 48 --
+
+Beispiel Position Betrag (Mrd. €)
+Umsatz 100
+Herstellungskosten (COGS) -65
+Operative Kosten (ohne Abschr.) -10
+Abschreibungen (D&A) -5
+Zinsen -3
+Steuern -4
+Investiertes Kapital (für ROI) 70
+13
+• Bruttomarge:
+Umsatz – Herstellungskosten
+= 100 – 65 = 35 Mrd. €
+d.h. 35% Bruttomarge
+zeigt, wie viel das Unternehmen
+nach Produktion noch vom Umsatz
+übrig hat.
+• EBITDA = 100 – 65 – 10 = 25 Mrd. € (rein operative Geschäft)
+• EBIT = EBITDA – 5 = 20 Mrd. €
+• Nettogewinn = EBIT – Zinsen – Steuern = 13 Mrd. € („echte“
+Gewinn für Aktionäre)
+• ROI = Nettogewinn / investiertes Kapital = 13/70 = 18.6% (zeigt
+wie effizient das Unternehmen Kapital einsetzt)
+
+-- 13 of 48 --
+
+Video
+14
+
+-- 14 of 48 --
+
+Textarbeit: Kern- vs Wertschöpfungsprozesse
+• Lesen Sie jeweils den Textabschnitt
+• Konsolidieren Sie mit ihrem Nachbarn links und rechts die
+Informationen
+• Teilen Sie ihre Ergebnisse
+15
+
+-- 15 of 48 --
+
+Wertschöpfungsketten von Branchen/Produkten
+Weg des gesamten Produkts/Dienstleistung vom Lieferanten über
+den Hersteller bis zum Endkunden
+Beispiel: „Jeans“
+
+-- 16 of 48 --
+
+Beispiele für Wertschöpfungsketten
+Beispiele für Wertschöpfungsketten:
+• Smartphones: Rohstoffe aus
+Taiwan, Lieferung nach China,
+Herstellung von Komponenten,
+Zusammensetzung der
+Komponenten, Lieferung
+international in zentrale Logistik-
+Zentren, Auslieferung an die Shops,
+Verkauf
+• Eisenwaren: Erzabbau, Lieferung
+zur Schmelze, Einschmelzen,
+Lieferung zur Produktion,
+Schmieden, Vertrieb, Verkauf
+http://www.fuer-gruender.de/wissen/existenzgruendung-
+planen/organisation/wertschoepfungskette/
+
+-- 17 of 48 --
+
+Aufgaben der IT in der Wertschöpfungskette
+Klassisch
+• Hardwarebeschaffung
+• Softwarebeschaffung und Lizenzmanagement
+• Installation, Betrieb und Versionsführung von Software-Systemen
+• Softwareintegration
+Aber auch
+• Strategische Einbindung der IT in das Unternehmen
+• Bereitstellung von Daten zur Unternehmenssteuerung
+Die IT entwickelt sich immer mehr vom reinen internen Dienstleister
+(Kostentreiber!) zum Treiber für Prozessoptimierung, Umsatzsteigerung
+und das Erschließen neuer Geschäftsfelder.
+
+-- 18 of 48 --
+
+Wertschöpfungsketten und IT
+Aus: © Pearson Studium
+2006
+
+-- 19 of 48 --
+
+Digitale Wertschöpfung
+• Digitale Wertschöpfung bezeichnet den Prozess, bei dem digitale
+Technologien genutzt werden, um Produkte, Dienstleistungen und
+Geschäftsmodelle effizienter, innovativer oder kundenorientierter zu
+gestalten
+• klassische Wertschöpfungsprozesse werden durch IT, Daten,
+Automatisierung und Vernetzung optimiert oder sogar komplett neu
+definiert
+Klassische Wertschöpfung Digitale Wertschöpfung
+Lineare Prozesse (z. B. Produktion → Verkauf →
+Service)
+Vernetzte Wertschöpfung (z. B. Plattformen, KI-
+gestützte Systeme)
+Physische Produkte stehen im Fokus Daten & digitale Services stehen im Fokus
+Skalierung oft kapitalintensiv Skalierung durch Software & Automatisierung
+möglich
+Geringere Kundeninteraktion nach dem Kauf Kontinuierliche digitale Interaktion (z. B. Tesla-
+Updates)
+
+-- 20 of 48 --
+
+Beispiel digitaler Wertschöpfung: Tesla
+• Tesla ist nicht nur ein Automobilhersteller, sondern ein
+Technologieunternehmen, das stark auf digitale Wertschöpfung setzt
+• Tesla nutzt digitale Technologien, um Produktion, Vertrieb und
+Kundeninteraktion zu optimieren
+2.1. Digitale Entwicklung & Design
+• Tesla nutzt virtuelle Prototypen und künstliche Intelligenz (KI) zur
+Fahrzeugentwicklung.
+• Over-the-Air (OTA) Updates ermöglichen kontinuierliche
+Verbesserungen ohne physische Werkstattbesuche.
+• Digitale Simulationen & KI helfen bei der Optimierung von Batterien,
+Aerodynamik und autonomen Fahrfunktionen.
+
+-- 21 of 48 --
+
+Beispiel digitaler Wertschöpfung: Tesla
+2.2. Produktion & Industrie 4.0
+• Tesla setzt auf Smart Factories, in denen Roboter, KI und IoT die
+Produktion steuern.
+• Vertikale Integration: Tesla produziert viele Komponenten selbst (z. B.
+Batterien, Chips), um die Kontrolle über die Wertschöpfung zu
+behalten.
+• Gigafactories: Durch hohe Automatisierung und Echtzeit-
+Datenanalyse wird die Effizienz maximiert.
+2.3. Digital gesteuerte Lieferkette (Supply Chain Management)
+• Tesla nutzt Big Data & KI, um Lieferketten zu optimieren und Engpässe
+frühzeitig zu erkennen.
+• Direktvertrieb statt Händlernetz: Kunden bestellen online, Tesla
+liefert ohne Zwischenhändler.
+• Optimierte Logistik durch KI-gesteuerte Bedarfsanalysen in den
+Gigafactories.
+22
+
+-- 22 of 48 --
+
+Beispiel digitaler Wertschöpfung: Tesla
+2.4. Verkauf & Kundeninteraktion
+• Online-Vertrieb: Tesla verkauft Autos über eine digitale Plattform,
+ohne klassische Autohäuser.
+• Digitale Kundenbetreuung: Diagnose & Wartung erfolgen über die
+Tesla-App, oft ohne Werkstattbesuch.
+• Personalisierte Datenanalyse: Tesla sammelt Fahrzeugdaten, um den
+Fahrstil zu analysieren und Funktionen anzupassen.
+2.5. Nutzung & Service (After-Sales-Wertschöpfung)
+• Over-the-Air (OTA) Updates verbessern Leistung, Sicherheit und
+Autonomiegrad der Fahrzeuge nach dem Kauf.
+• Tesla Supercharger-Netzwerk: Tesla optimiert das Ladenetz mit KI, um
+Wartezeiten zu reduzieren.
+• Tesla Energy & V2G (Vehicle-to-Grid): Autos können Strom zurück ins
+Netz einspeisen.
+23
+
+-- 23 of 48 --
+
+Diskussion
+Nehmen Sie sich kurz Zeit und denken Sie über folgende Fragen nach:
+• Welche Vor- und Nachteile hat Teslas digitales Geschäftsmodell?
+• Könnten traditionelle Autohersteller dieses Modell übernehmen?
+Warum (nicht)?
+• Welche weiteren Branchen könnten Teslas digitale Wertschöpfung
+übernehmen?
+24
+
+-- 24 of 48 --
+
+25
+Digitale Geschäftsprozesse
+Organisation
+
+-- 25 of 48 --
+
+Worum geht‘s?
+Unternehmen leben von Weiterentwicklung. Veränderung ist die Regel!
+Der Vorlesungsteil Organisation betrachtet strategische
+Entscheidungen in Unternehmen, die organisatorische Veränderungen
+nach sich ziehen und somit
+• bestehende Geschäftsprozesse beeinflussen/verändern und
+• neue Geschäftsprozesse entstehen lassen.
+Wir betrachten beispielhaft die nachfolgenden typischen Themenfelder,
+die selber strategische Entscheidungen darstellen oder aus diesen
+resultieren
+• Horizontale und vertikale Integration
+• Make or Buy/Sourcing
+• Mass Customization (Produkt-Design)
+26
+
+-- 26 of 48 --
+
+Vertikale Integration
+• Die vertikale Integration eines Unternehmens wird mit dem
+sogenannten Integrationsgrad gemessen:
+• Wiederholung: Die Wertschöpfung bemisst sich hierbei aus der
+Differenz zwischen der Leistung (Umsatz) eines Unternehmens und
+seinen Vorleistungen (fremdbezogenen Leistungen).
+• Mit Gesamtleistung ist der Gesamtumsatz am Ende der
+Wertschöpfungskette für das Produkt/die Produkte des
+Unternehmens gemeint.
+• Der vertikale Integrationsgrad beschreibt, wie hoch der Anteil, der von
+einem Unternehmen selbst erbrachten Leistungen innerhalb der
+Wertschöpfungskette ist.
+27
+1	0 		=	 tung	Gesamtleis
+ung	Wertschöpf
+nsgrad	Integratio
+
+-- 27 of 48 --
+
+Beispiel: Integrationsgrad Brauerei
+Lieferanten Brauerei Großhandel Einzelhandel
+Leistung: 400.000€ 800.000€ 900.000€ 1.000.000€
+𝐼𝑛𝑡𝑒𝑔𝑟𝑎𝑡𝑖𝑜𝑛𝑠𝑔𝑟𝑎𝑑 = 𝑊𝑒𝑟𝑡𝑠𝑐ℎö𝑝𝑓𝑢𝑛𝑔
+𝐺𝑒𝑠𝑎𝑚𝑡𝑙𝑒𝑖𝑠𝑡𝑢𝑛𝑔 = 400.000€
+1.000.000€ = 40%
+• Der Integrationsgrad der Brauerei liegt also bei 40%.
+Wie könnte man den Integrationsgrad erhöhen?
+
+-- 28 of 48 --
+
+Fertigungstiefe
+• Bemerkung: Der Integrationsgrad und die Fertigungstiefe sind
+verwandte Begriffe. Beim Begriff der Fertigungstiefe wird allerdings
+nur die Wertschöpfungskette der Produktion ohne den Handel
+betrachtet. Man geht daher von produzierenden Unternehmen aus.
+• Wertschöpfung und Leistung sind hier bezogen auf das Unternehmen.
+1	0 		=	 Leistung
+ung	Wertschöpf
+tiefe	Fertigungs
+Leistung: 400.000€ 800.000€
+%	50
+€	000	.	800
+€	000	.	400 =	=	= Leistung
+ung	Wertschöpf
+tiefe	Fertigungs
+Lieferanten Brauerei
+
+-- 29 of 48 --
+
+Vertikale & Horizontale Integration
+• Unter vertikaler Integration versteht man in
+den Wirtschaftswissenschaften eine Form
+der Unternehmenskonzentration, bei der meist
+die Fertigungstiefe erhöht wird, indem sich mehrere Unternehmen mit
+aufeinanderfolgenden Verarbeitungs- oder Handelsstufen vereinigen.
+• Es existieren zwei Arten der vertikalen Integration:
+• Rückwärtsintegration (backward integration)
+• Vorwärtsintegration (forward integration)
+• Die horizontale Integration ist in den Wirtschaftswissenschaften ein
+Unternehmenszusammenschluss von Unternehmen gleicher
+Verarbeitungs- oder Handelsstufe unter einer einheitlichen
+Unternehmenfühung.
+
+-- 30 of 48 --
+
+Backward-Integration/Forward-Integration
+• Backward-Integration
+Betrachtet wird die Input-Situation des Unternehmens
+(Vorleistungen). Backward-Integration (Rückwärts-Integration)
+bedeutet, dass das Unternehmen die bisher zugekauften
+Vorleistungen oder Güter, die dann anschließend vom Unternehmen
+weiterverarbeitet werden, selbst erbringt, herstellt oder gewinnt.
+• Forward-Integration
+Unter Forward-Integration (Vorwärts-Integration) versteht man die
+Integration nachgelagerten Produktions- und Handelsstufen, die
+bisher nicht Bestandteil der Wertschöpfungskette des Unternehmens
+waren.
+Voraussetzung: In der Wertschöpfungskette des Unternehmens wird
+der Endkunde nicht erreicht.
+• Frage: Steigt oder sinkt die vertikale Integration durch Backward-
+/Forward-Integration?
+
+-- 31 of 48 --
+
+Backward-Integration/Forward-Integration
+Wertschöpfungskette
+Backward-Integration
+Forward-Integration
+Bemerkung: Man spricht von vertikaler Integration,
+obwohl wir hier eine horizontale Darstellung haben.
+
+-- 32 of 48 --
+
+Vorteile vertikaler Integration
+• Zeit- und Kostenvorteile des Unternehmens gegenüber
+Wettbewerbern, das heißt, das Unternehmen spart durch die vertikale
+Integration zum Beispiel Transportzeit und -kosten, dadurch kann die
+Wettbewerbsfähigkeit des Unternehmens erhöht werden
+• Vorprodukte können besser auf Endprodukte abgestimmt werden
+• das Know-how des Unternehmens kann sich weiterentwickeln und es
+ergeben sich Synergieeffekte innerhalb der Produktionsprozessstufen
+• verbesserter Zugang zu Marktinformationen und neue
+Produktentwicklungen können leichter geheim gehalten werden
+33
+
+-- 33 of 48 --
+
+Nachteile vertikaler Integration
+• interne Kontroll- und Koordinationskosten aufgrund mangelnder
+Erfahrung
+• steigende Organisations- und Bürokratiekosten aufgrund wachsender
+Unternehmensgröße
+• veränderte Wettbewerbssituation für das Unternehmen (ehemalige
+Lieferanten oder Kunden werden zu Konkurrenten)
+34
+
+-- 34 of 48 --
+
+Video: Vertikale Integration
+35
+
+-- 35 of 48 --
+
+Übung: Integrationsgrad
+Bearbeitungszeit: 5 min
+Betrachten Sie die Wertschöpfungskette für Jeans, die wir bereits
+angeschaut haben.
+1. Verteilen Sie die 100% Gesamtleistung der Wertschöpfungskette
+möglichst realistisch auf die einzelnen Arbeitsschritte.
+2. Versetzen Sie sich in die Rolle eines Betriebes in dieser
+Wertschöpfungskette und überlegen Sie sich jeweils 1 Beispiel für
+Forward- und Backward-Integration!
+3. Wie verändert sich durch die gewählten Beispiele der
+Integrationsgrad?
+36
+
+-- 36 of 48 --
+
+Horizontale Integration
+• Wikipedia: Unter horizontaler Integration versteht man in der
+Wirtschaft das Zusammenfassen von Betrieben gleicher
+Produktionsstufe unter einem einheitlichen Management.
+• Im Gegensatz zur vertikalen Integration (Backward oder Forward), bei
+der vor- oder nachgelagerte Produktionsstufen integriert werden,
+integriert man bei der horizontalen Integration Betriebe gleicher
+Produktionsstufe.
+Was können die Gründe hierfür sein?
+37
+
+-- 37 of 48 --
+
+Beispiel Automobilindustrie
+38
+Quelle: Wikipedia
+
+-- 38 of 48 --
+
+Hauptgründe horizontaler Integration
+• Die Hauptgründe horizontaler Integration
+• bei der Beschaffung sind die zunehmende Einkaufsmacht mit der
+Folge verbesserter Einkaufskonditionen (vor allem
+niedrigere Einkaufspreise),
+• in der Produktion ist die Ausnutzung des Gesetzes der
+Massenproduktion mit der Folge der Fixkostendegression (liegt vor,
+wenn sich – bei einer gegebenen Betriebsgröße – die konstant
+bleibenden Fixkosten bei zunehmender Ausbringungsmenge durch
+sinkende Stückkosten bemerkbar machen) und im Vertrieb die
+Verbesserung der Marktmacht durch höhere Marktanteile.
+39
+Karlheinz Küting, Horizontale Unternehmungszusammenschlüsse, in:
+Wolfgang Lück (Hrsg.), Lexikon der Betriebswirtschaft, 1983, S. 1175
+
+-- 39 of 48 --
+
+Make or Buy/ Sourcing in der IT
+40
+Infrastrukturdienste
+• Computing, storage, network
+• Virtualisierung
+• Datensicherung, Ausfallsicherheit und Datenrückgewinnung
+Plattformdienste
+• Datenbank, Application Server
+• BPM, Enterprise Service Bus, Rules Management
+• Portal, Mobile
+Software-Dienste
+• Lösungskomponenten
+• Durchgängige Lösungen
+Anwendungsdienste
+• Konfiguration der Softwarelösung
+• Training
+• Business Process Outsourcing
+Rechenzentrumsdienste
+• Gebäude, -technik und -sicherheit
+• Stromversorgung
+• Telefon- und Netzwerkanbindung
+„as
+-a-Service“/
+Managed
+ Services
+Platform as a Service (PaaS)
+• Datacenter as a Service/Outsourcing
+• Infrastructure as a Service (IaaS)
+Software as a Service
+Managed Services
+
+-- 40 of 48 --
+
+Übung Textverständnis: Mass Customization
+Bearbeitungszeit: 15 min
+1. Lesen Sie den in moodle zur Verfügung gestellten Text
+„System-Anforderungen durch Mass Customization“
+von Guido Herres, erschienen in IT & Production ONLINE
+(https://www.it-production.com, TeDo Verlag GmbH, Marburg)
+2. Überlegen Sie sich 3 weitere Beispiele für Mass Customization!
+Welche Systemanforderungen entstehen in Ihren Beispielen?
+41
+
+-- 41 of 48 --
+
+Ausblick: SOA (Service oriented Architecture) BPM
+42
+Quelle: www.computerwoche.de
+Artikel „SOA und BPM wachsen zusammen“, 08.05.2007 von Dirk Slama
+
+-- 42 of 48 --
+
+Mass customization
+• Mass Customization ist ein Produktionskonzept, in dem einerseits die
+Vorzüge der Massenproduktion genutzt werden, andererseits dem
+wachsenden Wunsch des Kunden nach Individualisierung seines
+Produktes Rechnung getragen wird.
+• Zielabsatzmarkt ist nicht der differenzierte, sondern der
+Massenmarkt. Hier soll durch Variation aus wenigen, aus Kundensicht
+jedoch entscheidenden Merkmalen des Produkts eine
+Individualisierung erreicht werden.
+• Typische Individualisierungsdimensionen sind zum Beispiel
+Designmerkmale oder Passform. Häufig basieren diese Produkte aber
+auch auf dem Konzept der Modularisierung, das heißt das Produkt
+kann aus diversen Bausteinen individuell zusammengestellt werden.
+43
+https://de.wikipedia.org/wiki/Mass_Customization
+
+-- 43 of 48 --
+
+Vorteile von Mass customization
+• Bedienung individueller Kundenbedürfnisse bei Kosten, die nur
+geringfügig über denen eines Standardprodukts liegen
+• Produktion nur für den echten Bedarf
+• Reduzierung/Wegfall von Lagerkosten
+• Positionierung als Innovationsführer (zeitlich begrenzt)
+• Gewinnung von Kundendaten und Informationen über
+Kundenbedürfnisse (Marktforschung)
+• Individuelles Marketing, die über traditionelle
+Marktforschungsmethoden nur schwer ermittelbar sind. Durch Mass
+Customization erhält ein Unternehmen also auch ein zusätzliches
+Instrument zur frühen Aufklärung neuer Marktentwicklungen. Eine
+dauerhafte Kundenbindung wird begünstigt.
+44
+
+-- 44 of 48 --
+
+Video: Mass customization von DELL
+45
+
+-- 45 of 48 --
+
+Voraussetzungen für Mass customization
+• Grundvoraussetzung: Moderne Informations- und
+Kommunikationstechnologie an der Wertschöpfungskette
+• Internetbasierte Produktgestaltung mit Hilfe eines Konfigurators
+• Flexible Produktionsmittel, die im One-Piece-Flow produzieren
+können
+• Flexible Logistik
+Beobachtung: Durch Mass Customization werden besondere
+Anforderungen an den Entwurf von Informationssystemen erforderlich.
+46
+
+-- 46 of 48 --
+
+Beispiele
+47
+
+-- 47 of 48 --
+
+Thank you for your attention!
+48
+
+-- 48 of 48 --
+

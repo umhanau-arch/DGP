@@ -1,0 +1,261 @@
+A
+Klausurdeckblatt
+Name: Raum:
+Vorname: Sitzplatz:
+Matrikelnummer:
+Lehrveranstaltung: Digitale Geschäftsprozesse
+Semester: Sommersemester 2025
+Prüfungsdatum: 12.06.2025
+Dozent: Prof. Dr. Nicolas Stein
+Bearbeitungszeit: 90 Minuten
+Hilfsmittel: keine
+Für die Prüfungsdurchführung gilt:
+• Prüfen Sie, ob die vorliegende Klausur inklusive Deckblatt xx Seiten umfasst.
+• Lassen Sie die Klausur geheftet! Die Heftklammern werden nicht entfernt.
+• Tragen Sie ihre Lösungen direkt in dieses Klausurheft ein. Sollte der Platz auf der
+Vorderseite nicht reichen, nutzen Sie die Rückseite und vermerken Sie dies.
+• Schreiben Sie nicht mit roter oder grüner Farbe und nicht mit Bleistift.
+• Mobiltelefone sind auszuschalten und außer Reichweite zu verstauen.
+• Zur erfolgreichen Bearbeitung der Aufgaben müssen alle notwendigen Zwischenschritte für
+Rechnungen nachvollziehbar angegeben und Aussagen stets begründet werden.
+• Jegliche Täuschung und Täuschungsversuche führen zum Ausschluss von der Prüfung.
+Punkte A1 A2 A3 A4 A5 A6 A7 A8 Summe
+Max. 9 10 9 16 12 14 12 18 100
+Erreicht
+Viel Erfolg!
+1
+
+-- 1 of 14 --
+
+A
+Aufgabe 1 (3+3+3 = 9 Punkte)
+Erklären Sie mit eigenen Worten die folgenden Begriffe:
+• Geschäftsprozess:
+• Geschäftsprozessmodell:
+• Workflow:
+2
+
+-- 2 of 14 --
+
+A
+Aufgabe 2 (4+6 = 10 Punkte)
+Wir betrachten den Geschäftsprozessmanagementzyklus.
+(a) Ordnen Sie die verschiedenen Phasen
+• Prozessüberwachung
+• Prozessanalyse
+• Prozesseinführung
+• Prozessverbesserung
+• Prozessidentifikation
+• Prozesserhebung
+dem Geschäftsprozessmanagement Lebenszyklus zu
+Abbildung 1: Darstellung des GPM-Zyklus.
+(b) Geben Sie zwei Kategorien von Redesign-Heuristiken als konkrete Maßnahmen zur Umgestaltung
+von Geschäftsprozessen an. Nennen und beschreiben Sie kurz für jede Kategorie ein Beispiel für
+Geschäftsprozesse im Supermarkt.
+3
+
+-- 3 of 14 --
+
+A
+Aufgabe 3 (3+6 = 9 Punkte)
+Ein mittelständisches Unternehmen betreibt einen Online-Shop für nachhaltige Mode. Es nutzt eine digi-
+tale Plattform, auf der Kundinnen und Kunden Produkte auswählen, bestellen und bezahlen können. Im
+Hintergrund laufen zahlreiche Geschäftsprozesse digital ab, z.B. Produktentwicklung, Personalbeschaffung,
+Marketingkampagnen, Logistiksteuerung und Buchhaltung.
+1. Erläutern Sie in 1-2 vollständigen Sätzen, was Kern-, Management- und unterstützende Prozesse
+sind. Beschreiben Sie dabei die Zielsetzung und Merkmale dieser Prozessarten.
+2. Ordnen Sie die folgenden Geschäftsprozesse des Unternehmens jeweils eindeutig einer der drei Ka-
+tegorien durch Kreuzen in der entsprechenden Spalte zu.
+Geschäftsprozess unterstützender
+Prozess
+Management-
+prozess
+Kernprozess
+Entwicklung und Pflege der Online-Shop
+Plattform
+⃝ ⃝ ⃝
+Durchführung von Marketingkampagnen
+zur Umsatzsteigerung
+⃝ ⃝ ⃝
+Abwicklung des Online-Bestellvorgangs
+(Warenkorb, Bezahlung, Versand)
+⃝ ⃝ ⃝
+Einstellung und Schulung neuer Mitarbeiter ⃝ ⃝ ⃝
+Unternehmensstrategie-Entwicklung durch
+die Geschäftsleitung
+⃝ ⃝ ⃝
+Durchführung der monatlichen Lohn- und
+Gehaltsabrechnung
+⃝ ⃝ ⃝
+4
+
+-- 4 of 14 --
+
+A
+Aufgabe 4 (2 + 4 + 8 + 2 = 16 Punkte)
+Die LogiTech GmbH produziert zwei Produkte: Produkt Alpha und Produkt Beta. Um ihre Gemeinkosten
+besser zu analysieren, verwendet sie die Prozesskostenrechnung. Dabei wurden vier Teilprozesse identifi-
+ziert:
+Prozess Gesamtkosten (€) Fixkosten (€) Maßgröße Gesamtmenge
+Auftragsbearbeitung 60.000 20.000 Anzahl Aufträge 1.000
+Wareneingangskontrolle 40.000 10.000 Anzahl Material-
+positionen
+2.000
+Maschinenrüsten 30.000 10.000 Anzahl Rüstvorgänge 400
+Endprüfung & Doku-
+mentation
+50.000 20.000 Anzahl geprüfter
+Chargen
+500
+Im letzten Quartal fielen folgende Maßgrößen an:
+Produkt Aufträge Materialpositionen Rüstvorgänge Geprüfte Chargen
+Alpha 600 1.200 180 300
+Beta 400 800 120 200
+1. Geben Sie an, ob die angegebenen Teilprozesse leistungsmengeninduzierte oder leistungsmengen-
+neutrale Prozesse sind.
+Prozess leistungsmengeninduziert leistungsmengenneutral
+Auftragsbearbeitung ⃝ ⃝
+Wareneingangskontrolle ⃝ ⃝
+Maschinenrüsten ⃝ ⃝
+Endprüfung & Dokumentation ⃝ ⃝
+2. Berechnen Sie die variablen Prozesskostensätze der vier Prozesse.
+5
+
+-- 5 of 14 --
+
+A
+3. Berechnen Sie die gesamten Prozesskosten für die beiden Produkte unter der Annahme, dass die
+Fixkosten anteilig zur Maßgröße auf die Produkte verteilt werden.
+4. Berechnen Sie die insgesamten Prozesskosten pro Auftrag
+6
+
+-- 6 of 14 --
+
+A
+Aufgabe 5 (2 + 2 + 3 + 3 + 2 = 12 Punkte)
+Die MECHATRON GmbH ist ein mittelständisches Maschinenbauunternehmen. Es stellt CNC-Fräsen her
+und führt viele Produktionsschritte im eigenen Werk durch, z.B. das Fräsen von Metallteilen, die End-
+montage und die Qualitätssicherung. Allerdings werden einige Komponenten, wie Elektromotoren und
+Steuerungselektronik, von externen Lieferanten bezogen.
+Außerdem hat MECHATRON vor Kurzem ein kleineres Unternehmen übernommen, das ebenfalls CNC-
+Fräsen produziert – jedoch in einer anderen Region. Beide Unternehmen produzieren ähnliche Produkte,
+verwenden aber unterschiedliche Zulieferer.
+1. Erläutern Sie den Unterschied zwischen horizontaler und vertikaler Integration anhand der obigen
+Situation. Bitte antworten Sie in ganzen Sätzen.
+2. Ordnen Sie die folgenden Maßnahmen jeweils als vertikale (Rückwärts- oder Vorwärts-) oder hori-
+zontale Integration ein. Begründen Sie kurz.
+(a) MECHATRON übernimmt den bisherigen Zulieferer für Elektromotoren.
+(b) MECHATRON fusioniert mit einem direkten Wettbewerber in einer anderen Region.
+3. Die Kostenstruktur pro CNC-Fräsgerät ist wie folgt
+Leistung intern in € fremdbezogen in €
+Mech. Bearbeitung 3.000 -
+Elektromotoren - 1.500
+Steuerungselektronik 500 1.500
+Lackierung - 1.000
+Endmontage 2.000 -
+Qualitätssicherung 1.500 -
+Dabei hat der Zukauf des oben genannten Unternehmens dazu geführt, dass ein Teil der Steue-
+rungselektronik intern entwickelt wird.
+7
+
+-- 7 of 14 --
+
+A
+(a) Berechnen Sie den Integrationsgrad.
+(b) MECHATRON plant, die Steuerungselektronik künftig komplett selbst zu fertigen. Dadurch
+würden die internen Kosten um 1.500 € steigen, die externen entsprechend sinken.
+Berechnen Sie den neuen Integrationsgrad.
+(c) Benennen sowie erläutern Sie mindestens einen Vor- und einen Nachteil, den diese Entschei-
+dung mit sich bringt. Die Antwort soll in vollständigen Sätzen erfolgen.
+8
+
+-- 8 of 14 --
+
+A
+Aufgabe 6 (2 + 6 + 6 = 14 Punkte)
+Wir betrachten folgendes Petrinetz mit angegebener Markierung:
+1. Welche Transitionen sind bei gegebener Markierung aktiviert und wie oft können diese ausgehend
+von der dargestellten Startmarkierung feuern?
+2. Erstellen Sie den zum Petrinetz gehörenden Erreichbarkeitsgraphen.
+9
+
+-- 9 of 14 --
+
+A
+3. Ist das Petrinetz k-beschränkt? Wenn ja, geben Sie bitte k mit an!
+4. Ist das Petrinetz sicher, deadlockfrei und lebendig? Begründen Sie jeweils ihre Wahl.
+10
+
+-- 10 of 14 --
+
+A
+Aufgabe 7 (12 Punkte)
+Ein Unternehmen erhält gelegentlich Produktreklamationen von Kundinnen und Kunden. Der folgende
+Prozess beschreibt den Ablauf von der Annahme bis zur abschließenden Rückmeldung an den Kunden.
+1. Der Kunde schreib eine Reklamation und reicht diese per E-Mail beim Unternehmen ein.
+2. Der Kundenservice prüft bei Eingang, ob die Reklamation formell vollständig ist
+• Wenn unvollständig, wird der Kunde zur Nachbesserung aufgefordert. Dieser reicht die Unter-
+lagen nach und die Prüfung beginnt erneut.
+3. Ist die Reklamation vollständig, wird sie an die Fachabteilung (Qualitätsmanagement) weitergeleitet.
+4. Das Qualitätsmanagement prüft die technische Ursache.
+5. Danach entscheidet sie, ob die Reklamation berechtigt ist.
+• Wenn ja, wird ein Ersatzprodukt freigegeben
+• Wenn nein, wird eine schriftliche Ablehnung vorbereitet.
+6. Anschließend schickt der Kundenservice entweder das Ersatzprodukt zurück und informiert den
+Kunden oder er finalisiert und schickt die schriftliche Ablehnung zum Kunden.
+Modellieren Sie den oben beschriebenen Prozess nach BPMN 2.0.
+Hinweise:
+• Es wird der End-to-End Prozess betrachtet, d.h. Prozessteile außerhalb des Unternehmens sind
+separat zu dem Teilprozess innerhalb des Unternehmens über separate Pools zu modellieren.
+• Nachrichtenzwischenereignisse sind zu verwenden.
+• Die finalen Nachrichtenflüsse müssen nicht an Aktivitäten enden, sondern dürfen hier auch an einem
+Pool enden.
+• Beachten Sie bitte die Konvention zur Aktivitäts- und Ereignisbeschreibung in textueller Form.
+11
+
+-- 11 of 14 --
+
+A
+Leerseite für die Prozessdarstellung
+12
+
+-- 12 of 14 --
+
+A
+Aufgabe 8 (2+5+5+6 = 18 Punkte)
+Im Folgenden betrachten wir Konzepte des Process minings sowie Teile des α-Algorithmus.
+1. Erläutern Sie kurz den Unterschied zwischen einem Petrinetz und einem Workflownetz im Kontext
+der Prozessmodellierung.?
+2. Gegeben ist folgender Eventlog:
+(a) Benennen Sie die Elemente, die ein Eventlog mindestens haben muss.
+(b) Kennzeichnen und ordnen Sie die zugehörigen Spalten den zuvor genannten Elementen im
+dargestellten Eventlog zu.
+(c) Geben Sie zwei traces aus dem Eventlog an.
+13
+
+-- 13 of 14 --
+
+A
+3. Wir betrachten folgendes Prozessmodell:
+(a) Welche der folgenden Traces sind im Prozessmodell möglich?
+Trace möglich nicht möglich
+abcdeg ⃝ ⃝
+adcbfbcdeh ⃝ ⃝
+adbceh ⃝ ⃝
+bcdeg ⃝ ⃝
+acbdefg ⃝ ⃝
+acbdefdbch ⃝ ⃝
+(b) Wie viele komplette Traces gibt es für dieses Prozessmodell?
+4. Gegeben sei folgender Eventlog:
+L = [⟨a, b, c, e⟩, ⟨a, c, b, e⟩2, ⟨a, b, d, e⟩, ⟨a, e⟩2]
+Vervollständigen Sie den Fußabdruck von L:
+a b c d e
+a # → → # →
+b ← # ∥ → →
+c ← ∥ # # →
+d # ← # # →
+e ← ← ← ← #
+14
+
+-- 14 of 14 --
+
